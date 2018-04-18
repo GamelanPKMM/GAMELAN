@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Games/KarapanAsset/Scene/Karapan.unity
+    guid: f6fb2896adc240844a33490f25ae49d4
+  - enabled: 1
     path: Assets/Scenes/LompatNias.unity
     guid: 8ceb97cbe6015104589ff28df3526ed6

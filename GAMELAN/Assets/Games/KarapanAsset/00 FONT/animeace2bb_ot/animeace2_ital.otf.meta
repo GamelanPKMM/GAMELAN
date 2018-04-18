@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 71d509085aa11d948a1d9963abfc282e
+timeCreated: 1523866642
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Anime Ace 2.0 BB
+  fontNames:
+  - Anime Ace 2.0 BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 124777004439ca94aab3438ca206b2b0, type: 3}
+  - {fileID: 12800000, guid: 52c57594da292a344891402dcf59c0f1, type: 3}
+  - {fileID: 12800000, guid: aafee06505dee6b448545424ebf81560, type: 3}
+  - {fileID: 12800000, guid: 2ac8007da475bf947ab304a586acb2a9, type: 3}
+  - {fileID: 12800000, guid: 5fd6c6ff8d6465548bf53d7cfe70e894, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

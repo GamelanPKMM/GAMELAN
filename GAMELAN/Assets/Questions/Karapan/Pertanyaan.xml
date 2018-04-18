@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<QuestionBank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Questions>
+    <Question Question="Pilih A">
+      <answers>
+        <string>a. Jancuk</string>
+        <string>b. Kata</string>
+        <string>c. Nigga</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+	<Question Question="Pilih B">
+      <answers>
+        <string>a. Jancuk</string>
+        <string>b. Kata</string>
+        <string>c. Nigga</string>
+      </answers>
+      <answer>1</answer>
+    </Question>
+	<Question Question="Pilih C">
+      <answers>
+        <string>a. Jancuk</string>
+        <string>b. Kata</string>
+        <string>c. Nigga</string>
+      </answers>
+      <answer>2</answer>
+    </Question>
+  </Questions>
+</QuestionBank>
