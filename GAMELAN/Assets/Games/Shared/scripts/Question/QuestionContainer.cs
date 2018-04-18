@@ -11,14 +11,14 @@ public class QuestionContainer {
     public List<Question> question = new List<Question>();
 
     public static QuestionContainer loadQuestion(string path){
-        path = "file://" + Application.dataPath + "/"+path;
-        Debug.Log(path);
+        path = "file://" + Application.dataPath + "/"+ path;
         WWW file = new WWW(path);
+        if (file == null) {
+            Application.Quit();
+        }
         while (!file.isDone) ;
         XmlSerializer serializer = new XmlSerializer(typeof(QuestionContainer));
-        //FileStream stream = new FileStream(path, FileMode.Open);
         StringReader s = new StringReader(file.text);
-        Debug.Log(file.text);
         return serializer.Deserialize(s) as QuestionContainer;
     }
 

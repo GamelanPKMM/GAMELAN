@@ -7,13 +7,13 @@ using System.IO;
 [XmlRoot("MinigamesRoot")]
 public class MinigameContainer {
     [XmlArray("Minigames")]
-    [XmlArrayItem("Minigame")]
+    [XmlArrayItem("MinigameItem")]
     public List<Minigame> minigames = new List<Minigame>();
 
 
     public static MinigameContainer loadMinigame()
     {
-        TextAsset xmlLoad = Resources.Load("MiniGames.xml") as TextAsset;
+        TextAsset xmlLoad = Resources.Load("MiniGames") as TextAsset;
         XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
         StringReader reader = new StringReader(xmlLoad.text);
         return serializer.Deserialize(reader) as MinigameContainer;
