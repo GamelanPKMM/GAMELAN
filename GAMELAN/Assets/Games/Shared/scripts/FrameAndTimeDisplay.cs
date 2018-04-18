@@ -31,5 +31,16 @@ public class FrameAndTimeDisplay : SubController
     {
         base.start();
         textUI = gameObject.GetComponent<Text>();
+        /*
+        Minigame m1 = new Minigame();
+        m1.name = "Karapan";
+        Minigame m2 = new Minigame();
+        m2.name = "Lompat Nias";
+        MinigameContainer m = new MinigameContainer();
+        m.minigames.Add(m1);
+        m.minigames.Add(m2);
+        m.Save("MiniGames.xml");*/
+        MinigameContainer.loadMinigame();
+        Debug.Log("Minigames loaded");
     }
 }

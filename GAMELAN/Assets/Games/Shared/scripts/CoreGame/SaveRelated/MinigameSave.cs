@@ -8,7 +8,11 @@ public class MinigameSave : Minigame {
 
     [XmlAttribute("Minigame")]
     public int score;
-
+    public MinigameSave() { }
+    public MinigameSave(Minigame m) {
+        this.name = m.name;
+        score = 0;
+    }
     public void setScore(int score){
         this.score = score < 0 ? 0 : score > 5 ? 5 : score;
     }

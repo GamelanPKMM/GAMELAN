@@ -7,4 +7,8 @@ using System.Xml;
 public class Minigame {
     [XmlAttribute ("Minigame")]
     public string name;
+    public Minigame() { }
+    public Minigame(string name) {
+        this.name = name;
+    }
 }

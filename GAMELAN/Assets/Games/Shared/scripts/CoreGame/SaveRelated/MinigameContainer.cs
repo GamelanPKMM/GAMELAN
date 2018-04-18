@@ -11,17 +11,17 @@ public class MinigameContainer {
     public List<Minigame> minigames = new List<Minigame>();
 
 
-    public static MinigameContainer loadQuestion(string path)
+    public static MinigameContainer loadMinigame()
     {
+        TextAsset xmlLoad = Resources.Load("MiniGames.xml") as TextAsset;
         XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
-        FileStream stream = new FileStream(path, FileMode.Open);
-        return serializer.Deserialize(stream) as MinigameContainer;
+        StringReader reader = new StringReader(xmlLoad.text);
+        return serializer.Deserialize(reader) as MinigameContainer;
     }
-
     public void Save(string path)
     {
-        XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
-        using (FileStream stream = new FileStream(path, FileMode.Create))
+        var serializer = new XmlSerializer(typeof(MinigameContainer));
+        using (var stream = new FileStream(path, FileMode.Create))
         {
             serializer.Serialize(stream, this);
         }
