@@ -39,14 +39,8 @@ public class FrameAndTimeDisplay : SubController
         MinigameContainer m = new MinigameContainer();
         m.minigames.Add(m1);
         m.minigames.Add(m2);
-        m.Save("MiniGames.xml");
+        m.Save("MiniGames.xml");*/
         MinigameContainer.loadMinigame();
-        Debug.Log("Minigames loaded");*/
-        
-        Account a = new Account("edho");
-        AccountContainer c = AccountContainer.load();
-        c.accounts.Add(a);
-        Debug.Log(c.accounts.Count);
-        c.Save();
+        Debug.Log("Minigames loaded");
     }
 }
