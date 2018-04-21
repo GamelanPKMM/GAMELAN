@@ -6,7 +6,7 @@ using System.Xml;
 
 public class MinigameSave : Minigame {
 
-    [XmlAttribute("Minigame")]
+    [XmlAttribute("MinigameSave")]
     public int score;
     public MinigameSave() { }
     public MinigameSave(Minigame m) {

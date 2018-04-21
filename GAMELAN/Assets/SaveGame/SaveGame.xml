@@ -3,23 +3,15 @@
   <Accounts>
     <Account Account="dads">
       <minigameSave>
-        <MinigameSave Minigame="Karapan">
-          <score>1</score>
-        </MinigameSave>
-        <MinigameSave Minigame="Lompat Nias">
-          <score>0</score>
-        </MinigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="1" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
       </minigameSave>
     </Account>
   </Accounts>
   <currentAccount Account="dads">
     <minigameSave>
-      <MinigameSave Minigame="Karapan">
-        <score>1</score>
-      </MinigameSave>
-      <MinigameSave Minigame="Lompat Nias">
-        <score>0</score>
-      </MinigameSave>
+      <MinigameSave Minigame="Karapan" MinigameSave="1" />
+      <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
     </minigameSave>
   </currentAccount>
 </AccountContainer>

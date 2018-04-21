@@ -13,7 +13,6 @@ public class MinigameContainer {
 
     public static MinigameContainer loadMinigame()
     {
-<<<<<<< HEAD
         if (self == null)
         {
             TextAsset xmlLoad = Resources.Load("MiniGames") as TextAsset;
@@ -23,12 +22,6 @@ public class MinigameContainer {
             return self;
         }
         else return self;
-=======
-        TextAsset xmlLoad = Resources.Load("MiniGames.xml") as TextAsset;
-        XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
-        StringReader reader = new StringReader(xmlLoad.text);
-        return serializer.Deserialize(reader) as MinigameContainer;
->>>>>>> a50d40f22fab8510918aa8faade0c86b2682012d
     }
     //this is deprecated so dont use it
     public void Save(string path)
