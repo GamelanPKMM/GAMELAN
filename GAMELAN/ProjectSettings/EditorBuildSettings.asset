@@ -6,6 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Games/Shared/Scene/MAIN.unity
     guid: b908a8f5c71a43a4896e5330bb735b6e
   - enabled: 1
@@ -16,4 +17,7 @@ EditorBuildSettings:
     guid: f6fb2896adc240844a33490f25ae49d4
   - enabled: 1
     path: Assets/Games/FlappyBirdStyleAssets/Scenes/LompatNias.unity
+=======
+    path: Assets/Scenes/LompatNias.unity
+>>>>>>> a50d40f22fab8510918aa8faade0c86b2682012d
     guid: 8ceb97cbe6015104589ff28df3526ed6
