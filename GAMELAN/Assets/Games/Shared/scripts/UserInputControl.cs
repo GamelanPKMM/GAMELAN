@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UserInputControl : SubController {
-    public delegate void InputHandler(KeyCode input);
+    public delegate void InputHandler();
     InputHandler inputHandler;
     private LinkedList<KeyMap> keyMap = new LinkedList<KeyMap>();
     public const float AlwaysPress = 0;
@@ -13,17 +13,14 @@ public class UserInputControl : SubController {
     public const float second = 1F;
 
     void FixedUpdate() {
-        /*if (Input.anyKey)
-         {
-             inputHandler();
-         }*/
-     }
+        if (Input.anyKey && basicGameControl.getIsUserInputAllowed())
+        {
+            inputHandler();
+        }
+    }
 
-     void OnGUI() {
-        Event e = Event.current;
-         if (e.isKey && basicGameControl.getIsUserInputAllowed()) {
-             inputHandler(e.keyCode);
-         }
+    void OnGUI() {
+        
     }
 
      public void addKeyMap(KeyMap k) {

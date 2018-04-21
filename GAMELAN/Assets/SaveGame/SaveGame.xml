@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <AccountContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
-    <Account Account="Farid">
+    <Account Account="dads">
       <minigameSave>
         <MinigameSave Minigame="Karapan">
-          <score>0</score>
-        </MinigameSave>
-        <MinigameSave Minigame="Lompat Nias">
-          <score>0</score>
-        </MinigameSave>
-      </minigameSave>
-    </Account>
-    <Account Account="edho">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan">
-          <score>0</score>
+          <score>1</score>
         </MinigameSave>
         <MinigameSave Minigame="Lompat Nias">
           <score>0</score>
@@ -22,4 +12,14 @@
       </minigameSave>
     </Account>
   </Accounts>
+  <currentAccount Account="dads">
+    <minigameSave>
+      <MinigameSave Minigame="Karapan">
+        <score>1</score>
+      </MinigameSave>
+      <MinigameSave Minigame="Lompat Nias">
+        <score>0</score>
+      </MinigameSave>
+    </minigameSave>
+  </currentAccount>
 </AccountContainer>

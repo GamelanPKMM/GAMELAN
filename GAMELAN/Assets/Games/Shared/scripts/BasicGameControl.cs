@@ -12,7 +12,8 @@ public class BasicGameControl : SubController {
     public delegate void eventCall();
     private Dictionary<string, eventCall> events = new Dictionary<string, eventCall>();
     private Dictionary<string, SubController> subController = new Dictionary<string, SubController>();
-    public Debug debug;
+
+    protected CoreGameInterface coreInterface;
     public bool isPause() { return isPaused; }
     public void togglePause() {
         if (gameState)
@@ -46,12 +47,13 @@ public class BasicGameControl : SubController {
         callEvent("Finish");
 
     }
-    public void exitGame() {
+    public virtual void exitGame() {
         callEvent("ExitGame");
         /*
- * get out from mini game to core game
- * */
+        * get out from mini game to core game
+        * */
     }
+    public virtual void saveGame() { }
     public void toggleUserInput() {
         if (isUserInputAllowed)
         {
@@ -81,6 +83,7 @@ public class BasicGameControl : SubController {
     // called on Awake
     protected override void instantiate<T>() {
         base.instantiate<T>();
+        coreInterface = GetComponent<CoreGameInterface>();
         events.Add("Reset", delegate() { Debug.Log("Reset"); });
         events.Add("GameOver", delegate() { Debug.Log("GameOver"); });
         events.Add("Pausing", delegate() { Debug.Log("Pausing"); });

@@ -1,7 +1,9 @@
 WindowsStandalone
 SceneListBegin?
+Assets/Games/Shared/Scene/MAIN.unity
+Assets/Games/Shared/Scene/MAP.unity
 Assets/Games/KarapanAsset/Scene/Karapan.unity
-Assets/Scenes/LompatNias.unity
+Assets/Games/FlappyBirdStyleAssets/Scenes/LompatNias.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UserInputControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Console
@@ -118,7 +120,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanScroll
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.QuestionController
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanGameInput
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -178,9 +179,12 @@ c477a5a6a5a167e23d13594364375666 Assembly-CSharp.dll:.KarapanEnemyInstanceContro
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 5c05474e417e53b54580a5d5adfdf48e Assembly-CSharp.dll:.MoveRelatively
 47d12f8de53e22d3c226accc030098b4 Assembly-CSharp.dll:.ScrollBackground
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.QuestionButtonAction
 1820ed1de6bce04cf91bf4cad00967ef Assembly-CSharp.dll:.KarapanLifeUIControl
 19f5e39600cbb2f4ab4fe18a74a1f824 Assembly-CSharp.dll:.KarapanLifeControl
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanEndingScript
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanScoreDisplay
 bd641d3f2acea16f069c159dbd980718 Assembly-CSharp.dll:.SpawnObs
+f24af9bdcafa3f0ae1f28087d4153101 Assembly-CSharp.dll:.MainMenuControl
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MapController
+4c7dc8a4e3b464fa5ee10bb13be20d08 Assembly-CSharp.dll:.MiniGameLoaderScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CoreGameInterface

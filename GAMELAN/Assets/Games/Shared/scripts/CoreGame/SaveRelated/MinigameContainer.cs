@@ -9,15 +9,21 @@ public class MinigameContainer {
     [XmlArray("Minigames")]
     [XmlArrayItem("MinigameItem")]
     public List<Minigame> minigames = new List<Minigame>();
-
+    public static MinigameContainer self;
 
     public static MinigameContainer loadMinigame()
     {
-        TextAsset xmlLoad = Resources.Load("MiniGames") as TextAsset;
-        XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
-        StringReader reader = new StringReader(xmlLoad.text);
-        return serializer.Deserialize(reader) as MinigameContainer;
+        if (self == null)
+        {
+            TextAsset xmlLoad = Resources.Load("MiniGames") as TextAsset;
+            XmlSerializer serializer = new XmlSerializer(typeof(MinigameContainer));
+            StringReader reader = new StringReader(xmlLoad.text);
+            self =  serializer.Deserialize(reader) as MinigameContainer;
+            return self;
+        }
+        else return self;
     }
+    //this is deprecated so dont use it
     public void Save(string path)
     {
         var serializer = new XmlSerializer(typeof(MinigameContainer));

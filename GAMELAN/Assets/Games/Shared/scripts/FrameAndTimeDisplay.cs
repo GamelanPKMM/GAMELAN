@@ -20,7 +20,6 @@ public class FrameAndTimeDisplay : SubController
             text = text + (DisplayFrameCount ? "FrameCount = " + frameCount + " \n" : "");
             text = text + (DisplayAverageFPS ? "Average FPS = " + averageFPS + " \n" : "");
             text = text + (DisplayTime ? "Time = " + time + " \n" : "");
-            text = text + Application.dataPath + "/Questions/Karapan/Pertanyaan.xml";
             textUI.text = text;
         }
         else textUI.text = "";
@@ -31,22 +30,7 @@ public class FrameAndTimeDisplay : SubController
     {
         base.start();
         textUI = gameObject.GetComponent<Text>();
-        /*
-        Minigame m1 = new Minigame();
-        m1.name = "Karapan";
-        Minigame m2 = new Minigame();
-        m2.name = "Lompat Nias";
-        MinigameContainer m = new MinigameContainer();
-        m.minigames.Add(m1);
-        m.minigames.Add(m2);
-        m.Save("MiniGames.xml");
-        MinigameContainer.loadMinigame();
-        Debug.Log("Minigames loaded");*/
         
-        Account a = new Account("edho");
-        AccountContainer c = AccountContainer.load();
-        c.accounts.Add(a);
-        Debug.Log(c.accounts.Count);
-        c.Save();
+
     }
 }

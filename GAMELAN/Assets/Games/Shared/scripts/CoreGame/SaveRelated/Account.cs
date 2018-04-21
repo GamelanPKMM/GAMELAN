@@ -16,4 +16,34 @@ public class Account{
             minigameSave.Add(new MinigameSave(m));
         }
     }
+    public int getScore(string minigame) {
+        foreach (MinigameSave save in minigameSave) {
+            if (save.name.Equals(minigame)){
+                return save.score;
+            }
+        }
+        return -1;
+    }
+    public void setScore(string minigame, int score) {
+        foreach (MinigameSave save in minigameSave)
+        {
+            if (save.name.Equals(minigame)){
+                save.score = score;
+                return;
+            }
+        }
+    }
+    public void setHighScore(string minigame, int score) {
+        foreach (MinigameSave save in minigameSave)
+        {
+            if (save.name.Equals(minigame))
+            {
+                if (save.score < score) {
+                    save.score = score;
+                }
+                return;
+            }
+
+        }
+    }
 }

@@ -12,8 +12,8 @@ public class KarapanSpeedControl : KarapanSubScontroller {
     protected override void start()
     {
         base.start();
-        gameControl.userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.UpArrow, KeyCode.W }, "IncreaseSpeed", delegate() { if (gameControl.isDebugState())increaseSpeed(); }, UserInputControl.SometimePress));
-        gameControl.userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.DownArrow, KeyCode.S }, "DecreaseSpeed", delegate() { if (gameControl.isDebugState()) decreaseSpeed(); }, UserInputControl.SometimePress));
+     //   gameControl.userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.UpArrow, KeyCode.W }, "IncreaseSpeed", delegate() { if (gameControl.isDebugState())increaseSpeed(); }, UserInputControl.SometimePress));
+     //   gameControl.userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.DownArrow, KeyCode.S }, "DecreaseSpeed", delegate() { if (gameControl.isDebugState()) decreaseSpeed(); }, UserInputControl.SometimePress));
         gameControl.addEvent("Reset", reset);
     }
 	

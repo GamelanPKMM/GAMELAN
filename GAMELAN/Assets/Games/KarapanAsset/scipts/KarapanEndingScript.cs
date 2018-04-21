@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class KarapanEndingScript : KarapanSubScontroller {
 
-    void gameOver() {
+    public void gameOver() {
         gameObject.SetActive(true);
     }
-    void reset() {
+    public void reset() {
         gameObject.SetActive(false);
+    }
+    public void exit() {
+        basicGameControl.exitGame();
     }
     protected override void start() {
         base.start();
-        gameControl.addEvent("PlayerFinishAnimateDone", gameOver);
+        gameControl.addEvent("GameOver", gameOver);
         gameControl.addEvent("Reset", reset);
         reset();
     }

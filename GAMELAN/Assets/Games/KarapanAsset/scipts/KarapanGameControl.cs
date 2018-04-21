@@ -26,9 +26,18 @@ public class KarapanGameControl : BasicGameControl {
         addSubController("UserInputControl", userInputControl);
 
         UnityEngine.Debug.Log(userInputControl);
-        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Space }, "TogglePause", delegate() { togglePause(); }, 0.5F));
-        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Slash }, "DEBUG", delegate() { toggleDebug(); }, UserInputControl.SeldomtimePress));
-        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Equals }, "reset", delegate() { gameOver(); resetGame(); }, UserInputControl.SometimePress));
+        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Space }, "TogglePause", delegate() { togglePause(); }, Input.GetKeyDown, 0.75F));
+        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Slash }, "DEBUG", delegate() { toggleDebug(); }, Input.GetKeyDown, UserInputControl.SeldomtimePress));
+        userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Equals }, "reset", delegate() { gameOver(); resetGame(); }, Input.GetKeyDown, UserInputControl.SometimePress));
     }
     void Update() { }
+    public override void exitGame()
+    {
+        base.exitGame();
+        coreInterface.exitGame(SubController<StarController>("StarController").getStar());
+    }
+    public override void saveGame()
+    {
+        coreInterface.save(SubController<StarController>("StarController").getStar());
+    }
 }

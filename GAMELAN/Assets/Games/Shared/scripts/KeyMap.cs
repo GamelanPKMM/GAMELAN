@@ -6,14 +6,16 @@ public class KeyMap{
         private KeyCode[] key;
         public string name;
         private Action action;
+        private CheckMethod check;
         private float dTime;
         private float lastTime;
         public delegate void Action();
-        public void checkInput(KeyCode input)
+        public delegate bool CheckMethod(KeyCode k);
+        public void checkInput()
         {
             foreach (KeyCode k in key)
             {
-                if (input.Equals(k) && Time.fixedTime >= lastTime + dTime)
+                if (check(k) && Time.fixedTime >= lastTime + dTime)
                 {
                     action();
                     lastTime = Time.fixedTime;
@@ -22,12 +24,13 @@ public class KeyMap{
                 }
             }
         }
-        public KeyMap(KeyCode[] k, string name, Action act, float time)
+        public KeyMap(KeyCode[] k, string name, Action act, CheckMethod check,float time)
         {
             this.key = k;
             this.name = name;
             this.action = act;
             this.dTime = time;
+            this.check = check;
             lastTime = Time.fixedTime;
         }
  
