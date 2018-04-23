@@ -7,19 +7,23 @@ public class QuestionControl : SubController {
     public QuestionContainer questions;
     public Question q;
     public Text question;
-    public Button[] answer = new Button[3];
-    public int supposedAnswer;
-    public int userAnswer;
-    public bool isDOne = false;
+    private Button[] answer = new Button[3];
+    private int supposedAnswer;
+    private int userAnswer;
+    private bool isDOne = false;
+    private bool[] uni;
+    private int current = 0;
     protected override void start()
     {
         base.start();
-        string path = "Questions/"+basicGameControl.name+"/Pertanyaan.xml";
+        string path = "Questions/"+basicGameControl.name+".xml";
         Console.Add(path);
         Debug.Log(path);
         questions = QuestionContainer.loadQuestion(path);
-        Console.Add("Succes");        
+        basicGameControl.addEvent("Reset", reset);
+        Console.Add("Success");        
         Parent.SetActive(false);
+        reset();
 
     }
 
@@ -46,7 +50,12 @@ public class QuestionControl : SubController {
         basicGameControl.pauseGame();
         userAnswer = -1;
         isDOne = false;
-        int rand = Random.Range(0, questions.question.Count);
+        int rand;
+        do
+        {
+            rand = Random.Range(0, questions.question.Count);
+        } while (uni[rand]);
+        current = rand;
         q = questions.question[rand];
         question.text = q.question;
         for (int i = 0; i < 3; i++) {
@@ -63,7 +72,9 @@ public class QuestionControl : SubController {
              if (userAnswer == supposedAnswer)
              {
                  basicGameControl.SubController<StarController>("StarController").increaseStar();
-              }
+                uni[current] = true;
+
+            }
             else {
              }
              isDOne = true;
@@ -81,5 +92,10 @@ public class QuestionControl : SubController {
     void questionAnswered(int num) {
         userAnswer = num;
         QuestionEvaluate();
+    }
+
+    void reset()
+    {
+        uni = new bool[questions.question.Count];
     }
 }

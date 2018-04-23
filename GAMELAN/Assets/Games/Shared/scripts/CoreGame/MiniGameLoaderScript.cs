@@ -4,9 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MiniGameLoaderScript : MonoBehaviour {
     public string gameName;
-
+    public MateriController mt;
     public void gotoMiniGames() {
-        SceneManager.LoadScene(gameName);
         PlayerPrefs.SetString("minigame", gameName);
+        SceneManager.LoadScene(gameName);
+        Debug.Log(gameName);
+    }
+
+    public void click() {
+        mt.setMateriPath(gameName);
+        mt.startPreGameMateri(this);
     }
 }
