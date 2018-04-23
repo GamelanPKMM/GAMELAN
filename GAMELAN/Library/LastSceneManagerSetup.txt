@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Games/Shared/Scene/MAIN.unity
+- path: Assets/Games/Shared/Scene/MAP.unity
   isLoaded: 1
   isActive: 1
