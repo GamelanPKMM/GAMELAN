@@ -16,6 +16,8 @@ public class GameControl : MonoBehaviour
     public  float maxTime = 20f;
     public float acceleration = 1;
     private bool pause = false;
+    public int result = 0;
+    public bool gameOver = false;
     
 
     // Use this for initialization
@@ -43,7 +45,7 @@ public class GameControl : MonoBehaviour
         if (timeFinish <= maxTime && !stopBird)
         {
             timeFinish += Time.deltaTime;
-            int result = (int)(timeFinish * 100 / maxTime);            
+            result = (int)(timeFinish * 100 / maxTime);            
             if (result % 5 == 0 && result > 4)
             {
                 updateSpeed();
@@ -71,6 +73,7 @@ public class GameControl : MonoBehaviour
     {
         gameOverText.SetActive(true);
         stopBird = true;
+        gameOver = true;
     }
 
     //pengurangan nyawa

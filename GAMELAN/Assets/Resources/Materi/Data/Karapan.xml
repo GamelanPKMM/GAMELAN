@@ -2,11 +2,11 @@
 <MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <materis>
     <Materi>
-      <Penjelasan>jancuk</Penjelasan>
+      <Penjelasan></Penjelasan>
       <imageName>image1</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Fuck</Penjelasan>
+      <Penjelasan></Penjelasan>
       <imageName>image2</imageName>
     </Materi>
   </materis>

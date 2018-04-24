@@ -41,7 +41,7 @@ public class Bird : MonoBehaviour {
         }
 	}
 
-    public void OnTriggerEnter2D(Collider2D batu)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         //fungsi untuk mengecek nyawa
         if (GameControl.instance.life == 0)
@@ -51,14 +51,14 @@ public class Bird : MonoBehaviour {
             //Debug.Log("Dead");
             GameControl.instance.birdDead();        
         }
-        if (batu == obs)
+        if (other.gameObject.name == "BatuNias(Clone)")
         {
             anim.SetTrigger("Flash");
             anim.SetTrigger("Idle");
             Debug.Log("Flash");
         }
         //fungsi unutk mentriger jumplock
-        if (batu == ground)
+        if (other.gameObject.name == "Ground")
         {
             jumpLock = true;
             anim.SetTrigger("Idle");
