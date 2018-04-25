@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <materis>
+
+      <Materi>
+      <Penjelasan>Nama pakaian adat Madura adalah baju pesa&apos;an. Baju ini sebetulnya adalah baju sederhana yang dikenakan sehari-hari oleh orang-orang suku Madura di masa silam, baik untuk melaut, berladang, maupun untuk menghadiri upacara adat. Penggunaannya pun tidak terbatas baik untuk usia, jenis kelamin, maupun status sosial bagi orang yang mengenakannya</Penjelasan>
+      <imageName>image1</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>
+        Celurit digunakan tokoh yang bernama Sakera sebagai simbol perlawanan rakyat jelata terhadap penjajah Belanda.
+      </Penjelasan>
+      <imageName>image1</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>
+        Tari Muang Sangkal adalah salah satu tarian tradisional masyarakat Madura yang dilakukan untuk ritual tolak bala atau menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu besar dan berbagai acara adat lainnya. Tari Muang Sangkal ini merupakan tarian tradisional yang sangat terkenal dan menjadi salah satu icon seni tradisional dari Madura, Jawa Timur.
+      </Penjelasan>
+      <imageName>image1</imageName>
+    </Materi>
+  </materis>
+</MateriGame>

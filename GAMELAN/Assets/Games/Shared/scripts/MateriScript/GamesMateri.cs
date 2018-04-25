@@ -8,6 +8,7 @@ using System;
 
 [XmlRoot ("MateriGame")]
 public class GamesMateri{
+    [XmlArrayItem("Materis")]
     [XmlArrayItem("Materi")]
     public List<Materi> materis = new List<Materi>();
 
@@ -17,6 +18,7 @@ public class GamesMateri{
             TextAsset xmlLoad = Resources.Load("Materi/Data/" + path) as TextAsset;
             XmlSerializer serializer = new XmlSerializer(typeof(GamesMateri));
             StringReader reader = new StringReader(xmlLoad.text);
+            Debug.Log("Load " + path + "success");
             return serializer.Deserialize(reader) as GamesMateri;
         }
         catch (Exception e) {

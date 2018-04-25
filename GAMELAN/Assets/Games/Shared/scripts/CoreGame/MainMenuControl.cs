@@ -7,10 +7,13 @@ public class MainMenuControl : MonoBehaviour {
     List<Account> acc;
     public Dropdown savesDropdown;
     public Text inputNewSave;
+    public GameObject SaveGameUI;
+    public Text namePlayers;
 	// Use this for initialization
 	void Start () {
         acc = AccountContainer.load().accounts;
         restartOption();
+        saveClose();
 	}
     void restartOption() {
         savesDropdown.ClearOptions();
@@ -33,6 +36,7 @@ public class MainMenuControl : MonoBehaviour {
             AccountContainer acc = AccountContainer.self;
             acc.loadGame(acc.accounts[savesDropdown.value]);
             Debug.Log(acc.currentAccount.name);
+            namePlayers.text = "HAI " + AccountContainer.self.currentAccount.name + " !";
         }
         catch (System.Exception e)
         {
@@ -80,5 +84,14 @@ public class MainMenuControl : MonoBehaviour {
         {
             SceneManager.LoadScene("MAP");
         }
+    }
+
+    public void savePlayer()
+    {
+        SaveGameUI.SetActive(true);
+    }
+    public void saveClose()
+    {
+        SaveGameUI.SetActive(false);
     }
 }

@@ -11,6 +11,7 @@ public class MateriController : MonoBehaviour {
     public Text penjelasan;
     public Button next;
     public Button prev;
+    private Text next_text;
     private GamesMateri materis;
     private int current = 0;
     private int lastSaw = 0;
@@ -26,7 +27,7 @@ public class MateriController : MonoBehaviour {
         parent.SetActive(false);
         next.onClick.AddListener(Next);
         prev.onClick.AddListener(Prev);
-      
+        next_text = next.transform.GetChild(0).gameObject.GetComponent<Text>();
     }
 
     private void Update()
@@ -60,9 +61,15 @@ public class MateriController : MonoBehaviour {
         current = 0;
         last = materis.materis.Count;
         time = Time.time;
+        next_text.text = "Lanjut";
         showmateri(current);
     }
     void Next() {
+        
+        if (current == last - 2)
+        {
+            next_text.text = "Main";
+        }
         if (current < last-1)
         {
             lastSaw += current == lastSaw ? 1 : 0;
@@ -76,6 +83,7 @@ public class MateriController : MonoBehaviour {
     void Prev() {
         if (current > 0)
         {
+            next_text.text = "Lanjut";
             showmateri(--current);
         }
        

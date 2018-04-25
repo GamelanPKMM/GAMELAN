@@ -7,6 +7,12 @@
         <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
       </minigameSave>
     </Account>
+    <Account Account="bona">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="0" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      </minigameSave>
+    </Account>
   </Accounts>
   <currentAccount Account="edho">
     <minigameSave>
