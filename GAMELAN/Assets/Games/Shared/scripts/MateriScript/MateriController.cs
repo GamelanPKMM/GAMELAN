@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+
 public class MateriController : MonoBehaviour {
     public static MateriController self;
     public GameObject parent;
@@ -42,8 +44,14 @@ public class MateriController : MonoBehaviour {
         this.m = m;
         start();
     }
-    public void setMateriPath(string name) {
+    public void setMateriPath(string name)
+    {
         materiPath = name;
+    }
+    public void quit()
+    {
+        this.parent.SetActive(false);
+        m = null;
     }
     void start() {
         parent.SetActive(true);
@@ -74,8 +82,13 @@ public class MateriController : MonoBehaviour {
     }
 
     void showmateri(int i) {
-        penjelasan.text = materis.materis[i].Penjelasan;
-        gambar.sprite = Resources.Load<Sprite>("Materi/Gambar/" + materis.materis[i].imageName);
+        penjelasan.text = materis.materis[i].Penjelasan; try
+        {
+            gambar.sprite = Resources.Load<Sprite>("Materi/Gambar/" + materis.materis[i].imageName);
+        }
+        catch (NullReferenceException e) {
+            Debug.Log("File cannot be found. AT "+System.DateTime.Now);
+        }
         if(current <= 0)
         {
             prev.transform.gameObject.SetActive(false);

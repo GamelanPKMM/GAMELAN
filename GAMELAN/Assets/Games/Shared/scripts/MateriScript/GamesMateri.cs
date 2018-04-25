@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using System;
 
 [XmlRoot ("MateriGame")]
 public class GamesMateri{
@@ -11,10 +12,18 @@ public class GamesMateri{
     public List<Materi> materis = new List<Materi>();
 
     public static GamesMateri load(string path) {
-        TextAsset xmlLoad = Resources.Load("Materi/Data/"+path) as TextAsset;
-        XmlSerializer serializer = new XmlSerializer(typeof(GamesMateri));
-        StringReader reader = new StringReader(xmlLoad.text);
-        return serializer.Deserialize(reader) as GamesMateri;
+        try
+        {
+            TextAsset xmlLoad = Resources.Load("Materi/Data/" + path) as TextAsset;
+            XmlSerializer serializer = new XmlSerializer(typeof(GamesMateri));
+            StringReader reader = new StringReader(xmlLoad.text);
+            return serializer.Deserialize(reader) as GamesMateri;
+        }
+        catch (Exception e) {
+            Debug.Log("File Materi/Data/" + path + " couldnt be found");
+            GamesMateri m = new GamesMateri();
+            return m;
+        }
         
     }
     public void Save(string path)

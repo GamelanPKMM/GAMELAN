@@ -18,8 +18,9 @@ public class AccountContainer {
             string path;
             path = "file://" + Application.dataPath + "/SaveGame/SaveGame.xml";
             WWW file = new WWW(path);
-            if (file != null)
+            if (!file.text.Equals(""))
             {
+                Debug.Log(file.text);
                 while (!file.isDone) ;
                 XmlSerializer serializer = new XmlSerializer(typeof(AccountContainer));
                 StringReader s = new StringReader(file.text);
@@ -27,7 +28,12 @@ public class AccountContainer {
                 return self;
 
             }
-            else return new AccountContainer();
+            else
+            {
+                AccountContainer a = new AccountContainer();
+                a.Save();
+                return a;
+            }
         }
         else return self;
     }
@@ -79,7 +85,8 @@ public class AccountContainer {
             }
         }
         catch (System.Exception e) {
-            
+            Debug.Log("Failed to save Acount");
+
         }
 
     }
@@ -117,11 +124,12 @@ public class AccountContainer {
                 }
              }
              acc.RemoveAt(delete);
+             self.currentAccount = null;
              self.Save();
         }
         catch (System.Exception e)
         {
-
+            Debug.Log("Failed to delete Acount");
         }
     }
     public List<Account> getAllSaveGame() {

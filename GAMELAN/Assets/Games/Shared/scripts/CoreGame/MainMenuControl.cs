@@ -20,6 +20,7 @@ public class MainMenuControl : MonoBehaviour {
             option.Add(a.name);
         }
         savesDropdown.AddOptions(option);
+        load();
     }
 	// Update is called once per frame
 	void Update () {
@@ -40,16 +41,31 @@ public class MainMenuControl : MonoBehaviour {
 
     }
     public void newSaveGame() {
-        AccountContainer acc = AccountContainer.self;
-        acc.addNewSaveGame(inputNewSave.text);
-        restartOption();
+        try
+        {
+            AccountContainer acc = AccountContainer.self;
+            acc.addNewSaveGame(inputNewSave.text);
+            acc.loadGame(inputNewSave.text);
+            restartOption();
+        }
+        catch (System.Exception e)
+        {
+
+        }
     }
     public void deleteSaveGame() {
-        AccountContainer acc = AccountContainer.self;
-        acc.deleteAccount(acc.accounts[savesDropdown.value].name);
-        savesDropdown.value = 0;
-        acc.currentAccount = null;
-        restartOption();
+        try
+        {
+            AccountContainer acc = AccountContainer.self;
+            acc.deleteAccount(acc.accounts[savesDropdown.value].name);
+            savesDropdown.value = 0;
+            acc.currentAccount = null;
+            restartOption();
+        }
+        catch (System.Exception e)
+        {
+
+        }
     }
 
     public void quitGame() {

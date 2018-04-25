@@ -16,8 +16,7 @@ public class QuestionControl : SubController {
     protected override void start()
     {
         base.start();
-        string path = "Questions/"+basicGameControl.name+".xml";
-        Console.Add(path);
+        string path = basicGameControl.name;
         Debug.Log(path);
         questions = QuestionContainer.loadQuestion(path);
         basicGameControl.addEvent("Reset", reset);
@@ -89,9 +88,18 @@ public class QuestionControl : SubController {
         Parent.SetActive(false);
     }
 
+    private void questionAvailibilityCheck() {
+        foreach (bool check in uni) {
+            if (!check) { return; }
+            
+        }
+        Debug.Log("Resetting Question");
+        reset();
+    }
     void questionAnswered(int num) {
         userAnswer = num;
         QuestionEvaluate();
+        questionAvailibilityCheck();
     }
 
     void reset()
