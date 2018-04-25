@@ -3,7 +3,7 @@
   <Accounts>
     <Account Account="edho">
       <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="0" />
+        <MinigameSave Minigame="Karapan" MinigameSave="5" />
         <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
       </minigameSave>
     </Account>
@@ -16,7 +16,7 @@
   </Accounts>
   <currentAccount Account="edho">
     <minigameSave>
-      <MinigameSave Minigame="Karapan" MinigameSave="0" />
+      <MinigameSave Minigame="Karapan" MinigameSave="5" />
       <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
     </minigameSave>
   </currentAccount>
