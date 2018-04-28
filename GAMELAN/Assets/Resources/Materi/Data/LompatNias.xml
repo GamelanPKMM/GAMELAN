@@ -2,12 +2,16 @@
 <MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <materis>
     <Materi>
-      <Penjelasan></Penjelasan>
-      <imageName>image1</imageName>
+      <Penjelasan>Rumah adat tradisional Nias disebut Omohada, bentuknya unik dan bernilai seni tinggi, serta menjadi sebuah simbol kemegahan dari masyarakat lokal Nias pada jaman dulu. Di Desa Bawomataluo terdapat sekitar 1.250 rumah adat tradisional Nias yang berumur ratusan tahun, dan keberadaannya masih terpelihara dengan baik. rumah adat tradisional Nias Omohade yang menggambarkan sebuah cerminan kehidupan. Di mana batu merupakan dasar sebagai pijakan hidup. Itulah salah satu alasan mengapa rumah adat tradisional Nias Omohada di bangun di atas bongkahan batu.</Penjelasan>
+      <imageName>rumahadat-nias</imageName>
     </Materi>
     <Materi>
-      <Penjelasan></Penjelasan>
-      <imageName>image2</imageName>
+      <Penjelasan>Pakaian adat suku Nias dinamakan Baru Oholu untuk pakaian laki-laki dan Oroba Siioli untuk pakaian perempuan. Pakaian adat tersebut biasanya berwarna emas atau kuning yang dipadukan dengan warna lain seperti hitam, merah, dan putih</Penjelasan>
+      <imageName>bja_nias</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>Tradisi Lompat Batu biasanya dilakukan para pemuda dengan cara melompati tumpukan batu setinggi 2 meter dan setebal 40 cm untuk menunjukan bahwa mereka sudah pantas untuk dianggap dewasa secara fisik. Sejarahnya lompat batu terjadi ,Konon pada saat itu setiap kampung yang berperang mempunyai bentengnya masing-masing untuk menjaga wilayah mereka. Sehingga untuk menyerang, dibutuhkan kekuatan khusus untuk melompati benteng tersebut. Mereka kemudian membuat tumpukan batu yang digunakan untuk melatih fisik mereka, terutama ketangkasan dalam melompat. </Penjelasan>
+      <imageName>lompat_batu</imageName>
     </Materi>
   </materis>
 </MateriGame>

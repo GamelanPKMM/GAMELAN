@@ -2,24 +2,24 @@
 <MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <materis>
     <Materi>
-      <Penjelasan>Karapan Sapi merupakan acara permainan khas masyarakat Madura, Jawa Timur yang digelar setiap tahun pada bulan Agustus atau September, dan akan dilombakan lagi pada final di akhir bulan September atau Oktober. Awal mula kerapan sapi dilatar belakangi oleh tanah Madura yang kurang subur untuk lahan pertanian. Sebagai gantinya, orang-orang Madura mengalihkan mata pencahariannya menjadi nelayan untuk daerah pesisir dan beternak sapi yang sekaligus digunakan untuk bertani khususnya dalam membajak sawah atau ladang. Nilai yang bisa di ambil adalah melatih jiwa sportifitas dan menjadi pusat perhatian yang dapat menjadi pengumpul masa dan komunikasi public. </Penjelasan>
-      <imageName>image1</imageName>
+      <Penjelasan>Karapan Sapi merupakan acara permainan khas masyarakat Madura, Jawa Timur yang digelar setiap tahun pada bulan Agustus atau September. Awal mula kerapan sapi dilatar belakangi oleh tanah Madura yang kurang subur untuk lahan pertanian. Sebagai gantinya, orang-orang Madura mengalihkan mata pencahariannya menjadi nelayan untuk daerah pesisir dan beternak sapi yang sekaligus untuk bertani khususnya dalam membajak sawah atau ladang. Nilai yang bisa di ambil adalah melatih jiwa sportifitas dan menjadi pusat pengumpul masa dan komunikasi public. </Penjelasan>
+      <imageName>Karapan-Sapi</imageName>
     </Materi>
     <Materi>
       <Penjelasan>Orang Madura memiliki rumah khas tersendiri yang disebut rumah Bangshal (roma bhangsal). Dalam rumah itu tidak disekat oleh kamar-kamar. Jendela rumah hanya ada di depan di samping kanan dan kiri pintu utama. Di bagian atap rumah, terdapat hiasan seperti tanduk di kanan dan kiri. Rumah adat Madura Bangshal merupakan perpaduan antara budaya Madura dan cina. Dalam rumah adat Madura terdapat 2 tanduk  di atapnya, yang menyimbolkan dua nisan di sebuah kuburan. Maknanya bahwa selain ada rumah di dunia, ada juga rumah akhirat yakni kuburan. </Penjelasan>
-      <imageName>image1</imageName>
+      <imageName>Roma-Bangshal</imageName>
     </Materi>
     <Materi>
       <Penjelasan>Nama pakaian adat Madura adalah baju pesa&apos;an. Baju ini sebetulnya adalah baju sederhana yang dikenakan sehari-hari oleh orang-orang suku Madura di masa silam, baik untuk melaut, berladang, maupun untuk menghadiri upacara adat. Penggunaannya pun tidak terbatas baik untuk usia, jenis kelamin, maupun status sosial bagi orang yang mengenakannya</Penjelasan>
-      <imageName>image1</imageName>
+      <imageName>pakaian_adat_Madura</imageName>
     </Materi>
     <Materi>
       <Penjelasan>Celurit digunakan tokoh yang bernama Sakera sebagai simbol perlawanan rakyat jelata terhadap penjajah Belanda. </Penjelasan>
-      <imageName>image1</imageName>
+      <imageName>celurit</imageName>
     </Materi>
     <Materi>
       <Penjelasan>Tari Muang Sangkal adalah salah satu tarian tradisional masyarakat Madura yang dilakukan untuk ritual tolak bala atau menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu besar dan berbagai acara adat lainnya. Tari Muang Sangkal ini merupakan tarian tradisional yang sangat terkenal dan menjadi salah satu icon seni tradisional dari Madura, Jawa Timur. </Penjelasan>
-      <imageName>image1</imageName>
+      <imageName>muang_sangkal</imageName>
     </Materi>
   </materis>
 </MateriGame>

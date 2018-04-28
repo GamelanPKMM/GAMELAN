@@ -13,6 +13,24 @@
         <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
       </minigameSave>
     </Account>
+    <Account Account="JUNI">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="5" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      </minigameSave>
+    </Account>
+    <Account Account="Khairul">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="2" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      </minigameSave>
+    </Account>
+    <Account Account="yusril">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="0" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      </minigameSave>
+    </Account>
   </Accounts>
   <currentAccount Account="edho">
     <minigameSave>
