@@ -550,8 +550,9 @@ GameObject:
   - component: {fileID: 200496987}
   - component: {fileID: 200496986}
   - component: {fileID: 200496985}
+  - component: {fileID: 200496988}
   m_Layer: 5
-  m_Name: Kebudayaan (2)
+  m_Name: Cidomo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,7 +615,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 200496986}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200496988}
+        m_MethodName: click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &200496986
@@ -650,6 +662,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 200496983}
+--- !u!114 &200496988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200496983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42d5dc1fd293e2439ea1250b4a5936a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameName: Cidomo
+  mt: {fileID: 1321518769}
 --- !u!1 &227209755
 GameObject:
   m_ObjectHideFlags: 0
