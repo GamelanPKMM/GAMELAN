@@ -31,6 +31,12 @@
         <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
       </minigameSave>
     </Account>
+    <Account Account="thoh">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="4" />
+        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      </minigameSave>
+    </Account>
   </Accounts>
   <currentAccount Account="edho">
     <minigameSave>
