@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
     public GameObject gameOverText;
-    public GameObject finishText;
     public GameObject pauseUI;
     public bool stopBird = false;
     public static GameControl instance;
@@ -63,11 +62,15 @@ public class GameControl : MonoBehaviour
         //Mereload sceane
         if (stopBird == true && Input.GetKeyDown("up"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1;
+            ResetGame();
         }
     }
     
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1;
+    }
     //menmpilkan text gameover
     public void birdDead()
     {
@@ -88,8 +91,8 @@ public class GameControl : MonoBehaviour
 
     public void birdFinish()
     {
-        finishText.SetActive(true);
         stopBird = true;
+        birdDead();
     }
     //mengupdate kecepatan scroll background dan obstacle
     void updateSpeed()
@@ -114,5 +117,10 @@ public class GameControl : MonoBehaviour
             Time.timeScale = 0;
         }
         
+    }
+    public void gotoMap()
+    {
+        SceneManager.LoadScene("MAP");
+        Time.timeScale = 1;
     }
 }

@@ -31,5 +31,6 @@ public class Batu : MonoBehaviour {
         {
             rgbd.velocity = new Vector2(-GameControl.instance.scrollSpeed, 0);
         }
+
     }
 }
