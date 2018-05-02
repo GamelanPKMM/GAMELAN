@@ -5,18 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MAIN.unity
     guid: b908a8f5c71a43a4896e5330bb735b6e
   - enabled: 1
     path: Assets/Scenes/MAP.unity
     guid: aa1102e0fccaa324092a77012d3f920e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Karapan.unity
     guid: f6fb2896adc240844a33490f25ae49d4
   - enabled: 1
     path: Assets/Scenes/LompatNias.unity
     guid: 8ceb97cbe6015104589ff28df3526ed6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Cidomo.unity
     guid: 5890a92bc7f7a824b825cdffb1a707dc

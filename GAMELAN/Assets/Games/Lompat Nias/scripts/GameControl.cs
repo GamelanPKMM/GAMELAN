@@ -59,11 +59,7 @@ public class GameControl : MonoBehaviour
 
     private void Update()
     {
-        //Mereload sceane
-        if (stopBird == true && Input.GetKeyDown("up"))
-        {
-            ResetGame();
-        }
+
     }
     
     public void ResetGame()

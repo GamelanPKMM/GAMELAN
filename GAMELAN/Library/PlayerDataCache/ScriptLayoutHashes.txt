@@ -2,8 +2,11 @@ WindowsStandalone
 PlayerPath?
 C:/Users/Black Device/Desktop/Build Unity/Windows/Gamelan.exe
 SceneListBegin?
+Assets/Scenes/MAIN.unity
 Assets/Scenes/MAP.unity
+Assets/Scenes/Karapan.unity
 Assets/Scenes/LompatNias.unity
+Assets/Scenes/Cidomo.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UserInputControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Console
@@ -215,7 +218,7 @@ c81dfa0b9cba1e2a453c7b53823a133c Assembly-CSharp.dll:.RestartTerrain
 17672f8786faec7925d0d6b6a6268e14 Assembly-CSharp.dll:.StarControl
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-6c933fcf4bb1f0569b15bd724315b2c9 Assembly-CSharp.dll:.Bird
+d6e6ba70329c2693555c4f8d4591cead Assembly-CSharp.dll:.Bird
 b537ac24f5ee9d86b6240882df45e1ec Assembly-CSharp.dll:.RecycleCloud
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 7356db35050626f1df2302539a4a37d0 Assembly-CSharp.dll:.Level

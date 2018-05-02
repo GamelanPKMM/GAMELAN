@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bird : MonoBehaviour {
     public static Bird instance;
     public float up = 400f;
+    public float down = 100f;
     public Collider2D ground;
     public Collider2D obs;
     private bool life = false;
@@ -23,7 +24,7 @@ public class Bird : MonoBehaviour {
 	void Update () {
         if (life == false)
         {
-            if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))&& jumpLock)
+            if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))&& jumpLock && GameControl.instance.stopBird == false)
             {
                 anim.SetTrigger("Flap");
                 rgbd.velocity = Vector2.zero;
@@ -31,10 +32,11 @@ public class Bird : MonoBehaviour {
                 jumpLock = false;
                 Debug.Log("Flap");
             }
-            if (Input.GetKey(KeyCode.DownArrow)&& !jumpLock){
-                rgbd.AddForce(new Vector2(0, -100));
+            if (Input.GetKey(KeyCode.DownArrow)&& !jumpLock && GameControl.instance.stopBird == false)
+            {
+                rgbd.AddForce(new Vector2(0, -down));
             }
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) && GameControl.instance.stopBird == false)
             {
                 GameControl.instance.birdPause();
             }
