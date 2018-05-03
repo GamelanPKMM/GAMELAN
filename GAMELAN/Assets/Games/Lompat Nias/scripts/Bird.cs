@@ -30,7 +30,7 @@ public class Bird : MonoBehaviour {
                 rgbd.velocity = Vector2.zero;
                 rgbd.AddForce(new Vector2(0,up));
                 jumpLock = false;
-                Debug.Log("Flap");
+                //Debug.Log("Flap");
             }
             if (Input.GetKey(KeyCode.DownArrow)&& !jumpLock && GameControl.instance.stopBird == false)
             {
@@ -57,14 +57,14 @@ public class Bird : MonoBehaviour {
         {
             anim.SetTrigger("Flash");
             anim.SetTrigger("Idle");
-            Debug.Log("Flash");
+            //Debug.Log("Flash");
         }
         //fungsi unutk mentriger jumplock
         if (other.gameObject.name == "Ground")
         {
             jumpLock = true;
             anim.SetTrigger("Idle");
-            Debug.Log("idle");
+            //Debug.Log("idle");
         }
     }
 }

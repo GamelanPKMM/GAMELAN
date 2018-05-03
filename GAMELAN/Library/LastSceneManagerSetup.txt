@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MAIN.unity
+- path: Assets/Scenes/LompatNias.unity
   isLoaded: 1
   isActive: 1

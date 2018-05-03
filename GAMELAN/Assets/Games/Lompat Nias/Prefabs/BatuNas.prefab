@@ -140,18 +140,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d4f15cbd396554698fff024d049a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  batu: {fileID: 0}
 --- !u!114 &114947573342637504
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463371840173698}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1bab7cc3f7f9f84c919aaac9a9227fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2: {fileID: 0}
+  bg1: {fileID: 0}
+  bg2: {fileID: 0}
 --- !u!212 &212998107016661006
 SpriteRenderer:
   m_ObjectHideFlags: 1

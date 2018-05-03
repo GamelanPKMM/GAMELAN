@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour
     public static GameControl instance;
     public float scrollSpeed = 0.5f;
     public int life = 3;
+    public int star = 0;
     public  float timeFinish = 0f;
     public  float maxTime = 20f;
     public float acceleration = 1;
@@ -56,11 +57,6 @@ public class GameControl : MonoBehaviour
             birdFinish();
         }
     }
-
-    private void Update()
-    {
-
-    }
     
     public void ResetGame()
     {
@@ -82,6 +78,26 @@ public class GameControl : MonoBehaviour
         {
             return;
         }
+        life -= 1;
+        //Debug.Log("nyawa kurang 1");
+    }
+
+    public void lifeIncrease()
+    {
+        if (life < 3)
+        {
+            life += 1;
+        }
+       
+        if (stopBird)
+        {
+            return;
+        }
+        if (life < 3)
+        {
+            
+        }
+        
         //Debug.Log("nyawa kurang 1");
     }
 

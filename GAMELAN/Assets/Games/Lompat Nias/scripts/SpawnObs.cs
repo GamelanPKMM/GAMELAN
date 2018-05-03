@@ -11,6 +11,7 @@ public class SpawnObs : MonoBehaviour {
     public float maxX;
     private float time;
     private int currentColumn;
+    //setting spawn obs.
     private Vector2 objectPosition = new Vector2(-16f, -23.7f);
 
     // Use this for initialization
@@ -28,11 +29,11 @@ public class SpawnObs : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
-        if (GameControl.instance.gameOver == false && time >= spawnRate)
+        if (GameControl.instance.gameOver == false && time >= spawnRate && GameControl.instance.stopBird == false)
         {
             time = 0;
             float spawnXPosition = Random.Range(minX, maxX);
-            Debug.Log(currentColumn);
+            //Debug.Log(currentColumn);
             ColumnPrefabs[currentColumn].transform.position = new Vector2(spawnXPosition, -3.7f);
             currentColumn++;
             if (currentColumn >= sizeColumn)

@@ -4,38 +4,47 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StarControl : MonoBehaviour {
-    public GameObject [] StarImage;
+    public GameObject[] star = new GameObject[5];
     public static StarControl instance;
-    private byte value = 0 ;
+    private int starCount = 0;
+    // Use this for initialization
 
-	// Use this for initialization
-	private void Start () {
-        value = 0;
-        if (StarImage != null)
-        {
-            for (int i = 0; i < StarImage.Length; i++)
-            {
-                StarImage[i].SetActive(false);
-            }
-        }        
-	}
-
-    public void tambahBintang()
+    private void Awake()
     {
-        if (value <= StarImage.Length && value >= 0)
+        if (instance == null)
         {
-            StarImage[value].SetActive(true);
-            value += 1;
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
         }
     }
 
-
-    public void kurangBintang()
+    private void Start()
     {
-        if (value <= StarImage.Length && value >= 0)
+        for (int i = 0; i < star.Length; i++)
         {
-            StarImage[value].SetActive(false);
-            value -= 1;
+            star[i].SetActive(false);
+        }
+        starCount = GameControl.instance.star;
+    }
+
+    private void resetStar()
+    {
+        for (int i = 0; i < star.Length; i++)
+        {
+            star[i].SetActive(false);
+        }
+    }
+
+    public void UpdateStar()
+    {
+        resetStar();
+        starCount = GameControl.instance.star;
+        for (int i = 0; i < starCount; i++)
+        {
+            star[i].SetActive(true);
         }
     }
 }
