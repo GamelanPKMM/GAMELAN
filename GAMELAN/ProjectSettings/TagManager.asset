@@ -8,6 +8,7 @@ TagManager:
   - Background
   - Enemy
   - Star
+  - music
   layers:
   - Default
   - TransparentFX
