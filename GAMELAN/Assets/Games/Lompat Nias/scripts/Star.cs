@@ -17,13 +17,13 @@ public class Star : MonoBehaviour {
         if (other.GetComponent<Bird>() != null)
         {
             GameControl.instance.lifeIncrease();
+            GameControl.instance.StarIncrease();
             //masih percobaan
-            GameControl.instance.star += 1;
+            Debug.Log("Bintang");
             lifeControlUI.instance.UpdateLife();
             StarControl.instance.UpdateStar();
-            Debug.Log("Bintang");
-            Destroy(gameObject);
             GameControl.instance.birdPause();
+            Destroy(gameObject);
         }
     }
 

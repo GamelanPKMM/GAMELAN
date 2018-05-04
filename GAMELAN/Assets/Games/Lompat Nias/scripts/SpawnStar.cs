@@ -35,7 +35,5 @@ public class SpawnStar : MonoBehaviour {
             ColumnPrefabs.transform.position = new Vector2(spawnXPosition, YSpawnLocation);
             currentColumn++;
         }
-
-
     }
 }

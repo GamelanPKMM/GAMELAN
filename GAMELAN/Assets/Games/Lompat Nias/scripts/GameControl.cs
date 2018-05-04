@@ -18,6 +18,8 @@ public class GameControl : MonoBehaviour
     private bool pause = false;
     public int result = 0;
     public bool gameOver = false;
+    static public bool tutorialNias = true;
+    public bool finish = false;
     
 
     // Use this for initialization
@@ -61,7 +63,7 @@ public class GameControl : MonoBehaviour
     public void ResetGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1;
+        Time.timeScale = 1;
     }
     //menmpilkan text gameover
     public void birdDead()
@@ -93,16 +95,17 @@ public class GameControl : MonoBehaviour
         {
             return;
         }
-        if (life < 3)
-        {
-            
-        }
-        
         //Debug.Log("nyawa kurang 1");
+    }
+
+    public void StarIncrease()
+    {
+        star++;
     }
 
     public void birdFinish()
     {
+        finish = true;
         stopBird = true;
         birdDead();
     }
@@ -132,7 +135,9 @@ public class GameControl : MonoBehaviour
     }
     public void gotoMap()
     {
-        SceneManager.LoadScene("MAP");
         Time.timeScale = 1;
+        tutorialNias = true;
+        Destroy(gameObject);
+        SceneManager.LoadScene("MAP");
     }
 }
