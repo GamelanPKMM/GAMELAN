@@ -16,13 +16,9 @@ public class Star : MonoBehaviour {
     {
         if (other.GetComponent<Bird>() != null)
         {
-            GameControl.instance.lifeIncrease();
-            GameControl.instance.StarIncrease();
             //masih percobaan
+            QuestionControlNias.instance.startQuestion();
             Debug.Log("Bintang");
-            lifeControlUI.instance.UpdateLife();
-            StarControl.instance.UpdateStar();
-            GameControl.instance.birdPause();
             Destroy(gameObject);
         }
     }

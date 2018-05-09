@@ -1,43 +1,14 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <AccountContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
-    <Account Account="edho">
+    <Account Account="Farid">
       <minigameSave>
         <MinigameSave Minigame="Karapan" MinigameSave="5" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+        <MinigameSave Minigame="LompatNias" MinigameSave="5" />
+        <MinigameSave Minigame="Cidomo" MinigameSave="0" />
       </minigameSave>
     </Account>
-    <Account Account="bona">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="0" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
-      </minigameSave>
-    </Account>
-    <Account Account="JUNI">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="5" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
-      </minigameSave>
-    </Account>
-    <Account Account="Khairul">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="2" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
-      </minigameSave>
-    </Account>
-    <Account Account="yusril">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="0" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
-      </minigameSave>
-    </Account>
-    <Account Account="thoh">
-      <minigameSave>
-        <MinigameSave Minigame="Karapan" MinigameSave="4" />
-        <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
-      </minigameSave>
-    </Account>
-    <Account Account="lina">
+    <Account Account="Yusril">
       <minigameSave>
         <MinigameSave Minigame="Karapan" MinigameSave="0" />
         <MinigameSave Minigame="LompatNias" MinigameSave="0" />
@@ -45,10 +16,11 @@
       </minigameSave>
     </Account>
   </Accounts>
-  <currentAccount Account="edho">
+  <currentAccount Account="Yusril">
     <minigameSave>
-      <MinigameSave Minigame="Karapan" MinigameSave="5" />
-      <MinigameSave Minigame="Lompat Nias" MinigameSave="0" />
+      <MinigameSave Minigame="Karapan" MinigameSave="0" />
+      <MinigameSave Minigame="LompatNias" MinigameSave="0" />
+      <MinigameSave Minigame="Cidomo" MinigameSave="0" />
     </minigameSave>
   </currentAccount>
 </AccountContainer>

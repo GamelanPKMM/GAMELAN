@@ -17,7 +17,6 @@ public class Batu : MonoBehaviour {
         if (other.GetComponent<Bird>() != null)
         {
             GameControl.instance.lifeDecrease();
-            lifeControlUI.instance.UpdateLife();
         }
     }
 

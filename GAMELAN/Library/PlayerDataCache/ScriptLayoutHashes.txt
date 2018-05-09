@@ -239,7 +239,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanSubScontroller
-8d341415dfffe3496913098b19d1afd0 Assembly-CSharp.dll:.GameControl
+66d43ce57517ee2814a3fbe335e0f89f Assembly-CSharp.dll:.GameControl
 e436449e5d3ccae409960fac1a7bfdcd Assembly-CSharp.dll:.ProgressControl
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -265,7 +265,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-65bbb0955468b72bfd80f726366876e3 Assembly-CSharp.dll:.TutorialNias
+0256397e1072351deaa8822c7b348860 Assembly-CSharp.dll:.TutorialNias
 c477a5a6a5a167e23d13594364375666 Assembly-CSharp.dll:.KarapanEnemyInstanceControl
 13932163610b67022fb406875c2a1845 Assembly-CSharp.dll:.KarapanScoreControl
 6d91b252fbac79ced3189363ed2cd2bb Assembly-CSharp.dll:.Batu
@@ -348,3 +348,4 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
+25fcc92fda82d6a4b5b358d69c0afbe1 Assembly-CSharp.dll:.QuestionControlNias

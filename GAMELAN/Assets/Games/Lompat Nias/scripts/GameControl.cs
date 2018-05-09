@@ -20,6 +20,7 @@ public class GameControl : MonoBehaviour
     public bool gameOver = false;
     static public bool tutorialNias = true;
     public bool finish = false;
+    public bool input = true;
     
 
     // Use this for initialization
@@ -38,7 +39,8 @@ public class GameControl : MonoBehaviour
 
     private void Start()
     {
-        
+        input = true;
+        Application.targetFrameRate = 30;
     }
 
     private void FixedUpdate()
@@ -81,6 +83,7 @@ public class GameControl : MonoBehaviour
             return;
         }
         life -= 1;
+        lifeControlUI.instance.UpdateLife();
         //Debug.Log("nyawa kurang 1");
     }
 
@@ -95,12 +98,14 @@ public class GameControl : MonoBehaviour
         {
             return;
         }
+        lifeControlUI.instance.UpdateLife();
         //Debug.Log("nyawa kurang 1");
     }
 
     public void StarIncrease()
     {
         star++;
+        StarControl.instance.UpdateStar();
     }
 
     public void birdFinish()
@@ -137,7 +142,8 @@ public class GameControl : MonoBehaviour
     {
         Time.timeScale = 1;
         tutorialNias = true;
-        Destroy(gameObject);
-        SceneManager.LoadScene("MAP");
+        //Destroy(gameObject);
+        CoreGameInterface.instance.exitGame(star);
+        
     }
 }

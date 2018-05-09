@@ -2208,6 +2208,7 @@ GameObject:
   - component: {fileID: 780396708}
   - component: {fileID: 780396709}
   - component: {fileID: 780396710}
+  - component: {fileID: 780396711}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -2238,6 +2239,7 @@ MonoBehaviour:
   result: 0
   gameOver: 0
   finish: 0
+  input: 1
 --- !u!4 &780396707
 Transform:
   m_ObjectHideFlags: 0
@@ -2299,6 +2301,17 @@ MonoBehaviour:
   YSpawnLocation: -1.5
   minX: 20
   maxX: 25
+--- !u!114 &780396711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780396705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0093a41108e3674e950c66280c6d35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &916895033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,13 +4338,14 @@ GameObject:
   - component: {fileID: 1781965342}
   - component: {fileID: 1781965346}
   - component: {fileID: 1781965345}
+  - component: {fileID: 1781965343}
   m_Layer: 5
   m_Name: QuestionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1781965342
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4356,6 +4370,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0073446147, y: 0.000005222808}
   m_SizeDelta: {x: 565.97485, y: 318.13757}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1781965343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781965341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e555fce440c721e478a734c73129f960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Parent: {fileID: 1781965341}
+  question: {fileID: 0}
 --- !u!114 &1781965345
 MonoBehaviour:
   m_ObjectHideFlags: 0

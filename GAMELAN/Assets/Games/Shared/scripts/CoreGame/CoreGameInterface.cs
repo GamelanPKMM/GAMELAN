@@ -4,11 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CoreGameInterface : MonoBehaviour {
     AccountContainer acc;
+    public static CoreGameInterface instance;
     string gameName;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start() {
         acc = AccountContainer.load();
         gameName = PlayerPrefs.GetString("minigame");
-        Debug.Log(gameName);
+        Debug.Log("Load Save : "+gameName+" Active");
     }
 
     public void exitGame(int starNum) {

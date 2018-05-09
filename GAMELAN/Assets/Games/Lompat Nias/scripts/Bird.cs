@@ -22,7 +22,7 @@ public class Bird : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (life == false)
+        if (life == false && GameControl.instance.input)
         {
             if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))&& jumpLock && GameControl.instance.stopBird == false)
             {
