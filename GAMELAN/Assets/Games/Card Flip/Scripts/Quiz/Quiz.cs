@@ -61,7 +61,7 @@ public class Quiz : MonoBehaviour {
 	{
 		if (option == answer)
 		{
-			Star.control.AddStar ();
+			StarScore.control.AddStar ();
 			Life.control.IncreaseLife ();
 		}
 		else

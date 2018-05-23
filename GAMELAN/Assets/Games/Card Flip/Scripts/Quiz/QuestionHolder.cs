@@ -1,5 +1,5 @@
 ﻿[System.Serializable]
-public class Question 
+public class QuestionHolder 
 {
 	public string question;
 	public string[] options;

@@ -25,7 +25,7 @@ public class CardFlipManager : MonoBehaviour
 
 	public float previewTime;
 
-	private List<Question> questionList;
+	private List<QuestionHolder> questionList;
 
 	private int remainingCardPairs = 0;
 	private int currentSession = 1;
@@ -73,7 +73,7 @@ public class CardFlipManager : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		winDisplay.SetActive (true);
-		CoreGameInterface.instance.exitGame (Star.control.obtainedStar);
+		CoreGameInterface.instance.exitGame (StarScore.control.obtainedStar);
 	}
 
 	//
@@ -168,7 +168,7 @@ public class CardFlipManager : MonoBehaviour
 	//
 	// Assign values into given card
 	//
-	private void InitCard (GameObject card, int id, Question question) 
+	private void InitCard (GameObject card, int id, QuestionHolder question) 
 	{
 		Card initCard = card.GetComponent<Card> ();
 		initCard.Id = id;
@@ -288,6 +288,6 @@ public class CardFlipManager : MonoBehaviour
 	private void DeserializeQuestions ()
 	{
 		QuestionList data = JsonUtility.FromJson<QuestionList> (questionData.text);
-		questionList = data.questions.ToList<Question>();
+		questionList = data.questions.ToList<QuestionHolder>();
 	}
 }

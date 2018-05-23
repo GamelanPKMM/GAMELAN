@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Star : MonoBehaviour 
+public class StarScore : MonoBehaviour 
 {
-	public static Star control;
+	public static StarScore control;
 	public GameObject[] stars;
 	public int obtainedStar = 0;
 

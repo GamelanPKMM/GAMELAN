@@ -8,7 +8,7 @@ public class Card : MonoBehaviour
 	private bool isFaceUp;
 	private Sprite front;
 	private Sprite back;
-	private Question question;
+	private QuestionHolder question;
 
 	void OnMouseDown () 
 	{
@@ -133,7 +133,7 @@ public class Card : MonoBehaviour
 		set { this.back = value; }
 	}
 
-	public Question Question {
+	public QuestionHolder Question {
 		get { return this.question; }
 		set { this.question = value; }
 	}
