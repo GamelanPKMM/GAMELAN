@@ -6,7 +6,6 @@ public class KarapanStarControl : StarController {
     public GameObject StarPrefab;
     public Vector3 StartPos = new Vector3(0, 10, 0);
     public ProgressControl progressControl;
-    public int starCount = 0;
     public int spawnDelta = 20;
     public int lastSpawn = 0;
     protected override void start()
@@ -15,7 +14,7 @@ public class KarapanStarControl : StarController {
         StarPrefab = GameObject.FindGameObjectWithTag("Star");
         progressControl = basicGameControl.SubController<ProgressControl>("ProgressControl");
         StarPrefab.SetActive(false);
-
+        basicGameControl.addEvent("Reset", reset);
     }
 
     void spawnStar()
@@ -39,6 +38,10 @@ public class KarapanStarControl : StarController {
                 lastSpawn = (int)progressControl.progress;
             }
         }
+    }
+
+    void reset() {
+        lastSpawn = 0;
     }
   
 }

@@ -1349,7 +1349,6 @@ MonoBehaviour:
   StarPrefab: {fileID: 0}
   StartPos: {x: 0, y: 10, z: 0}
   progressControl: {fileID: 0}
-  starCount: 0
   spawnDelta: 20
   lastSpawn: 0
 --- !u!4 &332781644

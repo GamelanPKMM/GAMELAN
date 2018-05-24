@@ -34,10 +34,18 @@ public class KarapanGameControl : BasicGameControl {
     public override void exitGame()
     {
         base.exitGame();
-        coreInterface.exitGame(SubController<StarController>("StarController").getStar());
+        Debug.Log("Exitting");
+        if (isWin) { coreInterface.exitGame(basicGameControl.SubController<StarController>("StarController").getStar()); }
+        else{
+            coreInterface.exitGame();
+        }
     }
     public override void saveGame()
     {
-        coreInterface.save(SubController<StarController>("StarController").getStar());
+        if (isWin)
+        {
+            coreInterface.save(SubController<StarController>("StarController").getStar());
+            Debug.Log("Saved");
+        }
     }
 }

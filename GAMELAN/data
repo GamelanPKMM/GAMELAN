@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<PenghargaanContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PenghargaanArray>
+    <Penghargaan Penghargaan="ini penghargaan">
+      <imageName>baju_adat_nias</imageName>
+      <penjelasan>jancuk suro sik urip ae ta awak peno</penjelasan>
+    </Penghargaan>
+  </PenghargaanArray>
+</PenghargaanContainer>

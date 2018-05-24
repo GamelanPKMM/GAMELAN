@@ -9,25 +9,21 @@ public class CoreGameInterface : MonoBehaviour {
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
     void Start() {
-        acc = AccountContainer.load();
+        acc = AccountContainer.self;
+        loadGame();
+    }
+
+    public void loadGame() {
         gameName = PlayerPrefs.GetString("minigame");
-        Debug.Log("Load Save : "+gameName+" Active");
+        Debug.Log("Load Save : " + gameName + " Active");
     }
 
     public void exitGame(int starNum) {
         save(starNum);
-        PlayerPrefs.SetString("minigame", null);
-        SceneManager.LoadScene("MAP");
+        exitGame();
     }
 
     public void save(int starNum)
@@ -35,5 +31,9 @@ public class CoreGameInterface : MonoBehaviour {
         acc.currentAccount.setHighScore(gameName, starNum);
         acc.saveGame(acc.currentAccount);
         acc.Save();
+    }
+    public void exitGame() {
+        PlayerPrefs.SetString("minigame", null);
+        SceneManager.LoadScene("MAP");
     }
 }
