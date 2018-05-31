@@ -18,6 +18,7 @@ public class Star : MonoBehaviour {
         {
             //masih percobaan
             QuestionControlNias.instance.startQuestion();
+            GameControl.instance.lifeIncrease();
             Debug.Log("Bintang");
             Destroy(gameObject);
         }

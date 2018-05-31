@@ -17,7 +17,7 @@ public class RecycleBackground : MonoBehaviour {
     private void FixedUpdate()
     {
         //jika background bertransformasi sampai ukurnnya maka akan di transformasi ke kanan sejauh size sumbu xnya
-        if (transform.position.x < -backgroundLength * 2f)
+        if (transform.position.x < -backgroundLength * 1f)
         {
             RecyleBackground();
            //Debug.Log("transisi x : " + transform.position.x);
@@ -26,7 +26,7 @@ public class RecycleBackground : MonoBehaviour {
     //method untuk metransformasi
     private void RecyleBackground()
     {
-        Vector2 offset = new Vector2(backgroundLength * 4f, 0);
+        Vector2 offset = new Vector2(backgroundLength * 2f, 0);
         transform.position =  ((Vector2)transform.position) + offset;
     }
 }

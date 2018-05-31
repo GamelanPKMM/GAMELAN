@@ -112,6 +112,7 @@ public class GameControl : MonoBehaviour
     {
         finish = true;
         stopBird = true;
+        Time.timeScale = 0;
         birdDead();
     }
     //mengupdate kecepatan scroll background dan obstacle

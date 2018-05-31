@@ -16,10 +16,10 @@
       </minigameSave>
     </Account>
   </Accounts>
-  <currentAccount Account="Yusril">
+  <currentAccount Account="Farid">
     <minigameSave>
-      <MinigameSave Minigame="Karapan" MinigameSave="0" />
-      <MinigameSave Minigame="LompatNias" MinigameSave="0" />
+      <MinigameSave Minigame="Karapan" MinigameSave="5" />
+      <MinigameSave Minigame="LompatNias" MinigameSave="5" />
       <MinigameSave Minigame="Cidomo" MinigameSave="0" />
     </minigameSave>
   </currentAccount>
