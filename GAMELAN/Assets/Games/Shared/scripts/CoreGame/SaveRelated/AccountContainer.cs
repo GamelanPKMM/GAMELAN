@@ -11,7 +11,7 @@ public class AccountContainer {
     [XmlArrayItem("Account")]
     public List<Account> accounts = new List<Account>();
     public static AccountContainer self;
-    public  Account currentAccount;
+    public Account currentAccount;
     public static AccountContainer load() {
         if (self == null)
         {
@@ -20,11 +20,15 @@ public class AccountContainer {
             WWW file = new WWW(path);
             if (!file.text.Equals(""))
             {
-                Debug.Log(file.text);
                 while (!file.isDone) ;
                 XmlSerializer serializer = new XmlSerializer(typeof(AccountContainer));
                 StringReader s = new StringReader(file.text);
                 self = serializer.Deserialize(s) as AccountContainer;
+                foreach (Account a in self.accounts) {
+                    a.updateNewGameSave(MinigameContainer.loadMinigame().minigames);
+                    a.updateNewPenghargaanSave(PenghargaanContainer.load().penghargaans);
+                    self.Save();
+                }
                 return self;
 
             }

@@ -8,12 +8,12 @@ public class BasicGameControl : SubController {
     protected bool isDebug = false;
     protected bool isFinish = false;
     protected bool isUserInputAllowed = true;
-
+    protected bool isWin = false;
+    protected CoreGameInterface coreInterface;
     public delegate void eventCall();
     private Dictionary<string, eventCall> events = new Dictionary<string, eventCall>();
     private Dictionary<string, SubController> subController = new Dictionary<string, SubController>();
 
-    protected CoreGameInterface coreInterface;
     public bool isPause() { return isPaused; }
     public void togglePause() {
         if (gameState)
@@ -35,7 +35,15 @@ public class BasicGameControl : SubController {
         isPaused = false;
         callEvent("Playing");
     }
-    public void resetGame() { gameState = true; getEvent("Reset")(); allowUserInput(); }
+    public void winning() {
+        isWin = true;
+        callEvent("Winning");
+        gameOver();
+    }
+    public bool isWinning() {
+        return isWin;
+    }
+    public void resetGame() { isWin = false; gameState = true; getEvent("Reset")(); allowUserInput(); }
     public void gameOver() { gameState = false; getEvent("GameOver")(); banUserInput(); }
     public bool getGameState() { return gameState; }
     protected void toggleDebug() { isDebug = !isDebug; if (isDebug) getEvent("Debug")(); }
@@ -93,6 +101,7 @@ public class BasicGameControl : SubController {
         events.Add("ExitGame", delegate() { Debug.Log("ExitGame"); });
         events.Add("UserInputBanned", delegate(){Debug.Log("UserInputBanned");});
         events.Add("UserInputAllowed", delegate() { Debug.Log("UserInputAllowed"); });
+        events.Add("Winning", delegate () { Debug.Log("WIN"); });
         UnityEngine.Debug.Log("Instantiating Game Control Succes");
     }
     public void addEvent(string eventName, eventCall newEvent){

@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MAP.unity
     guid: aa1102e0fccaa324092a77012d3f920e
   - enabled: 1
-    path: Assets/Scenes/Karapan.unity
+    path: Assets/Games/KarapanAsset/scene/Karapan.unity
     guid: f6fb2896adc240844a33490f25ae49d4
   - enabled: 1
-    path: Assets/Scenes/LompatNias.unity
+    path: Assets/Games/Lompat Nias/scene/LompatNias.unity
     guid: 8ceb97cbe6015104589ff28df3526ed6
   - enabled: 1
     path: Assets/Scenes/Cidomo.unity

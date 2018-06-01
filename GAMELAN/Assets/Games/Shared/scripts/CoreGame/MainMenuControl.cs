@@ -11,10 +11,13 @@ public class MainMenuControl : MonoBehaviour {
     public Text namePlayers;
 	// Use this for initialization
 	void Start () {
+        PenghargaanContainer.load();
+        PenghargaanController.load();
         acc = AccountContainer.load().accounts;
         restartOption();
         saveClose();
-	}
+
+    }
     void restartOption() {
         savesDropdown.ClearOptions();
         List<string> option = new List<string>();

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<PenghargaanContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PenghargaanArray>
+    <Penghargaan Penghargaan="ini penghargaan">
+      <imageName>baju_adat_nias</imageName>
+      <penjelasan>jancuk suro sik urip ae ta awak peno</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="nyoba Penghargaan">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan1">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan2">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan3">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan4">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan5">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+	<Penghargaan Penghargaan="nyoba Penghargaan6">
+      <imageName />
+      <penjelasan>ini penjelasan</penjelasan>
+    </Penghargaan>
+  </PenghargaanArray>
+</PenghargaanContainer>

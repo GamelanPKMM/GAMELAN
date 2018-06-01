@@ -13,6 +13,16 @@ public class KarapanEndingScript : KarapanSubScontroller {
     public void exit() {
         basicGameControl.exitGame();
     }
+
+    public void resetButtonClick() {
+        if (basicGameControl.isWinning()) {
+            basicGameControl.saveGame();
+        }
+        basicGameControl.resetGame();
+    }
+    public void exitButtonClick() {
+        basicGameControl.exitGame();
+    }
     protected override void start() {
         base.start();
         gameControl.addEvent("GameOver", gameOver);
