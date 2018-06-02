@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <materis>
+    <Materi>
+      <Penjelasan>Hai sobat GAMELAN..! tahukah kamu rumah adat jawa tengah ? ya.. Rumah adat Jawa Tengah dinamakan Padepokan. Padepokan Jawa Tengah merupakan bangunan induk istana Mangkunegara di Surakarta. Rumah penduduk dan keraton di Jawa Tengah umumnya terdiri dari 3 ruangan. Pertama pendopo, tempat menerima tamu, upacara adat dan kesenian. Kedua Pringgitan untuk pagelaran wayang kulit. Ketiga dalem, tempat singgasana raja. Bagi rumah penduduk, "dalem" berarti ruangan untuk tempat tinggal.</Penjelasan>
+      <imageName>Karapan-Sapi</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>Hai sobat GAMELAN..! tahukah kamu seni hias masyarakat Jawa Tengah ? ya.. seni hias masyarakat Jawa Tengah berupa seni hias Parang Rusak yang terlihat pada kain batik. Seni hias parang rusak terinspirasi dari ombak besar yang terus menghantam bebatuan laut hingga membuat karang tersebut rusak.Bentuk dasar leter 'S' di ambil dari ombak samudra, jalinan motif yang tidak pernah putus pada motif parang menggambarkan hubungan yang terus tersambung. Garis lurus diagonal pada batik parang rusak melambangkan rasa hormat, keteladanan serta ketaatan pada nilai-nilai kebenaran.</Penjelasan>
+      <imageName>Roma-Bangshal</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>
+        Hai sobat GAMELAN..! tahukah kamu pakaian adat masyarakat Jawa Tengah ? ya.. Pakaian adat untuk pria Jawa Tengah adalah penutup kepala yang disebut kuluk, berbaju jas sikepan, korset dan keris yang terselip di pinggang. Ia juga memakai kain batik dengan pola dan corak yang sama dengan wanitanya.
+        Sedangkan wanitanya memakai kebaya panjang dengan kain batik. Perhiasannya berupa subang, kalung, gelang, dan cincin. Sanggulnya disebut bokor mengkureb yang diisi dengan daun pandan wangi.
+      </Penjelasan>
+      <imageName>pakaian_adat_Madura</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>
+        Hai sobat GAMELAN..! tahukah kamu alat musik masyarakat Jawa Tengah ? ya.. Alat musik masyarakat Jawa Tengah Adalah Gamelan, Gamelan adalah salah satu alat musik yang terkenal di Indonesia. Alat musik yang satu ini sering kita temui pada beberapa kesenian tradisional di Indonesia, terutama di Jawa.  Sebenarnya alat musik gamelan juga terdapat di beberapa daerah disekitar Jawa, yaitu Bali, Madura dan Lombok.
+        Makna gamelan sebenarnya berasal dari kata "gamel" yang dalam bahasa jawa memiliki arti memukul atau menabuh. Sedangkan pada akhiran kata terdapat imbuhan kata "an" yang berfungsi membentuk kata benda. Dengan begitu makna gamelan dapat kita artikan sebagai kumpulan dari beberapa alat musik yang dimainkan dengan cara dipukul atau ditabuh.
+      </Penjelasan>
+      <imageName>celurit</imageName>
+    </Materi>
+    <Materi>
+      <Penjelasan>Tahukah kamu Tari Muang Sangkal yang merupakan tarian tradisional Madura? Tari Muang Sangkal adalah salah satu tarian tradisional Madura yang dilakukan untuk ritual menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu dan berbagai acara adat lainnya.  </Penjelasan>
+      <imageName>muang_sangkal</imageName>
+    </Materi>
+  </materis>
+</MateriGame>
