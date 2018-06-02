@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/Games/Lompat Nias/scene/LompatNias.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/MAP.unity
+- path: Assets/Games/Card Flip/Scenes/CardFlip.unity
   isLoaded: 1
   isActive: 1
