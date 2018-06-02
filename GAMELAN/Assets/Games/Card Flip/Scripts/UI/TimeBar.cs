@@ -7,8 +7,10 @@ public class TimeBar : MonoBehaviour {
 	public static TimeBar control;
 	public Image progressBarImage;
 	public int duration;
+    private float timeFinish = 0;
 
-	void Start () 
+
+    void Start () 
 	{
 		if (control == null)
 		{
@@ -26,12 +28,17 @@ public class TimeBar : MonoBehaviour {
 
 	void Update ()
 	{
-		progressBarImage.fillAmount = Time.time / this.duration;
-
-		if (progressBarImage.fillAmount == 1)
+		
+        if (!CardFlipManager.control.stop)
+        {
+            progressBarImage.fillAmount = timeFinish / this.duration;
+            timeFinish += Time.deltaTime;
+        }
+        
+        if (progressBarImage.fillAmount == 1)
 		{
 			CardFlipManager.control.GameOver ();
-		}
+        }
 	}
 
 	public void AddTime (float time)

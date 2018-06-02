@@ -9,8 +9,16 @@ public class CoreGameInterface : MonoBehaviour {
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
+
     void Start() {
         acc = AccountContainer.self;
         loadGame();

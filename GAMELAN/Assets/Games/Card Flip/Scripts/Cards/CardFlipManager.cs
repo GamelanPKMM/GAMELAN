@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardFlipManager : MonoBehaviour 
 {
@@ -22,6 +23,7 @@ public class CardFlipManager : MonoBehaviour
 	public GameObject winDisplay;
 	public GameObject gameOverDisplay;
 	public GameObject pauseDisplay;
+    public bool stop = false;
 
 	public float previewTime;
 
@@ -73,7 +75,7 @@ public class CardFlipManager : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		winDisplay.SetActive (true);
-		CoreGameInterface.instance.exitGame (StarScore.control.obtainedStar);
+        stop = true;
 	}
 
 	//
@@ -81,14 +83,24 @@ public class CardFlipManager : MonoBehaviour
 	//
 	public void GameOver ()
 	{
-		Destroy (cardsHolder);
-		gameOverDisplay.SetActive (true);
+        Destroy (cardsHolder);
+        gameOverDisplay.SetActive (true);
+        stop = true;
 	}
 
-	//
-	// Flip card and add it into opened card list
-	//
-	public void OpenCard (GameObject card) 
+    //
+    // reset game
+    //
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+    }
+
+    //
+    // Flip card and add it into opened card list
+    //
+    public void OpenCard (GameObject card) 
 	{
 		this.openedCards.Add (card);
 	}
@@ -290,4 +302,13 @@ public class CardFlipManager : MonoBehaviour
 		QuestionList data = JsonUtility.FromJson<QuestionList> (questionData.text);
 		questionList = data.questions.ToList<QuestionHolder>();
 	}
+
+
+    public void gotoMap()
+    {
+        Time.timeScale = 1;
+        CoreGameInterface.instance.exitGame(StarScore.control.obtainedStar);
+        Destroy(gameObject);
+    }
+
 }

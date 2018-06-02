@@ -18,5 +18,23 @@ EditorBuildSettings:
     path: Assets/Games/Lompat Nias/scene/LompatNias.unity
     guid: 8ceb97cbe6015104589ff28df3526ed6
   - enabled: 1
-    path: Assets/Scenes/Cidomo.unity
+    path: Assets/Games/Cidomo/Scene/Cidomo.unity
     guid: 5890a92bc7f7a824b825cdffb1a707dc
+  - enabled: 1
+    path: Assets/Games/Dayak/scene/Dayak.unity
+    guid: c01bbd7946a7be444849366d4d1ccc99
+  - enabled: 1
+    path: Assets/Games/Papua/scene/Papua.unity
+    guid: 1ef027627429c7b4cb815a79097c4efc
+  - enabled: 1
+    path: Assets/Games/Card Flip/Scenes/CardFlip.unity
+    guid: 8c8cc9d74f2b16d48a65f1d9dc0923e3
+  - enabled: 1
+    path: Assets/Games/Aceh/Scenes/Aceh.unity
+    guid: 044ab78db859db14d9aff689c7643ecc
+  - enabled: 1
+    path: Assets/Games/Sulawesi/Scenes/Sulawesi.unity
+    guid: 87699fc9e26546544bc8bb9327ee8106
+  - enabled: 1
+    path: Assets/Games/Jatim/Scenes/Jatim.unity
+    guid: 9215d60ee62ebe840b2c584cf754b721

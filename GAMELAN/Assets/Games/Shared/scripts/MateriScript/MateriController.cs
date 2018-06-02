@@ -21,6 +21,19 @@ public class MateriController : MonoBehaviour {
     private float time;
     private MiniGameLoaderScript m;
     // Use this for initialization
+
+    private void Awake()
+    {
+        if (self == null)
+        {
+            self = this;
+        }
+        else if (self != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start() {
         
         self = this;

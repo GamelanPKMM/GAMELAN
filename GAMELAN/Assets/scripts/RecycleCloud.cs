@@ -10,8 +10,8 @@ public class RecycleCloud : MonoBehaviour {
     void Start()
     {
         cloud = GetComponent<RectTransform>();
-        backgroundLength = cloud.rect.width/2;
-        Debug.Log(backgroundLength);
+        backgroundLength = cloud.rect.width;
+        //Debug.Log(backgroundLength);
     }
 
     // Update is called once per frame
@@ -19,8 +19,9 @@ public class RecycleCloud : MonoBehaviour {
     private void FixedUpdate()
     {
         //jika background bertransformasi sampai ukurnnya maka akan di transformasi ke kanan sejauh size sumbu xnya
-        if (transform.position.x < -backgroundLength * 1f)
+        if (transform.position.x*2 < -backgroundLength * 1f)
         {
+            
             RecyleBackground();
             //Debug.Log("transisi x : " + transform.position.x);
         }
