@@ -1,48 +1,49 @@
 {
-    "questions": [{
-            "question": "satu tambah satu",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 0
-        },
-        {
-            "question": "satu tambah dua",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 2
-        },
-        {
-            "question": "satu tambah satu",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 0
-        },
-        {
-            "question": "satu tambah satu",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 0
-        },
-        {
-            "question": "satu tambah satu",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 0
-        }
-    ]
+  "questions": [
+    {
+      "question": "Pakaian adat yang berasal dari Nangroe Aceh Darussalam adalah",
+      "options": [
+        "a.\tPesaan",
+        "b.\tMantenan",
+        "c.\tLinto Baro dan Daro Baro"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Rumah Krong Bade mencerminkan karakteristik masyarakat Aceh yang bagimana?",
+      "options": [
+        "a.\tDekat dengan alam serta menjaga kelestarian lingkungan",
+        "b.\tRukun",
+        "c.\tRamah"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Tari Saman yang merupakan tarian tradisional yang berasal dari Nangroe Aceh Darussalam memiliki makna?",
+      "options": [
+        "a.\tMedia penyampaian dakwah",
+        "b.\tKeberanian dalam peperangan",
+        "c.\tKehormatan seorang raja"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Senjata Tradisional yang berasal dari Nangroe Aceh Darussalam adalah",
+      "options": [
+        "a.\tMandau",
+        "b.\tRencong",
+        "c.\tParang"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Permainan Tradisional yang berasal dari Nangroe Aceh Darussalam adalah",
+      "options": [
+        "a.\tMakkah-makkah",
+        "b.\tGobak sodor",
+        "c.\tEgrang"
+      ],
+      "answer": 0
+    }
+  ]
 }

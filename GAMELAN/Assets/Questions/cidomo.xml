@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<QuestionBank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Questions>
+    <Question Question="Nama Rumah adat Madura adalah...">
+      <answers>
+        <string>a. R</string>
+        <string>b. shal</string>
+        <string>c. Rumah Panggung</string>
+      </answers>
+      <answer>1</answer>
+    </Question>
+	<Question Question="Simbol dari 2 dalam atap rumah adat Madura adalah ...">
+      <answers>
+        <string>a. Sebagai symbol keberanian </string>
+        <string>b. Sebagai symbol keberagaman </string>
+        <string>c. Sebagai symbol dari batu nisan</string>
+      </answers>
+      <answer>2</answer>
+    </Question>
+	<Question Question="Senjata ka disebut ...">
+      <answers>
+        <string>a. Celurit</string>
+        <string>b. Kapak</string>
+        <string>c. Kris</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+	<Question Question="Pakaian adat khas Maang merah putih atau merah hitam dan celan gamboran disebut ">
+      <answers>
+        <string>a. Baju pesa’an </string>
+        <string>b. Baju Mbjo</string>
+        <string>c. Baju Bodo</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+	<Question Question="Makna darn sapi adalah">
+      <answers>
+        <string>a. Sportifitas dan Komunikasi publik</string>
+        <string>b. Sopan santun</string>
+        <string>c. Selalu Menganggap Lemah Orang</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+  </Questions>
+</QuestionBank>
