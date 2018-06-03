@@ -1,0 +1,48 @@
+{
+    "questions": [{
+            "question": "satu tambah satu",
+            "options": [
+                "dua",
+                "tiga",
+                "ratusan"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "dua tambah dua",
+            "options": [
+                "dua",
+                "tiga",
+                "empat"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "satu tambah satu",
+            "options": [
+                "dua",
+                "tiga",
+                "ratusan"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "satu tambah satu",
+            "options": [
+                "dua",
+                "tiga",
+                "ratusan"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "satu tambah satu",
+            "options": [
+                "dua",
+                "tiga",
+                "ratusan"
+            ],
+            "answer": 0
+        }
+    ]
+}
