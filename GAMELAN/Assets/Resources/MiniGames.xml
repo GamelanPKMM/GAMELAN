@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <MinigamesRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Minigames>
-    <Minigame Minigame="Karapan" />
+    <Minigame Minigame="Aceh" />
     <Minigame Minigame="LompatNias" />
-	<Minigame Minigame="Cidomo" />
+	<Minigame Minigame="Dayak" />
+<Minigame Minigame="Jatim" />
+<Minigame Minigame="Karapan" />
+<Minigame Minigame="Cidomo" />
+<Minigame Minigame="Sulawesi" />
+<Minigame Minigame="Papua" />
   </Minigames>
 </MinigamesRoot>
