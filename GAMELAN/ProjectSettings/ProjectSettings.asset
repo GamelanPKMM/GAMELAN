@@ -39,10 +39,12 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 26815d53cd9a2a141b6f3d01f8439db4, type: 3}
+  - logo: {fileID: 21300000, guid: d5a0a365ecd0a4d409430a6e6f994731, type: 3}
     duration: 4
+  - logo: {fileID: 21300000, guid: 209600ac4cafba94d85e2ce8b86a1c20, type: 3}
+    duration: 3
   - logo: {fileID: 21300000, guid: 3cfd64779dbf85b46a20d0a69dd2ef14, type: 3}
-    duration: 2
+    duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024

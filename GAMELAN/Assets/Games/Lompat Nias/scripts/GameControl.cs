@@ -21,6 +21,7 @@ public class GameControl : MonoBehaviour
     static public bool tutorialNias = true;
     public bool finish = false;
     public bool input = true;
+    public string gameName = "LompatNias";
     
 
     // Use this for initialization
@@ -40,7 +41,9 @@ public class GameControl : MonoBehaviour
     private void Start()
     {
         input = true;
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = 75;
+        //Memilih soal pada game
+        QuestionControlNias.instance.gameName = gameName;
     }
 
     private void FixedUpdate()
@@ -70,6 +73,15 @@ public class GameControl : MonoBehaviour
     //menmpilkan text gameover
     public void birdDead()
     {
+        //Ganti Text Menang atau kalah
+        if (!finish)
+        {
+            gameOverText.transform.Find("kata").GetComponent<Text>().text = "KALAH !!";
+        }
+        else
+        {
+            gameOverText.transform.Find("kata").GetComponent<Text>().text = "MENANG !!";
+        }
         gameOverText.SetActive(true);
         stopBird = true;
         gameOver = true;
@@ -141,9 +153,14 @@ public class GameControl : MonoBehaviour
     }
     public void gotoMap()
     {
-        Time.timeScale = 1;
         tutorialNias = true;
-        //Destroy(gameObject);
+        /*
+        //Tambah penghargaan
+        if (star >= 5)
+        {
+            PenghargaanController.self.tambahPenghargaan("Jateng");
+        }
+        */
         CoreGameInterface.instance.exitGame(star);
         
     }

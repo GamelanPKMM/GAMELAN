@@ -25,24 +25,31 @@ public class Quiz : MonoBehaviour {
 		}
 	}
 
-	//
-	// Display question box of given card's question
-	//
-	public void ShowQuestion (Card card)
-	{
-		Time.timeScale = 0;
-		this.card = card;
-		holder.SetActive (true);
+    //
+    // Display question box of given card's question
+    //
+    public void ShowQuestion(Card card)
+    {
+        CardFlipManager.control.stop = true;
+        if (holder != null)
+        {
+            Time.timeScale = 0;
+            this.card = card;
+            holder.SetActive(true);
+            questionText.text = card.Question.question;
 
-		questionText.text = card.Question.question;
+            for (int i = 0; i < optionText.Length; i++)
+            {
+                optionText[i].text = card.Question.options[i];
+            }
 
-		for (int i = 0; i < optionText.Length; i++)
-		{
-			optionText [i].text = card.Question.options [i];
-		}
-
-		answer = card.Question.answer;
-	}
+            answer = card.Question.answer;
+        }
+        else
+        {
+            Debug.Log("Quiz Error");
+        }
+    }
 
 	//
 	// Hide question box and delete question from given card
@@ -52,6 +59,7 @@ public class Quiz : MonoBehaviour {
 		Time.timeScale = 1;
 		this.card.Question = null;
 		holder.SetActive (false);
+        CardFlipManager.control.stop = false;
 	}
 
 	//

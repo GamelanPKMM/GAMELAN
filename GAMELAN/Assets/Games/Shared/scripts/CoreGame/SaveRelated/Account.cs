@@ -34,7 +34,6 @@ public class Account {
         {
             if (save.name.Equals(minigame)) {
                 save.score = score;
-                AccountContainer.self.saveGame(this);
                 return;
             }
         }
@@ -47,7 +46,6 @@ public class Account {
                 if (save.score < score) {
                     save.score = score;
                 }
-                AccountContainer.self.saveGame(this);
                 return;
             }
 
@@ -92,7 +90,6 @@ public class Account {
             if (save.name.Equals(p) && !save.isEarned)
             {
                 save.isEarned = true;
-                AccountContainer.self.saveGame(this);
                 Debug.Log("success adding a penghargaan");
                 return true;
             }

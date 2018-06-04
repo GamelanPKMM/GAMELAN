@@ -15,7 +15,6 @@ public class AccountContainer {
     public static AccountContainer load() {
         if (self == null)
         {
-            checkDirectory();
             string path;
             path = "file://" + Application.dataPath + "/SaveGame/SaveGame.xml";
             WWW file = new WWW(path);
@@ -46,7 +45,6 @@ public class AccountContainer {
     public void Save()
     {
         var serializer = new XmlSerializer(typeof(AccountContainer));
-        checkDirectory();
         using (var stream = new FileStream(Application.dataPath + "/SaveGame/" + "SaveGame.xml", FileMode.Create))
         {
             serializer.Serialize(stream, this);
@@ -146,13 +144,6 @@ public class AccountContainer {
         catch (System.Exception e)
         {
             return null;
-        }
-    }
-
-    public static void checkDirectory() {
-        if (!Directory.Exists(Application.dataPath+"/SaveGame"))
-        {
-            Directory.CreateDirectory(Application.dataPath+"/SaveGame");
         }
     }
 }

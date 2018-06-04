@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <AccountContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
-    <Account Account="FAK">
+    <Account Account="Farid">
       <minigameSave>
-        <MinigameSave Minigame="Aceh" MinigameSave="0" />
-        <MinigameSave Minigame="LompatNias" MinigameSave="0" />
-        <MinigameSave Minigame="Dayak" MinigameSave="0" />
-        <MinigameSave Minigame="Jatim" MinigameSave="0" />
-        <MinigameSave Minigame="Karapan" MinigameSave="1" />
+        <MinigameSave Minigame="Karapan" MinigameSave="5" />
+        <MinigameSave Minigame="LompatNias" MinigameSave="5" />
         <MinigameSave Minigame="Cidomo" MinigameSave="0" />
-        <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
-        <MinigameSave Minigame="Papua" MinigameSave="0" />
       </minigameSave>
       <penghargaans>
         <PenghargaanSave>
           <name>ini penghargaan</name>
-          <isEarned>false</isEarned>
+          <isEarned>true</isEarned>
         </PenghargaanSave>
         <PenghargaanSave>
           <name>nyoba Penghargaan</name>
@@ -45,27 +40,55 @@
           <name>nyoba Penghargaan6</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
+      </penghargaans>
+    </Account>
+    <Account Account="Yusril">
+      <minigameSave>
+        <MinigameSave Minigame="Karapan" MinigameSave="0" />
+        <MinigameSave Minigame="LompatNias" MinigameSave="0" />
+        <MinigameSave Minigame="Cidomo" MinigameSave="0" />
+      </minigameSave>
+      <penghargaans>
         <PenghargaanSave>
-          <name>Nias Bintang 5</name>
+          <name>ini penghargaan</name>
+          <isEarned>true</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
         <PenghargaanSave>
-          <name>Karapan Bintang 5</name>
-          <isEarned>true</isEarned>
+          <name>nyoba Penghargaan1</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan2</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan3</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan4</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>nyoba Penghargaan6</name>
+          <isEarned>false</isEarned>
         </PenghargaanSave>
       </penghargaans>
     </Account>
   </Accounts>
-  <currentAccount Account="FAK">
+  <currentAccount Account="Farid">
     <minigameSave>
-      <MinigameSave Minigame="Aceh" MinigameSave="0" />
-      <MinigameSave Minigame="LompatNias" MinigameSave="0" />
-      <MinigameSave Minigame="Dayak" MinigameSave="0" />
-      <MinigameSave Minigame="Jatim" MinigameSave="0" />
-      <MinigameSave Minigame="Karapan" MinigameSave="1" />
+      <MinigameSave Minigame="Karapan" MinigameSave="5" />
+      <MinigameSave Minigame="LompatNias" MinigameSave="5" />
       <MinigameSave Minigame="Cidomo" MinigameSave="0" />
-      <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
-      <MinigameSave Minigame="Papua" MinigameSave="0" />
     </minigameSave>
     <penghargaans>
       <PenghargaanSave>
@@ -99,14 +122,6 @@
       <PenghargaanSave>
         <name>nyoba Penghargaan6</name>
         <isEarned>false</isEarned>
-      </PenghargaanSave>
-      <PenghargaanSave>
-        <name>Nias Bintang 5</name>
-        <isEarned>false</isEarned>
-      </PenghargaanSave>
-      <PenghargaanSave>
-        <name>Karapan Bintang 5</name>
-        <isEarned>true</isEarned>
       </PenghargaanSave>
     </penghargaans>
   </currentAccount>

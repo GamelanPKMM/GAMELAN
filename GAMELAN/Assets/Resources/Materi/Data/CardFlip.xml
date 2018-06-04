@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="Windows-1252"?>
-<MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <materis>
-    <Materi>
-      <Penjelasan>Hai sobat GAMELAN..! tahukah kamu rumah adat jawa tengah ? ya.. Rumah adat Jawa Tengah dinamakan Padepokan. Padepokan Jawa Tengah merupakan bangunan induk istana Mangkunegara di Surakarta. Rumah penduduk dan keraton di Jawa Tengah umumnya terdiri dari 3 ruangan. Pertama pendopo, tempat menerima tamu, upacara adat dan kesenian. Kedua Pringgitan untuk pagelaran wayang kulit. Ketiga dalem, tempat singgasana raja. Bagi rumah penduduk, "dalem" berarti ruangan untuk tempat tinggal.</Penjelasan>
-      <imageName>jateng/padepokan</imageName>
-    </Materi>
-    <Materi>
-      <Penjelasan>Hai sobat GAMELAN..! tahukah kamu seni hias masyarakat Jawa Tengah ? ya.. seni hias masyarakat Jawa Tengah berupa seni hias Parang Rusak yang terlihat pada kain batik. Seni hias parang rusak terinspirasi dari ombak besar yang terus menghantam bebatuan laut hingga membuat karang tersebut rusak.Bentuk dasar leter 'S' di ambil dari ombak samudra, jalinan motif yang tidak pernah putus pada motif parang menggambarkan hubungan yang terus tersambung. Garis lurus diagonal pada batik parang rusak melambangkan rasa hormat, keteladanan serta ketaatan pada nilai-nilai kebenaran.</Penjelasan>
-      <imageName>jateng/parangrusak</imageName>
-    </Materi>
-    <Materi>
-      <Penjelasan>
-        Hai sobat GAMELAN..! tahukah kamu pakaian adat masyarakat Jawa Tengah ? ya.. Pakaian adat untuk pria Jawa Tengah adalah penutup kepala yang disebut kuluk, berbaju jas sikepan, korset dan keris yang terselip di pinggang. Ia juga memakai kain batik dengan pola dan corak yang sama dengan wanitanya.
-        Sedangkan wanitanya memakai kebaya panjang dengan kain batik. Perhiasannya berupa subang, kalung, gelang, dan cincin. Sanggulnya disebut bokor mengkureb yang diisi dengan daun pandan wangi.
-      </Penjelasan>
-      <imageName>jateng/pakaianjawatengah</imageName>
-    </Materi>
-    <Materi>
-      <Penjelasan>
-        Hai sobat Gamelan! Tahukah kamu apa itu Saron ? ya ,Saron atau ricik merupakan bagian dari alat musik gamelan yang termasuk keluarga balungan. Instrumen yang terbuat dari lembaran-lembaran logam ini dimainkan dengan cara dipukul menggunakan alat pemukul khusus yang terbuat dari kayu. Saat setelah dipukul, wilahan harus dipencet atau dipathet untuk menghentikan dengungan yang dihasilkan sebelum wilahan lainnya dipukul.
-      </Penjelasan>
-      <imageName>jateng/saron</imageName>
-    </Materi>
-  </materis>
+<?xml version="1.0" encoding="utf-8"?>
+<MateriGame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <materis>
+      <Materi>
+         <Penjelasan>Hai sobat GAMELAN !! tahukah kamu rumah adat jawa tengah ? ya Rumah adat Jawa Tengah dinamakan Padepokan. Padepokan Jawa Tengah merupakan bangunan induk istana Mangkunegara di Surakarta. Rumah penduduk dan keraton di Jawa Tengah umumnya terdiri dari 3 ruangan. Pertama pendopo, tempat menerima tamu, upacara adat dan kesenian. Kedua Pringgitan untuk pagelaran wayang kulit. Ketiga dalem, tempat singgasana raja. Bagi rumah penduduk, "dalem" berarti ruangan untuk tempat tinggal.</Penjelasan>
+         <imageName>jateng/padepokan</imageName>
+      </Materi>
+      <Materi>
+         <Penjelasan>Hai sobat GAMELAN !! tahukah kamu seni hias masyarakat Jawa Tengah ? ya seni hias masyarakat Jawa Tengah berupa seni hias Parang Rusak yang terlihat pada kain batik. Seni hias parang rusak terinspirasi dari ombak besar yang terus menghantam bebatuan laut sehingga membuat karang tersebut rusak. Bentuk huruf 'S' di ambil dari ombak samudra, jalinan motif yang tidak pernah putus pada motif parang menggambarkan hubungan yang terus tersambung. Garis lurus diagonal pada batik parang rusak melambangkan rasa hormat, keteladanan serta ketaatan pada nilai kebenaran.</Penjelasan>
+         <imageName>jateng/parangrusak</imageName>
+      </Materi>
+      <Materi>
+         <Penjelasan>Hai sobat GAMELAN !! Tahukah kamu apa pakaian adat resmi Jawa Tengah ? pakaian adat resmi Jawa Tengah adalah Jawi Jangkep dan Kebaya. Jawi jangkep merupakan pakaian pria  yang terdiri dari beberapa kelengkapan dan biasanya dipakai untuk keperluan adat. Jawi jangkep sendiri terdiri dari atasan yang berupa baju besakap dengan motif bunga, bawahan yang berupa kain jarik yang dililitkan dibagian pinggang, destar berupa blangkon, dan aksesoris lainnya. Sedangkan kebaya merupakan pakaian adat wanita jawa yang terdiri dari  atasan yang berupa kebaya, kemben, kain tapih pinjung,stagen, konde.</Penjelasan>
+         <imageName>jateng/bajuadat</imageName>
+      </Materi>
+      <Materi>
+         <Penjelasan>Hai sobat GAMELAN !! Tahukah kamu salah satu senjata tradisional masyarakat Jawa Tengah yang terkenal ? ya, Keris. Keris  adalah senjata tikam golongan belati (berujung runcing dan tajam pada kedua sisinya). Pada masa lalu keris berfungsi sebagai senjata dalam peperangan dan sekaligus sebagai benda pelengkap sesajian. Pada penggunaan masa kini, keris lebih merupakan benda aksesori (ageman) dalam berbusana.</Penjelasan>
+         <imageName>jateng/keris</imageName>
+      </Materi>
+      <Materi>
+         <Penjelasan>Hai sobat GAMELAN !! Tahukah kamu apa itu Saron ? ya ,Saron atau ricik merupakan bagian dari alat musik gamelan yang termasuk keluarga balungan. Instrumen yang terbuat dari lembaran - lembaran logam ini dimainkan dengan cara dipukul menggunakan alat pemukul khusus yang terbuat dari kayu. Saat setelah dipukul, wilahan harus dipencet atau dipathet untuk menghentikan dengungan yang dihasilkan sebelum wilahan lainnya dipukul.</Penjelasan>
+         <imageName>jateng/saron</imageName>
+      </Materi>
+   </materis>
 </MateriGame>

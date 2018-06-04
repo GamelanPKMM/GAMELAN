@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QuestionBank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Questions>
+    <Question Question="Senjata tradisional yang berasal dari Dayak adalah.......">
+      <answers>
+        <string>a. Pedang</string>
+        <string>b. Mandau</string>
+        <string>c. Belati</string>
+      </answers>
+      <answer>1</answer>
+    </Question>
+    <Question Question="Alat musik tradisional Dayak adalah........">
+      <answers>
+        <string>a. Sampe</string>
+        <string>b. Ketipung</string>
+        <string>c. Kecapi</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+    <Question Question="Tarian Datun julut yang merupakan tarian adat berasal dari Dayak yang bertujuan untuk....">
+      <answers>
+        <string>a. Meminta hujan</string>
+        <string>b. Simbol peperangan</string>
+        <string>c. Tanda syukur</string>
+      </answers>
+      <answer>2</answer>
+    </Question>
+    <Question Question="Apakah makna pembuatan rumah Betang (rumah adat Dayak) panjang bagian hulunya haruslah searah dengan Matahari terbit dan sebelah hilirnya ke arah Matahari terbenam....">
+      <answers>
+        <string>a. Kerja Keras</string>
+        <string>b. Keberanian</string>
+        <string>c. Kewibawaan</string>
+      </answers>
+      <answer>0</answer>
+    </Question>
+    <Question Question="Apakah nama pakaian adat Dayak yang digunakan perempuan dan laki-laki ?">
+      <answers>
+        <string>a. Mantenan</string>
+        <string>b. Pesa’an</string>
+        <string>c. Ta’a dan Sapei Sapaq</string>
+      </answers>
+      <answer>2</answer>
+    </Question>
+  </Questions>
+</QuestionBank>

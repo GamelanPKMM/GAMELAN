@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="Windows-1252"?>
-<MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<MateriGame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <materis>
     <Materi>
-      <Penjelasan>Hai kawan Mari hari ini kita belajar tentang kebudayaan Madura. Apa kamu tahu permainan tradisional kerapan sapi ? Karapan Sapi merupakan permainan khas masyarakat Madura. Tahukah kamu awal mula adanya kerapan sapi? Awal mulanya kerapan sapi ini dilatar belakangi pada zaman dahulu tanah Madura itu kurang subur untuk lahan pertanian, sehingga orang-orang Madura beternak sapi yang juga digunakan untuk membajak sawah atau ladang. Kerapan sapi ini juga memiliki makna positif yaitu melatih jiwa sportifitas dan pemberani.</Penjelasan>
-      <imageName>Karapan-Sapi</imageName>
+      <Penjelasan>Hai Sobat Gamelan ! Tahukah kamu rumah adat Dayak ? Ya rumah adat Dayak bernama Rumah Betang. Rumah Betang mempunyai ciri berbentuk rumah panggung dan memanjang. Pembuatan rumah panjang bagian hulunya haruslah searah dengan Matahari terbit dan sebelah hilirnya ke arah Matahari terbenam, sebagai simbol kerja-keras untuk bertahan hidup mulai dari Matahari terbit dan pulang ke rumah pada matahari tenggelam.</Penjelasan>
+      <imageName>dayak/rumahadat</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai kawan ! Madura juga memiliki rumah adat yang disebut rumah Bangshal (roma bhangsal). Dalam rumah adat Madura terdapat 2 tanduk di atapnya yang menyimbolkan dua nisan di sebuah kuburan. Maknanya yaitu bahwa selain ada rumah di dunia, ada juga rumah di akhirat yakni kuburan. </Penjelasan>
-      <imageName>Roma-Bangshal</imageName>
+      <Penjelasan>Hai Sobat Gamelan ! Tahukah kamu pakaian adat Dayak ? Ya pakaian adat Dayak untuk wanita bernama pakaian Ta’a. Baju ini juga di lengkapi dengan adanya gelang yang dipasangkan di tangan wanita suku dayak. Gelang ini dipercayai oleh masyarakat dayak berfungsi sebagai penolak balak (mencegah mara bahaya). Untuk pakaian adat laki-laki dinamakan Sapei Sapaq. Pakaian ini menggunakan aksesoris senjata tradisional suku dayak. Fungsinya sebagai alat perlindungan diri dari serangan musuh atau pun seranga hewan buas pada saat berada di dalam hutan.</Penjelasan>
+      <imageName>dayak/ta</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai Kawan ! Madura juga memiliki pakaian adat. Nama pakaian adat Madura adalah baju pesa&apos;an. . Baju ini sebenarnya adalah baju sederhana yang dikenakan sehari-hari oleh orang-orang suku Madura di masa silam, baik untuk melaut, berladang, maupun untuk menghadiri upacara adat.</Penjelasan>
-      <imageName>pakaian_adat_Madura</imageName>
+      <Penjelasan>Hai Sobat Gamelan ! Apakah kamu tahu senjata tradisional Dayak ? Ya senjata tradisional Dayak bernama Mandau. Tahukah kamu apa itu mandau? Mandau adalah senjata tajam sejenis parang. Makna Mandau ini adalah dau artinya senjata, man artinya keberanian.</Penjelasan>
+      <imageName>dayak/mando</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu senjata tradisional Madura? Ya senjata tradisional Madura bernama Celurit. Celurit ini digunakan tokoh yang bernama Sakera sebagai simbol perlawanan rakyat terhadap penjajah Belanda.  </Penjelasan>
-      <imageName>celurit</imageName>
+      <Penjelasan>Hai Sobat Gamelan ! Apakah kamu tahu alat musik tradisional Dayak? Ya alat musik tradisional Dayak bernama Sampe. Alat musik ini dimainkan dengan cara dipetik. Sampe ini sering di gunakan dalam mengiringi berbagai acara adat seperti tarian adat dan kesenian adat suku Dayak  lainnya.</Penjelasan>
+      <imageName>dayak/sampe</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu Tari Muang Sangkal yang merupakan tarian tradisional Madura? Tari Muang Sangkal adalah salah satu tarian tradisional Madura yang dilakukan untuk ritual menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu dan berbagai acara adat lainnya.  </Penjelasan>
-      <imageName>muang_sangkal</imageName>
+      <Penjelasan>Hai Sobat Gamelan ! Tahukah kamu tarian adat Dayak ? Ya tarian adat Dayak bernama Datun Julut. Tarian ini bertujuan sebagai tanda syukur atas kesembuhan penyakit, namun di jaman sekarang ini Tarian ini selain untuk tanda syukur, juga dibawakan untuk penyambutan para tamu.</Penjelasan>
+      <imageName>dayak/datunjulud</imageName>
     </Materi>
   </materis>
 </MateriGame>

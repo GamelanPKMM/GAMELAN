@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CardFlipManager : MonoBehaviour 
 {
@@ -21,9 +22,11 @@ public class CardFlipManager : MonoBehaviour
 	public int[] sessionMaxQuestions;
 
 	public GameObject winDisplay;
+    public Text ending;
 	public GameObject gameOverDisplay;
 	public GameObject pauseDisplay;
     public bool stop = false;
+    public bool init = false;
 
 	public float previewTime;
 
@@ -46,7 +49,8 @@ public class CardFlipManager : MonoBehaviour
 
 	void Start () 
 	{
-		DeserializeQuestions ();
+        Application.targetFrameRate = 75;
+        DeserializeQuestions ();
 		InitSession ();
 	}
 
@@ -57,6 +61,7 @@ public class CardFlipManager : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		pauseDisplay.SetActive (true);
+        stop = true;
 	}
 
 	//
@@ -66,6 +71,7 @@ public class CardFlipManager : MonoBehaviour
 	{
 		Time.timeScale = 1;
 		pauseDisplay.SetActive (false);
+        stop = false;
 	}
 
 	//
@@ -74,7 +80,9 @@ public class CardFlipManager : MonoBehaviour
 	public void Win ()
 	{
 		Time.timeScale = 0;
-		winDisplay.SetActive (true);
+        winDisplay.SetActive (true);
+        //change String if winner
+        ending.text = "MENANG !!";
         stop = true;
 	}
 
@@ -84,7 +92,9 @@ public class CardFlipManager : MonoBehaviour
 	public void GameOver ()
 	{
         Destroy (cardsHolder);
+        //change String if lose
         gameOverDisplay.SetActive (true);
+        ending.text = "KALAH !!";
         stop = true;
 	}
 
@@ -306,9 +316,14 @@ public class CardFlipManager : MonoBehaviour
 
     public void gotoMap()
     {
-        Time.timeScale = 1;
+        /*
+        //Tambah penghargaan
+        if (StarScore.control.obtainedStar >= 5)
+        {
+            PenghargaanController.self.tambahPenghargaan("Jateng");
+        }
+        */
         CoreGameInterface.instance.exitGame(StarScore.control.obtainedStar);
-        Destroy(gameObject);
     }
 
 }

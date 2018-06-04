@@ -15,9 +15,10 @@ public class QuestionControlNias : MonoBehaviour {
     private bool isDOne = false;
     private bool[] uni;
     private int current = 0;
+    public string gameName = "LompatNias";
     private void Start()
     {
-        string path = "LompatNias";
+        string path = gameName;
         //Debug.Log(path);
         questions = QuestionContainer.loadQuestion(path);
         Console.Add("Load Question Container");

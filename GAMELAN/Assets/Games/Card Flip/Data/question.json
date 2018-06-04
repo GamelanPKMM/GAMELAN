@@ -1,48 +1,48 @@
 {
     "questions": [{
-            "question": "satu tambah satu",
+            "question": "Nama rumah adat Jawa Tengah adalah...",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
-            ],
-            "answer": 0
-        },
-        {
-            "question": "satu tambah dua",
-            "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a. Joglo",
+                "b. Bale",
+                "c. Padepokan"
             ],
             "answer": 2
         },
         {
-            "question": "satu tambah satu",
+            "question": "Salah satu makna lambang garis lurus diagonal batik parang rusak adalah...",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a. Keberanian",
+                "b. Ketaatan pada nilai kebenaran",
+                "c. Kegembiraan"
             ],
             "answer": 0
         },
         {
-            "question": "satu tambah satu",
+            "question": "Nama pakaian adat pria pada masyarakat Jawa Tengah adalah...",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a. Batik Gedok",
+                "b. Jawi Jangkep",
+                "c. Baju Malangan"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Nama senjata tradisional masyarakat Jawa Tengah adalah...",
+            "options": [
+                "a. Keris",
+                "b. Gandora",
+                "c. Baluse"
             ],
             "answer": 0
         },
         {
-            "question": "satu tambah satu",
+            "question": "Makna dari alat musik Saron adalah...",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a. Dalam dawah islam kita bekerja lebih giat",
+                "b. Selalu senang dan gembira",
+                "c. Belajar dan berbakti kepada orang tua"
             ],
-            "answer": 0
+            "answer": 1
         }
     ]
 }

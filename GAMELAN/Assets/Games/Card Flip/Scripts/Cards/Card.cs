@@ -14,10 +14,13 @@ public class Card : MonoBehaviour
 
 	void OnMouseDown () 
 	{
-		if (this.isFaceUp)
-			CloseCard ();
-		else
-			OpenCard ();
+        if (!CardFlipManager.control.stop && !CardFlipManager.control.init)
+        {
+            if (this.isFaceUp)
+                CloseCard();
+            else
+                OpenCard();
+        }
 	}
 
 	void OnDestroy ()
@@ -32,8 +35,9 @@ public class Card : MonoBehaviour
 	// Preview card in given seconds
 	//
 	public IEnumerator Preview (float seconds) {
-		// Flip open
-		this.isFaceUp = true;
+        CardFlipManager.control.init = true;
+        // Flip open
+        this.isFaceUp = true;
 		StartCoroutine (Flip()); 
 
 		// Wait for given seconds
@@ -41,10 +45,11 @@ public class Card : MonoBehaviour
 
 		// Flip close
 		this.isFaceUp = false;
-		StartCoroutine (Flip()); 
+		StartCoroutine (Flip());
+        CardFlipManager.control.init = false;
 
-		// Add collider
-		this.gameObject.AddComponent<BoxCollider2D> ();
+        // Add collider
+        this.gameObject.AddComponent<BoxCollider2D> ();
 	}
 
 	//
