@@ -34,6 +34,7 @@ public class CardFlipManager : MonoBehaviour
 
 	private int remainingCardPairs = 0;
 	private int currentSession = 1;
+    public bool gameOver;
 
 	void Awake () 
 	{
@@ -52,6 +53,7 @@ public class CardFlipManager : MonoBehaviour
         Application.targetFrameRate = 75;
         DeserializeQuestions ();
 		InitSession ();
+        gameOver = false;
 	}
 
 	//
@@ -79,7 +81,8 @@ public class CardFlipManager : MonoBehaviour
 	//
 	public void Win ()
 	{
-		Time.timeScale = 0;
+        gameOver = true;
+        Time.timeScale = 0;
         winDisplay.SetActive (true);
         //change String if winner
         ending.text = "MENANG !!";
@@ -91,11 +94,14 @@ public class CardFlipManager : MonoBehaviour
 	//
 	public void GameOver ()
 	{
+        gameOver = true;
+        stop = true;
         Destroy (cardsHolder);
         //change String if lose
         gameOverDisplay.SetActive (true);
         ending.text = "KALAH !!";
-        stop = true;
+        Quiz.control.holder.SetActive(false);
+   
 	}
 
     //
@@ -237,7 +243,6 @@ public class CardFlipManager : MonoBehaviour
 				CloseAllCards ();
 			}
 		}
-
 		if(remainingCardPairs == 0)
 		{
 			NextSession ();

@@ -35,21 +35,25 @@ public class Card : MonoBehaviour
 	// Preview card in given seconds
 	//
 	public IEnumerator Preview (float seconds) {
-        CardFlipManager.control.init = true;
-        // Flip open
-        this.isFaceUp = true;
-		StartCoroutine (Flip()); 
+        if (!CardFlipManager.control.stop)
+        {
+            CardFlipManager.control.init = true;
+            // Flip open
+            this.isFaceUp = true;
+            StartCoroutine(Flip());
 
-		// Wait for given seconds
-		yield return new WaitForSeconds (seconds);
+            // Wait for given seconds
+            yield return new WaitForSeconds(seconds);
 
-		// Flip close
-		this.isFaceUp = false;
-		StartCoroutine (Flip());
-        CardFlipManager.control.init = false;
+            // Flip close
+            this.isFaceUp = false;
+            StartCoroutine(Flip());
+            CardFlipManager.control.init = false;
 
-        // Add collider
-        this.gameObject.AddComponent<BoxCollider2D> ();
+            // Add collider
+            this.gameObject.AddComponent<BoxCollider2D>();
+        }
+       
 	}
 
 	//
@@ -107,7 +111,14 @@ public class Card : MonoBehaviour
 	//
 	private void ShowQuestion ()
 	{
-		Quiz.control.ShowQuestion (this);
+        if (!CardFlipManager.control.gameOver)
+        {
+        Debug.Log("Show QUiz");
+        Quiz.control.ShowQuestion(this);
+        }
+        
+
+		
 	}
 
 	//
