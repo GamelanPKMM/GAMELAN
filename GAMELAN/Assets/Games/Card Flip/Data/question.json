@@ -15,7 +15,7 @@
                 "b. Ketaatan pada nilai kebenaran",
                 "c. Kegembiraan"
             ],
-            "answer": 0
+            "answer": 1
         },
         {
             "question": "Nama pakaian adat pria pada masyarakat Jawa Tengah adalah...",
@@ -42,7 +42,7 @@
                 "b. Selalu senang dan gembira",
                 "c. Belajar dan berbakti kepada orang tua"
             ],
-            "answer": 1
+            "answer": 0
         }
     ]
 }

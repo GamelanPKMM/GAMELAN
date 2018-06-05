@@ -15,6 +15,7 @@ public class CardFlipManager : MonoBehaviour
 	public Vector3[] cardPositions;
 	public List<GameObject> openedCards;
 	public GameObject cardsHolder;
+    public List<GameObject> cards;
 
 	public TextAsset questionData;
 
@@ -35,6 +36,8 @@ public class CardFlipManager : MonoBehaviour
 	private int remainingCardPairs = 0;
 	private int currentSession = 1;
     public bool gameOver;
+    public bool isQuestionShowing;
+    public bool isClosingCard;
 
 	void Awake () 
 	{
@@ -135,7 +138,7 @@ public class CardFlipManager : MonoBehaviour
 	private void InitSession () 
 	{
 		this.remainingCardPairs = (this.sessionMaxCards [this.currentSession - 1] / 2);
-
+        new WaitWhile(() => isQuestionShowing);
 		List<int> cardId = GenerateId ();
 		List<int> cardWithQuestion = RandomQuestionAssign (cardId);
 
@@ -199,11 +202,13 @@ public class CardFlipManager : MonoBehaviour
 	private void InitCard (GameObject card, int id, QuestionHolder question) 
 	{
 		Card initCard = card.GetComponent<Card> ();
+        cards.Add(card);
 		initCard.Id = id;
 		initCard.Front = cardFrontFaces [id];
 		initCard.Back = cardBackFace;
 		initCard.Question = question;
 		StartCoroutine (initCard.Preview (this.previewTime));
+        initCard.ResetCollider();
 	}
 
 	//
@@ -223,8 +228,10 @@ public class CardFlipManager : MonoBehaviour
 	//
 	private void CloseAllCards ()
 	{
+        isClosingCard = true;
+        openedCards[0].GetComponent<Card> ().CloseCard ();
 		openedCards [0].GetComponent<Card> ().CloseCard ();
-		openedCards [0].GetComponent<Card> ().CloseCard ();
+        isClosingCard = false;
 	}
 
 	//
@@ -234,18 +241,19 @@ public class CardFlipManager : MonoBehaviour
 	{
 		if(openedCards.Count > 1)
 		{
-			if(OpenedCardsIsMatch()) 
-			{
-				RemoveCardPair ();
+            if (OpenedCardsIsMatch())
+            {
+                RemoveCardPair();
 			}
 			else 
 			{
-				CloseAllCards ();
+                if(!isClosingCard)
+                CloseAllCards();
 			}
 		}
 		if(remainingCardPairs == 0)
 		{
-			NextSession ();
+            StartCoroutine(NextSession());
 		}
 	}
 
@@ -267,25 +275,38 @@ public class CardFlipManager : MonoBehaviour
 	//
 	private void RemoveCardPair ()
 	{
-		Destroy (openedCards [0]);
-		Destroy (openedCards [1]);
-		this.remainingCardPairs -= 1;
+        //Destroy (openedCards [0]);
+        //Destroy (openedCards [1]);
+        openedCards[0].GetComponent<Card>().isDone = true;
+        openedCards[1].GetComponent<Card>().isDone = true;
+        print("quiz check");
+        openedCards[0].GetComponent<Card>().checkQuiz();
+        openedCards[1].GetComponent<Card>().checkQuiz();
+        this.remainingCardPairs -= 1;
 		openedCards.Clear ();
 	}
 
 	//
 	// Move onto the next session
 	//
-	private void NextSession () 
+	private IEnumerator NextSession () 
 	{
-		if (currentSession < sessionMaxCards.Length)
+        yield return new WaitUntil(() => !isQuestionShowing);
+        if (currentSession < sessionMaxCards.Length)
 		{
-			this.currentSession += 1;
-			InitSession ();
+            foreach(GameObject g in cards) {
+                Destroy(g);
+            }
+            cards.Clear();
+            this.currentSession += 1;
+            yield return new WaitUntil(() => !isQuestionShowing);
+            InitSession();
+            
 		}
 		else
 		{
-			this.Win ();
+            yield return new WaitUntil(() => !isQuestionShowing);
+            this.Win ();
 		}
 	}
 

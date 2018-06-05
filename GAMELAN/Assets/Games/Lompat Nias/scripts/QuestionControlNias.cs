@@ -9,6 +9,8 @@ public class QuestionControlNias : MonoBehaviour {
     public QuestionContainer questions;
     public Question q;
     public Text question;
+    public float deltaTime = 4;
+    private float startTime;
     private Button[] answer = new Button[3];
     private int supposedAnswer;
     private int userAnswer;
@@ -16,6 +18,8 @@ public class QuestionControlNias : MonoBehaviour {
     private bool[] uni;
     private int current = 0;
     public string gameName = "LompatNias";
+    private bool isQuestionAnswerShow;
+
     private void Start()
     {
         string path = gameName;
@@ -53,6 +57,7 @@ public class QuestionControlNias : MonoBehaviour {
         Time.timeScale = 0;        
         userAnswer = -1;
         isDOne = false;
+        startTime = Time.unscaledTime;
         int rand;
         do
         {
@@ -66,6 +71,11 @@ public class QuestionControlNias : MonoBehaviour {
             answer[i].transform.GetChild(0).gameObject.GetComponent<Text>().text = q.answers[i];
         }
         supposedAnswer = q.answer;
+        isQuestionAnswerShow = false;
+        foreach (Button b in answer)
+        {
+            b.gameObject.SetActive(false);
+        }
         Parent.SetActive(true);
 
 
@@ -124,5 +134,16 @@ public class QuestionControlNias : MonoBehaviour {
     void reset()
     {
         uni = new bool[questions.question.Count];
+    }
+    private void Update()
+    {
+        if (!isQuestionAnswerShow && Time.unscaledTime >= startTime + deltaTime)
+        {
+            foreach (Button b in answer)
+            {
+                b.gameObject.SetActive(true);
+            }
+            isQuestionAnswerShow = true;
+        }
     }
 }

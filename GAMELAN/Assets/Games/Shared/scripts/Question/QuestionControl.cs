@@ -7,11 +7,14 @@ public class QuestionControl : SubController {
     public QuestionContainer questions;
     public Question q;
     public Text question;
+    public float deltaTime = 4;
+    private float startTime;
     private Button[] answer = new Button[3];
     private int supposedAnswer;
     private int userAnswer;
     private bool isDOne = false;
     private bool[] uni;
+    private bool isQuestionAnswerShow;
     private int current = 0;
     protected override void start()
     {
@@ -49,7 +52,9 @@ public class QuestionControl : SubController {
         basicGameControl.pauseGame();
         userAnswer = -1;
         isDOne = false;
+        isQuestionAnswerShow = false;
         int rand;
+        startTime = Time.time;
         do
         {
             rand = Random.Range(0, questions.question.Count);
@@ -61,6 +66,9 @@ public class QuestionControl : SubController {
             answer[i].transform.GetChild(0).gameObject.GetComponent<Text>().text = q.answers[i];
         }
         supposedAnswer = q.answer;
+        foreach (Button b in answer) {
+            b.gameObject.SetActive(false);
+        }
         Parent.SetActive(true);
         
 
@@ -105,5 +113,15 @@ public class QuestionControl : SubController {
     void reset()
     {
         uni = new bool[questions.question.Count];
+    }
+
+    private void Update()
+    {
+        if (!isQuestionAnswerShow && Time.time >= startTime + deltaTime) {
+            foreach (Button b in answer) {
+                b.gameObject.SetActive(true);
+            }
+            isQuestionAnswerShow = true;
+        }   
     }
 }

@@ -154,6 +154,7 @@ public class GameControl : MonoBehaviour
     public void gotoMap()
     {
         tutorialNias = true;
+        Time.timeScale = 1;
         /*
         //Tambah penghargaan
         if (star >= 5)

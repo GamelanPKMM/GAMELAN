@@ -41,7 +41,6 @@ public class CoreGameInterface : MonoBehaviour {
         acc.Save();
     }
     public void exitGame() {
-        Time.timeScale = 1;
         PlayerPrefs.SetString("minigame", null);
         SceneManager.LoadScene("MAP");
     }

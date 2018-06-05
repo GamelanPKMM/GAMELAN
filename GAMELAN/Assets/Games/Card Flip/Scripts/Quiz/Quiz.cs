@@ -9,11 +9,14 @@ public class Quiz : MonoBehaviour {
 	public Text questionText;
 	public Text[] optionText;
 	public float penalty;
-
-	private Card card;
+    public float deltaTime = 4;
+    private float startTime;
+    private Card card;
 	private int answer;
+    private bool isQuestionAnswerShow;
 
-	void Start ()
+
+    void Start ()
 	{
 		if (control == null)
 		{
@@ -33,6 +36,7 @@ public class Quiz : MonoBehaviour {
         CardFlipManager.control.stop = true;
         if (holder != null)
         {
+            CardFlipManager.control.isQuestionShowing = true;
             Time.timeScale = 0;
             this.card = card;
             holder.SetActive(true);
@@ -44,6 +48,11 @@ public class Quiz : MonoBehaviour {
             }
 
             answer = card.Question.answer;
+            startTime = Time.unscaledTime;
+            foreach (Text t in optionText) {
+                t.gameObject.transform.parent.gameObject.SetActive(false);
+            }
+            isQuestionAnswerShow = false;
         }
         else
         {
@@ -60,6 +69,8 @@ public class Quiz : MonoBehaviour {
 		this.card.Question = null;
 		holder.SetActive (false);
         CardFlipManager.control.stop = false;
+        CardFlipManager.control.isQuestionShowing = false;
+        
 	}
 
 	//
@@ -80,4 +91,18 @@ public class Quiz : MonoBehaviour {
 
 		HideQuestion ();
 	}
+    //
+    //
+    //
+    private void Update()
+    {
+        if (!isQuestionAnswerShow && Time.unscaledTime >= startTime + deltaTime)
+        {
+            foreach (Text t in optionText)
+            {
+                t.gameObject.transform.parent.gameObject.SetActive(true);
+            }
+            isQuestionAnswerShow = true;
+        }
+    }
 }

@@ -9,12 +9,13 @@ public class Card : MonoBehaviour
 	private Sprite front;
 	private Sprite back;
 	private QuestionHolder question;
-
+    public bool isDone;
     public float speed = 1;
+    public bool isFlipping;
 
 	void OnMouseDown () 
 	{
-        if (!CardFlipManager.control.stop && !CardFlipManager.control.init)
+        if (!CardFlipManager.control.stop && !CardFlipManager.control.init && !isDone)
         {
             if (this.isFaceUp)
                 CloseCard();
@@ -23,11 +24,11 @@ public class Card : MonoBehaviour
         }
 	}
 
-	void OnDestroy ()
+	public void checkQuiz ()
 	{
 		if(this.question != null)
 		{
-			ShowQuestion ();
+			StartCoroutine(ShowQuestion ());
 		}
 	}
 
@@ -37,9 +38,11 @@ public class Card : MonoBehaviour
 	public IEnumerator Preview (float seconds) {
         if (!CardFlipManager.control.stop)
         {
+            new WaitUntil(() => !CardFlipManager.control.isQuestionShowing);
             CardFlipManager.control.init = true;
             // Flip open
             this.isFaceUp = true;
+    
             StartCoroutine(Flip());
 
             // Wait for given seconds
@@ -86,7 +89,7 @@ public class Card : MonoBehaviour
 	private IEnumerator Flip () 
 	{
 		int rotation = 0;
-
+        isFlipping = true;
 		while(rotation != 180) 
 		{
 			// Change sprite on half flipping
@@ -100,21 +103,21 @@ public class Card : MonoBehaviour
 			rotation += 10;
 			yield return new WaitForSeconds (0.01f / this.speed);
 		}
-
 		ResetCollider ();
-
-		CardFlipManager.control.CardMatching ();
+        isFlipping = false;
+        CardFlipManager.control.CardMatching();
 	}
 
 	//
 	// Show question box of this card's question
 	//
-	private void ShowQuestion ()
+	private IEnumerator ShowQuestion ()
 	{
         if (!CardFlipManager.control.gameOver)
         {
-        Debug.Log("Show QUiz");
-        Quiz.control.ShowQuestion(this);
+            yield return new WaitWhile(() => isFlipping);
+            Debug.Log("Show QUiz");
+            Quiz.control.ShowQuestion(this);
         }
         
 
@@ -124,7 +127,7 @@ public class Card : MonoBehaviour
 	//
 	// Reassign collider to prevent unclickable collider bug
 	//
-	private void ResetCollider ()
+	public void ResetCollider ()
 	{
 		Destroy (this.gameObject.GetComponent<Collider2D> ());
 		this.gameObject.AddComponent<BoxCollider2D> ();

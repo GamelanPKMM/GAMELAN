@@ -6,6 +6,11 @@
         <MinigameSave Minigame="Karapan" MinigameSave="5" />
         <MinigameSave Minigame="LompatNias" MinigameSave="5" />
         <MinigameSave Minigame="Cidomo" MinigameSave="0" />
+        <MinigameSave Minigame="Aceh" MinigameSave="0" />
+        <MinigameSave Minigame="Dayak" MinigameSave="1" />
+        <MinigameSave Minigame="Jatim" MinigameSave="0" />
+        <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
+        <MinigameSave Minigame="Papua" MinigameSave="0" />
       </minigameSave>
       <penghargaans>
         <PenghargaanSave>
@@ -38,6 +43,14 @@
         </PenghargaanSave>
         <PenghargaanSave>
           <name>nyoba Penghargaan6</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Nias Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Karapan Bintang 5</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
       </penghargaans>
@@ -47,6 +60,11 @@
         <MinigameSave Minigame="Karapan" MinigameSave="0" />
         <MinigameSave Minigame="LompatNias" MinigameSave="0" />
         <MinigameSave Minigame="Cidomo" MinigameSave="0" />
+        <MinigameSave Minigame="Aceh" MinigameSave="0" />
+        <MinigameSave Minigame="Dayak" MinigameSave="0" />
+        <MinigameSave Minigame="Jatim" MinigameSave="0" />
+        <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
+        <MinigameSave Minigame="Papua" MinigameSave="0" />
       </minigameSave>
       <penghargaans>
         <PenghargaanSave>
@@ -79,6 +97,14 @@
         </PenghargaanSave>
         <PenghargaanSave>
           <name>nyoba Penghargaan6</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Nias Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Karapan Bintang 5</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
       </penghargaans>
@@ -89,6 +115,11 @@
       <MinigameSave Minigame="Karapan" MinigameSave="5" />
       <MinigameSave Minigame="LompatNias" MinigameSave="5" />
       <MinigameSave Minigame="Cidomo" MinigameSave="0" />
+      <MinigameSave Minigame="Aceh" MinigameSave="0" />
+      <MinigameSave Minigame="Dayak" MinigameSave="1" />
+      <MinigameSave Minigame="Jatim" MinigameSave="0" />
+      <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
+      <MinigameSave Minigame="Papua" MinigameSave="0" />
     </minigameSave>
     <penghargaans>
       <PenghargaanSave>
@@ -121,6 +152,14 @@
       </PenghargaanSave>
       <PenghargaanSave>
         <name>nyoba Penghargaan6</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Nias Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Karapan Bintang 5</name>
         <isEarned>false</isEarned>
       </PenghargaanSave>
     </penghargaans>

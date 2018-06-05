@@ -167,6 +167,7 @@ MonoBehaviour:
   - {fileID: 426571440}
   - {fileID: 849448564}
   penalty: 1
+  deltaTime: 4
 --- !u!222 &2927027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1033,6 +1034,7 @@ MonoBehaviour:
   - {x: 4.5, y: -3.5, z: 0}
   openedCards: []
   cardsHolder: {fileID: 1359968141}
+  cards: []
   questionData: {fileID: 4900000, guid: 1502053e315110b49be55b0511d2f419, type: 3}
   sessionMaxCards: 0400000006000000080000000c000000
   sessionMaxQuestions: 00000000010000000200000003000000
@@ -1043,6 +1045,9 @@ MonoBehaviour:
   stop: 0
   init: 0
   previewTime: 3
+  gameOver: 0
+  isQuestionShowing: 0
+  isClosingCard: 0
 --- !u!4 &690919687
 Transform:
   m_ObjectHideFlags: 0
@@ -3429,7 +3434,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: f5da9416a3cf27b4181c404fbd677953, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
