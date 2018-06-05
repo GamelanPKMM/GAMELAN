@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class KarapanEnemyControl : KarapanSubScontroller {
     private int maxEnemPerKloter = 4;
-    private float baseEnemSpawnDelta = 2F;
-    public float spawnDeltaVariable = 0;
+    public float baseEnemSpawnDelta = 2F;
+    public float spawnDeltaVariable;
     private GameObject[] PrefabEnem = new GameObject[4];
     private Vector3 StartPos = new Vector3(0, 10, 0);
     private float lastSpawn;

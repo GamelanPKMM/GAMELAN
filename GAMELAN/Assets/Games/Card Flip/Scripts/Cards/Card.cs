@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : MonoBehaviour 
+public class Card : MonoBehaviour
 {
 	private int id;
 	private bool isFaceUp;
@@ -15,7 +15,7 @@ public class Card : MonoBehaviour
 
 	void OnMouseDown () 
 	{
-        if (!CardFlipManager.control.stop && !CardFlipManager.control.init && !isDone)
+        if (!CardFlipManager.control.stop && !CardFlipManager.control.init && !isDone && CardFlipManager.control.openedCards.Count<2)
         {
             if (this.isFaceUp)
                 CloseCard();
@@ -28,7 +28,8 @@ public class Card : MonoBehaviour
 	{
 		if(this.question != null)
 		{
-			StartCoroutine(ShowQuestion ());
+            //StartCoroutine(ShowQuestion ());
+            ShowQuestion();
 		}
 	}
 
@@ -90,7 +91,11 @@ public class Card : MonoBehaviour
 	{
 		int rotation = 0;
         isFlipping = true;
-		while(rotation != 180) 
+        if (CardFlipManager.control.openedCards.Count > 1)
+        {
+            StartCoroutine(CardFlipManager.control.CardMatching());
+        }
+        while (rotation != 180) 
 		{
 			// Change sprite on half flipping
 			if(rotation == 90)
@@ -105,17 +110,17 @@ public class Card : MonoBehaviour
 		}
 		ResetCollider ();
         isFlipping = false;
-        CardFlipManager.control.CardMatching();
-	}
+        
+    }
 
-	//
-	// Show question box of this card's question
-	//
-	private IEnumerator ShowQuestion ()
+    //
+    // Show question box of this card's question
+    //
+    private void ShowQuestion ()
 	{
         if (!CardFlipManager.control.gameOver)
         {
-            yield return new WaitWhile(() => isFlipping);
+         //   yield return new WaitWhile(() => CardFlipManager.control.openedCards[0].GetComponent<Card>().isFlipping && CardFlipManager.control.openedCards[1].GetComponent<Card>().isFlipping);
             Debug.Log("Show QUiz");
             Quiz.control.ShowQuestion(this);
         }

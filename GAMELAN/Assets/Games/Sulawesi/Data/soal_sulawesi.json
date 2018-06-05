@@ -1,48 +1,48 @@
 {
     "questions": [{
-            "question": "satu tambah satu",
+            "question": "Apakah makna pada Rumah adat Makassar yang bernama Balla?",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a.\tAlam semesta",
+                "b.\tNegeri dongeng",
+                "c.\tNegeri khayangan"
             ],
             "answer": 0
         },
         {
-            "question": "dua tambah dua",
+            "question": "Apakah nama pakaian adat Makassar?",
             "options": [
-                "dua",
-                "tiga",
-                "empat"
+                "a.\tKebaya",
+                "b.\tTaa",
+                "c.\tBaju Bodo"
             ],
             "answer": 2
         },
         {
-            "question": "satu tambah satu",
+            "question": "Apakah nama tarian adat Makassar?",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a.\tRemo",
+                "b.\tPakarena",
+                "c.\tDatun julut"
             ],
-            "answer": 0
+            "answer": 1
         },
         {
-            "question": "satu tambah satu",
+            "question": "Apakah nama makanan khas Makassar?",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a.\tSate",
+                "b.\tRendang",
+                "c.\tCoto"
             ],
-            "answer": 0
+            "answer": 2
         },
         {
-            "question": "satu tambah satu",
+            "question": "Apakah kepercayaan yang terdapat pada Badik?",
             "options": [
-                "dua",
-                "tiga",
-                "ratusan"
+                "a.\tDakwah",
+                "b.\tPeperangan",
+                "c.\tKesejahteraan"
             ],
-            "answer": 0
+            "answer": 2
         }
     ]
 }

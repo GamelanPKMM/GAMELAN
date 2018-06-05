@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Games/Card Flip/Scenes/CardFlip.unity
+- path: Assets/Games/Cidomo/Scene/Cidomo.unity
   isLoaded: 1
   isActive: 1

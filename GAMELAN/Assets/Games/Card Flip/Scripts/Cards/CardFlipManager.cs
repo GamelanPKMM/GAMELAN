@@ -37,7 +37,6 @@ public class CardFlipManager : MonoBehaviour
 	private int currentSession = 1;
     public bool gameOver;
     public bool isQuestionShowing;
-    public bool isClosingCard;
 
 	void Awake () 
 	{
@@ -223,44 +222,51 @@ public class CardFlipManager : MonoBehaviour
 		return randomId;
 	}
 
-	//
-	// Close all opened cards
-	//
-	private void CloseAllCards ()
-	{
-        isClosingCard = true;
-        openedCards[0].GetComponent<Card> ().CloseCard ();
-		openedCards [0].GetComponent<Card> ().CloseCard ();
-        isClosingCard = false;
-	}
+    //
+    // Close all opened cards
+    //
+    private void CloseAllCards()
+    {
+        while (openedCards.Count > 0)
+        {
+            openedCards[0].GetComponent<Card>().CloseCard();
+        }
+        
+    }
 
 	//
 	// Do a card match check and remove them if matches
 	//
-	public void CardMatching () 
+	public IEnumerator CardMatching () 
 	{
+        yield return new WaitWhile(() => openedCards[0].GetComponent<Card>().isFlipping || openedCards[1].GetComponent<Card>().isFlipping);
+        print("Card matching");
+        //yield return new WaitForSeconds(0.1F);
+        this.stop = true;
 		if(openedCards.Count > 1)
 		{
             if (OpenedCardsIsMatch())
             {
                 RemoveCardPair();
-			}
+                if (remainingCardPairs == 0)
+                {
+                    StartCoroutine(NextSession());
+                }
+            }
 			else 
 			{
-                if(!isClosingCard)
                 CloseAllCards();
 			}
 		}
-		if(remainingCardPairs == 0)
-		{
-            StartCoroutine(NextSession());
-		}
-	}
+        this.stop = false;
+        
 
-	//
-	// Check whether a pair of card is matching
-	//
-	private bool OpenedCardsIsMatch () 
+    }
+
+    //
+    // Check whether a pair of card is matching
+    //
+    private bool OpenedCardsIsMatch () 
 	{
 		if(openedCards.Count > 1) 
 		{
@@ -291,7 +297,7 @@ public class CardFlipManager : MonoBehaviour
 	//
 	private IEnumerator NextSession () 
 	{
-        yield return new WaitUntil(() => !isQuestionShowing);
+        yield return new WaitUntil(() => !isQuestionShowing);//&& CardFlipManager.control.openedCards[0].GetComponent<Card>().isFlipping || CardFlipManager.control.openedCards[1].GetComponent<Card>().isFlipping);
         if (currentSession < sessionMaxCards.Length)
 		{
             foreach(GameObject g in cards) {
@@ -299,7 +305,6 @@ public class CardFlipManager : MonoBehaviour
             }
             cards.Clear();
             this.currentSession += 1;
-            yield return new WaitUntil(() => !isQuestionShowing);
             InitSession();
             
 		}
@@ -350,6 +355,16 @@ public class CardFlipManager : MonoBehaviour
         }
         */
         CoreGameInterface.instance.exitGame(StarScore.control.obtainedStar);
+    }
+
+    public bool isAnyCardFlipping() {
+        
+        foreach (GameObject g in cards) {
+            if (g.GetComponent<Card>().isFlipping) {
+                return true;
+            } 
+        }
+        return false;
     }
 
 }

@@ -8,10 +8,11 @@ public class KarapanGameControl : BasicGameControl {
     public KarapanPlayerControl playerControl;
     public ProgressControl progressControl;
     public UserInputControl userInputControl;
+    public string Name;
     protected override void instantiate<T>()
     {
  	    base.instantiate<KarapanGameControl>();
-        base.name = "Karapan";
+        base.name = Name;
         userInputControl = gameObject.GetComponent<UserInputControl>();
         playerControl = GameObject.Find("Player").GetComponent<KarapanPlayerControl>();
 

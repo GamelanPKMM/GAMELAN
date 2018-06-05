@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <materis>
     <Materi>
-      <Penjelasan>Hai kawan Mari hari ini kita belajar tentang kebudayaan Madura. Apa kamu tahu permainan tradisional kerapan sapi ? Karapan Sapi merupakan permainan khas masyarakat Madura. Tahukah kamu awal mula adanya kerapan sapi? Awal mulanya kerapan sapi ini dilatar belakangi pada zaman dahulu tanah Madura itu kurang subur untuk lahan pertanian, sehingga orang-orang Madura beternak sapi yang juga digunakan untuk membajak sawah atau ladang. Kerapan sapi ini juga memiliki makna positif yaitu melatih jiwa sportifitas dan pemberani.</Penjelasan>
-      <imageName>Karapan-Sapi</imageName>
+      <Penjelasan>Hai Sobat GAMELAN! Tahukah kamu rumah adat Makassar? Ya.... Rumah adat Makassar disebut "Balla". Rumah ini berbentuk rumah panggung dengan kayu sebagai penyangganya. Rumah masyarakat Bugis menyerupai anatomi tubuh manusia dan menempati area persegi, yang mereka percayai sebagai alam semesta.</Penjelasan>
+      <imageName>makassar/rm_adat</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai kawan ! Madura juga memiliki rumah adat yang disebut rumah Bangshal (roma bhangsal). Dalam rumah adat Madura terdapat 2 tanduk di atapnya yang menyimbolkan dua nisan di sebuah kuburan. Maknanya yaitu bahwa selain ada rumah di dunia, ada juga rumah di akhirat yakni kuburan. </Penjelasan>
-      <imageName>Roma-Bangshal</imageName>
+      <Penjelasan>Hai Sobat GAMELAN! Tahukah kamu pakaian adat Makassar? Ya...Pakaian Adat Suku Makassar ini disebut dengan �Baju Bodo�. Ciri Baju Bodo ini yaitu memiliki bentuk segi empat, sisi samping pakaian atas yang dijahit, tidak berlengan, terbentuknya gelembung dibagian tubuh, tak ada sambungan jahitan dibagian bahu, terdapatnya hiasan berbentuk bulatan kepingan logam di seluruh bagian tepi, dan permukaan blus. Memakai Baju Bodo berdasarkan warna mesti mematuhi ketentuan yang terkait dengan usia penggunanya. </Penjelasan>
+      <imageName>makassar/pakaian_adat</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai Kawan ! Madura juga memiliki pakaian adat. Nama pakaian adat Madura adalah baju pesa&apos;an. . Baju ini sebenarnya adalah baju sederhana yang dikenakan sehari-hari oleh orang-orang suku Madura di masa silam, baik untuk melaut, berladang, maupun untuk menghadiri upacara adat.</Penjelasan>
-      <imageName>pakaian_adat_Madura</imageName>
+      <Penjelasan>Hai Sobat GAMELAN! Tahukah kamu tarian adat Makassar? Ya... Tarian Adat Suku Makassar yang paling terkenal ialah Tari Pakarena. Tari Pakarena ialah tarian tradisional yang diiringi oleh 2 (dua) kepala drum (gandrang) dan sepasang instrument alat semacam suling (puik-puik). Tari Pakarena berawal dari kisah perpisahan penghuni botting langi (Negeri Kayangan) dengan penghuni lino (bumi) zaman dahulu. Sebelum berpisah, botting langi mengajarkan kepada penghuni lino mengenai tata cara hidup, bercocok tanam hingga cara berburu lewat gerakan-gerakan tangan, badan dan kaki. Gerakan inilah yang kemudian menjadi tarian ritual ketika penduduk di bumi menyampaikan rasa syukur pada penghuni langit.</Penjelasan>
+      <imageName>makassar/tarian_adat</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu senjata tradisional Madura? Ya senjata tradisional Madura bernama Celurit. Celurit ini digunakan tokoh yang bernama Sakera sebagai simbol perlawanan rakyat terhadap penjajah Belanda.  </Penjelasan>
-      <imageName>celurit</imageName>
+      <Penjelasan>Hai Sobat GAMELAN! Tahukah kamu makanan khas Makassar? Ya Makanan paling terkenal dan paling digemari oleh banyak orang dari orang Makassar ini ialah Coto Makassar. Makanan ini terbuat dari jeroan (isi perut) sapi yang direbus dalam waktu yang lama. Rebusan jeroan bercampur daging sapi ini kemudian diiris-iris lalu dibumbui dengan bumbu yang diracik secara khusus. Coto dihidangkan dalam mangkuk dan dinikmati dengan ketupat dan "burasa" atau yang biasa dikenal sebagai buras, yakni sejenis ketupat yang dibungkus daun pisang.</Penjelasan>
+      <imageName>makassar/makanan_adat</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu Tari Muang Sangkal yang merupakan tarian tradisional Madura? Tari Muang Sangkal adalah salah satu tarian tradisional Madura yang dilakukan untuk ritual menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu dan berbagai acara adat lainnya.  </Penjelasan>
-      <imageName>muang_sangkal</imageName>
+      <Penjelasan>Hai Sobat GAMELAN! Tahukah kamu senjata tradisional Makassar? Ya senjata tradisional Makassar disebut Badik. Pada umumnya Badik merupakan besi atau bilah yang pipih, ujung runcing dan bentuk agak melebar pada bagian ujung. Terdapat kepercayaan bahwa badik juga mampu menimbulkan ketenangan, kedamaian, kesejahteraan dan kemakmuran ataupun kemelaratan, kemiskinan dan penderitaan bagi yang menyimpannya.</Penjelasan>
+      <imageName>makassar/senjata_adat</imageName>
     </Materi>
   </materis>
 </MateriGame>

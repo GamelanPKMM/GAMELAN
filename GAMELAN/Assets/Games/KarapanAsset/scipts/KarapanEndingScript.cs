@@ -9,7 +9,7 @@ public class KarapanEndingScript : KarapanSubScontroller {
         if (basicGameControl.getIsFinish())
         {
             text.text = "Selamat kamu menang!";
-            PenghargaanController.self.tambahPenghargaan("Karapan Bintang 5");
+            //PenghargaanController.self.tambahPenghargaan("Karapan Bintang 5");
         }
         else {
             text.text = "Kamu kalah!";

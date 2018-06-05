@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class KarapanScroll : KarapanSubScontroller {
-    private Vector3 startPos;
-    private GameObject back;
+    private Vector3[] startPos;
+    public GameObject Target;
+    public GameObject Start;
+    private GameObject[] back;
 
     protected override void start()
     {
         base.start();
-        back = GameObject.FindGameObjectWithTag("Background");
-        startPos = back.transform.localPosition;
-        startPos = transform.position;
-        startPos.y = 10;
+        back = GameObject.FindGameObjectsWithTag("Background");
+        startPos = new Vector3[back.Length];
+        for (int i = 0; i < back.Length; i++)
+        {
+            // startPos[i] = back[0].transform.localPosition;
+            startPos[i] = back[i].transform.position;
+        }
         gameControl.addEvent("Reset", reset);
 
     }
@@ -22,17 +27,24 @@ public class KarapanScroll : KarapanSubScontroller {
     {
         if (!gameControl.isPause() && gameControl.getGameState())
         {
-            back.transform.Translate(Vector2.down * (Time.deltaTime * gameControl.speedControl.speed));
-                if (back.transform.position.y <= -10)
+            for (int i = 0; i < back.Length; i++)
+            {
+
+                back[i].transform.Translate(Vector2.down * (Time.deltaTime * gameControl.speedControl.speed));
+                if (back[i].transform.position.y <= Target.transform.position.y)
                 {
-                    back.transform.position = startPos;
+                    back[i].transform.position = Start.transform.position;
                 }
+            }
        }
     }
     
 
     void reset() {
-        back.transform.position = startPos;
+        for (int i = 0; i < back.Length; i++)
+        {
+            back[i].transform.position = startPos[i];
+        }
     }
 
 }

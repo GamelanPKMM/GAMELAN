@@ -11,6 +11,7 @@ public class MainMenuControl : MonoBehaviour {
     public Text namePlayers;
 	// Use this for initialization
 	void Start () {
+        Application.targetFrameRate = 60;
         PenghargaanContainer.load();
         PenghargaanController.load();
         acc = AccountContainer.load().accounts;
