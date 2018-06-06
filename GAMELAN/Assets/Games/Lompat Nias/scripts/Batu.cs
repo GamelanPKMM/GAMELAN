@@ -14,7 +14,7 @@ public class Batu : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Bird>() != null)
+        if (other.GetComponent<Player>() != null)
         {
             GameControl.instance.lifeDecrease();
         }

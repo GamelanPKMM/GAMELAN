@@ -41,7 +41,6 @@ public class GameControl : MonoBehaviour
     private void Start()
     {
         input = true;
-        Application.targetFrameRate = 75;
         //Memilih soal pada game
         QuestionControlNias.instance.gameName = gameName;
     }
@@ -74,6 +73,7 @@ public class GameControl : MonoBehaviour
     public void birdDead()
     {
         //Ganti Text Menang atau kalah
+        Time.timeScale = 0;
         if (!finish)
         {
             gameOverText.transform.Find("kata").GetComponent<Text>().text = "KALAH !!";
@@ -83,6 +83,8 @@ public class GameControl : MonoBehaviour
             gameOverText.transform.Find("kata").GetComponent<Text>().text = "MENANG !!";
         }
         gameOverText.SetActive(true);
+        enabled = stopBird;
+        ParalaxControl.self.StopBackground();
         stopBird = true;
         gameOver = true;
     }
@@ -131,7 +133,8 @@ public class GameControl : MonoBehaviour
     void updateSpeed()
     {
         scrollSpeed += acceleration/1000;
-        ScrollBackground.updateSpeed(scrollSpeed);
+        ParalaxControl.self.updateSpeed(scrollSpeed);
+        //ScrollBackground.Sb.updateSpeed(scrollSpeed);
     }
 
     //untuk Pause game
@@ -140,12 +143,14 @@ public class GameControl : MonoBehaviour
         if (pause)
         {
             pause = false;
+            enabled = true;
             pauseUI.SetActive(false);
             Time.timeScale = 1;
         }
         else
         {
             pause = true;
+            enabled = false;
             pauseUI.SetActive(true);
             Time.timeScale = 0;
         }
@@ -154,7 +159,7 @@ public class GameControl : MonoBehaviour
     public void gotoMap()
     {
         tutorialNias = true;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         /*
         //Tambah penghargaan
         if (star >= 5)

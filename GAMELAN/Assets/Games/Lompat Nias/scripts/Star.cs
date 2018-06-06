@@ -14,7 +14,7 @@ public class Star : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Bird>() != null)
+        if (other.GetComponent<Player>() != null)
         {
             //masih percobaan
             QuestionControlNias.instance.startQuestion();

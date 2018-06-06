@@ -5,8 +5,8 @@
       <minigameSave>
         <MinigameSave Minigame="Karapan" MinigameSave="5" />
         <MinigameSave Minigame="LompatNias" MinigameSave="5" />
-        <MinigameSave Minigame="Cidomo" MinigameSave="0" />
-        <MinigameSave Minigame="Aceh" MinigameSave="0" />
+        <MinigameSave Minigame="Cidomo" MinigameSave="1" />
+        <MinigameSave Minigame="Aceh" MinigameSave="1" />
         <MinigameSave Minigame="Dayak" MinigameSave="1" />
         <MinigameSave Minigame="Jatim" MinigameSave="0" />
         <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
@@ -114,8 +114,8 @@
     <minigameSave>
       <MinigameSave Minigame="Karapan" MinigameSave="5" />
       <MinigameSave Minigame="LompatNias" MinigameSave="5" />
-      <MinigameSave Minigame="Cidomo" MinigameSave="0" />
-      <MinigameSave Minigame="Aceh" MinigameSave="0" />
+      <MinigameSave Minigame="Cidomo" MinigameSave="1" />
+      <MinigameSave Minigame="Aceh" MinigameSave="1" />
       <MinigameSave Minigame="Dayak" MinigameSave="1" />
       <MinigameSave Minigame="Jatim" MinigameSave="0" />
       <MinigameSave Minigame="Sulawesi" MinigameSave="0" />

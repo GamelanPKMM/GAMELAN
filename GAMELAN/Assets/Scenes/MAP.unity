@@ -1809,6 +1809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519895620}
   - component: {fileID: 519895619}
+  - component: {fileID: 519895621}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1840,6 +1841,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519895621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519895618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81410bf5718aac48a0bf388e31e5e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fps: 60
 --- !u!1 &559762018
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,7 +5435,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1935775661
@@ -6051,7 +6064,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2146979286

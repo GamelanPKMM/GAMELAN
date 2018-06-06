@@ -20,11 +20,24 @@ public class QuestionControlNias : MonoBehaviour {
     public string gameName = "LompatNias";
     private bool isQuestionAnswerShow;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
     private void Start()
     {
-        string path = gameName;
-        //Debug.Log(path);
-        questions = QuestionContainer.loadQuestion(path);
+        //string path = gameName;
+        Debug.Log(gameName);
+        questions = QuestionContainer.loadQuestion(gameName);
         Console.Add("Load Question Container");
         Parent.SetActive(false);
         reset();
@@ -38,18 +51,6 @@ public class QuestionControlNias : MonoBehaviour {
         answer[2].onClick.AddListener(delegate () { this.questionAnswered(2); });
     }
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-        
-    }
     //Fungsi untuk  mengeluarkan pertanyaan
     public void startQuestion()
     {

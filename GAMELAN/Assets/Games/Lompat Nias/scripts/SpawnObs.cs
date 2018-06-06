@@ -9,6 +9,7 @@ public class SpawnObs : MonoBehaviour {
     public float spawnRate = 4f;
     public float minX;
     public float maxX;
+    public float positionY = -3.7f;
     private float time;
     private int currentColumn;
     //setting spawn obs.
@@ -29,13 +30,15 @@ public class SpawnObs : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
+        //unutuk memindah batu jika batu sudah melebihi dari yang ditentukan
         if (GameControl.instance.gameOver == false && time >= spawnRate && GameControl.instance.stopBird == false)
         {
             time = 0;
             float spawnXPosition = Random.Range(minX, maxX);
             //Debug.Log(currentColumn);
-            ColumnPrefabs[currentColumn].transform.position = new Vector2(spawnXPosition, -3.7f);
+            ColumnPrefabs[currentColumn].transform.position = new Vector2(spawnXPosition, positionY);
             currentColumn++;
+            //untuk mereset currentColumn
             if (currentColumn >= sizeColumn)
             {
                 currentColumn = 0;

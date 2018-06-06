@@ -1012,12 +1012,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 1598037080830960, guid: f28da25cc51a7de47afe719b294c9992, type: 2}
   cardFrontFaces:
-  - {fileID: 21300002, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
-  - {fileID: 21300004, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
-  - {fileID: 21300006, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
-  - {fileID: 21300008, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
-  - {fileID: 21300010, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
-  - {fileID: 21300012, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
+  - {fileID: 21300000, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
+  - {fileID: 21300002, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
+  - {fileID: 21300004, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
+  - {fileID: 21300006, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
+  - {fileID: 21300008, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
+  - {fileID: 21300010, guid: 899d3dfe87ec59040b4eb4c210ce522b, type: 3}
   cardBackFace: {fileID: 21300000, guid: 34ea4bd22e2aa34489af9e60560cdf0f, type: 3}
   cardPositions:
   - {x: -4.5, y: 2.5, z: 0}
@@ -2188,7 +2188,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 52c57594da292a344891402dcf59c0f1, type: 3}
+    m_Font: {fileID: 12800000, guid: f5da9416a3cf27b4181c404fbd677953, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

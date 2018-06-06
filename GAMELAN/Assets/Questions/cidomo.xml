@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <QuestionBank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Questions>
-    <Question Question="Singkatan dari Cidomo adalah . . .">
+    <Question Question="Kepanjangan dari Cidomo adalah . . .">
       <answers>
         <string>a.	Cikar Dolan Mobil</string>
         <string>b.	Cikar Dokar Mobil</string>
         <string>c.	Cikar Dokar Motor</string>
       </answers>
-      <answer>1</answer>
+      <answer>2</answer>
     </Question>
 	<Question Question="Salah satu kerajinan masyarakat pulau Lombok adalah . . .">
       <answers>
-        <string>a.	Gerbah </string>
+        <string>a.	Gerabah </string>
         <string>b.	Batik parang rusak </string>
         <string>c.	Kendi</string>
       </answers>
       <answer>0</answer>
     </Question>
-	<Question Question="Pakian adat pria masyarakat Lombok adalah . . .">
+	<Question Question="Pakaian adat pria masyarakat Lombok adalah . . .">
       <answers>
         <string>a.	Lambung</string>
         <string>b.	Pegon</string>

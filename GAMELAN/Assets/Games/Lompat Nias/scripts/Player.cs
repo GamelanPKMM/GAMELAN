@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bird : MonoBehaviour {
-    public static Bird instance;
+public class Player : MonoBehaviour {
+    public static Player instance;
     public float up = 400f;
     public float down = 100f;
     public Collider2D ground;
