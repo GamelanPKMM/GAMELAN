@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4107827902303506}
   - component: {fileID: 212501503222379038}
-  - component: {fileID: 60935926038126488}
   - component: {fileID: 114758208442030526}
   - component: {fileID: 50663850442098722}
+  - component: {fileID: 60347239461022578}
   m_Layer: 0
   m_Name: BatuNias
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1913452861162764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.34, y: -10.15, z: 0}
+  m_LocalPosition: {x: -12.3, y: -10.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60935926038126488
+--- !u!60 &60347239461022578
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,7 +79,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.77, y: 2.59}
+    oldSize: {x: 2.13, y: 2.63}
     newSize: {x: 2.19, y: 2.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -87,18 +87,58 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.995, y: -0.08}
-      - {x: 0.905, y: 0.29999998}
-      - {x: 0.815, y: 0.78}
-      - {x: 0.695, y: 1.25}
-      - {x: 0.685, y: 1.26}
-      - {x: -0.695, y: 1.26}
-      - {x: -0.72499996, y: 1.17}
-      - {x: -0.98499995, y: -0.08}
-      - {x: -1.095, y: -0.61}
-      - {x: -1.095, y: -1.26}
-      - {x: 1.095, y: -1.26}
-      - {x: 1.095, y: -0.55}
+    - - {x: 0.24499999, y: -0.525}
+      - {x: 0.415, y: -0.445}
+      - {x: 0.53499997, y: -0.445}
+      - {x: 0.555, y: -0.475}
+      - {x: 0.765, y: -0.465}
+      - {x: 1.0649999, y: -0.275}
+      - {x: 1.0649999, y: -0.055}
+      - {x: 1.055, y: -0.035}
+      - {x: 0.79499996, y: 0.125}
+      - {x: 0.645, y: 0.255}
+      - {x: 0.465, y: 0.375}
+      - {x: 0.325, y: 0.445}
+      - {x: 0.095, y: 0.49499997}
+      - {x: -0.114999995, y: 0.525}
+      - {x: -0.355, y: 0.555}
+      - {x: -0.415, y: 0.555}
+      - {x: -0.545, y: 0.755}
+      - {x: -0.515, y: 0.835}
+      - {x: -0.525, y: 1.025}
+      - {x: -0.59499997, y: 1.125}
+      - {x: -0.60499996, y: 1.265}
+      - {x: -0.635, y: 1.3149999}
+      - {x: -0.835, y: 1.3149999}
+      - {x: -0.91499996, y: 1.175}
+      - {x: -1.0649999, y: 0.945}
+      - {x: -1.0649999, y: 0.805}
+      - {x: -0.825, y: 0.745}
+      - {x: -0.84499997, y: 0.585}
+      - {x: -0.92499995, y: 0.255}
+      - {x: -0.92499995, y: 0.125}
+      - {x: -0.85499996, y: 0.055}
+      - {x: -0.78499997, y: -0.185}
+      - {x: -0.715, y: -0.315}
+      - {x: -0.675, y: -0.36499998}
+      - {x: -0.48499998, y: -0.515}
+      - {x: -0.36499998, y: -0.53499997}
+      - {x: -0.315, y: -0.675}
+      - {x: -0.265, y: -0.92499995}
+      - {x: -0.265, y: -1.0849999}
+      - {x: -0.39499998, y: -1.145}
+      - {x: -0.465, y: -1.185}
+      - {x: -0.445, y: -1.285}
+      - {x: -0.325, y: -1.3149999}
+      - {x: 0.145, y: -1.3149999}
+      - {x: 0.155, y: -1.245}
+      - {x: 0.105, y: -0.615}
+      - {x: 0.16499999, y: -0.53499997}
+    - - {x: -0.074999996, y: -0.835}
+      - {x: -0.085, y: -0.895}
+      - {x: -0.074999996, y: -0.98499995}
+      - {x: -0.065, y: -1.155}
+      - {x: -0.055, y: -1.145}
 --- !u!114 &114758208442030526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 4aa9f0bce6dce7242af4ff1ba592b5df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed2fefad8682db34aa69e20c2a6446a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
