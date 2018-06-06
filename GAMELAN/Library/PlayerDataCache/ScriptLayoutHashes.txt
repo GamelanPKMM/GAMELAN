@@ -12,7 +12,6 @@ Assets/Games/Papua/scene/Papua.unity
 Assets/Games/Card Flip/Scenes/CardFlip.unity
 Assets/Games/Aceh/Scenes/Aceh.unity
 Assets/Games/Sulawesi/Scenes/Sulawesi.unity
-Assets/Games/Jatim/Scenes/jatim.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UserInputControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Console
@@ -148,6 +147,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 a57ab85683267ccc832b7759f464ea07 Assembly-CSharp.dll:.KarapanGameControl
 9c3971508554f08a6d238e9dbce53dab Assembly-CSharp.dll:.ScrollCloud
+d56bdd7d3a978fc763d77c0fb74d7a2a Assembly-CSharp.dll:.FpsControl
 c81dfa0b9cba1e2a453c7b53823a133c Assembly-CSharp.dll:.RestartTerrain
 e52f20e755b87771372b4dc180d1baec Assembly-CSharp.dll:.QuestionControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroy
@@ -159,10 +159,9 @@ e6684292d2db8c82040c9472852e881c Assembly-CSharp.dll:.StarControl
 0c09726084a5ecbe51c7eb9a8518601c Assembly-CSharp.dll:.Life
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-d6e6ba70329c2693555c4f8d4591cead Assembly-CSharp.dll:.Bird
+d6e6ba70329c2693555c4f8d4591cead Assembly-CSharp.dll:.Player
 b537ac24f5ee9d86b6240882df45e1ec Assembly-CSharp.dll:.RecycleCloud
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
-7356db35050626f1df2302539a4a37d0 Assembly-CSharp.dll:.Level
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BasicGameControl
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -211,15 +210,15 @@ c477a5a6a5a167e23d13594364375666 Assembly-CSharp.dll:.KarapanEnemyInstanceContro
 13932163610b67022fb406875c2a1845 Assembly-CSharp.dll:.KarapanScoreControl
 6d91b252fbac79ced3189363ed2cd2bb Assembly-CSharp.dll:.Batu
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-0e59d5d1b395fea39438a70940ff66eb Assembly-CSharp.dll:.ScrollBackground
+9c3971508554f08a6d238e9dbce53dab Assembly-CSharp.dll:.ScrollBackground
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.Scroll
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioScript
 1820ed1de6bce04cf91bf4cad00967ef Assembly-CSharp.dll:.KarapanLifeUIControl
 19f5e39600cbb2f4ab4fe18a74a1f824 Assembly-CSharp.dll:.KarapanLifeControl
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanEndingScript
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanScoreDisplay
-6259e40ed2bed03e8d8e8416a5a70cc6 Assembly-CSharp.dll:.SpawnObs
+65ad023b29c12fb98c1abc6bab196eaa Assembly-CSharp.dll:.SpawnObs
 d0c4dec2b5a89eef0a9a1e5aa0e41607 Assembly-CSharp.dll:.Card
 6e223dee6eef1df4695f6317abfe1cb5 Assembly-CSharp.dll:.CardFlipManager
 c565f3bca0f722aae62c1956f5f14ffb Assembly-CSharp.dll:.StarScore
-d56bdd7d3a978fc763d77c0fb74d7a2a Assembly-CSharp.dll:.FpsControl
+54d5e2865724850deeaaf3c34b99183e Assembly-CSharp.dll:.ParalaxControl

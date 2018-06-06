@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MateriGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <materis>
     <Materi>
-      <Penjelasan>Hai kawan Mari hari ini kita belajar tentang kebudayaan Madura. Apa kamu tahu permainan tradisional kerapan sapi ? Karapan Sapi merupakan permainan khas masyarakat Madura. Tahukah kamu awal mula adanya kerapan sapi? Awal mulanya kerapan sapi ini dilatar belakangi pada zaman dahulu tanah Madura itu kurang subur untuk lahan pertanian, sehingga orang-orang Madura beternak sapi yang juga digunakan untuk membajak sawah atau ladang. Kerapan sapi ini juga memiliki makna positif yaitu melatih jiwa sportifitas dan pemberani.</Penjelasan>
+      <Penjelasan>Hai Sobat Gamelan.....! Tahukah kamu rumah adat Jawa Timur? Ya... rumah adat Jawa Timur bernama joglo. Rumah Joglo umumnya terbuat dari kayu Jati. Sebutan Joglo mengacu pada bentuk atapnya yang menyerupai sebuah gunung. Hal ini berkaitan keyakinan masyarakat Jawa bahwa gunung atau tempat yang tinggi adalah tempat yang dianggap suci dan tempat tinggal para Dewa.</Penjelasan>
       <imageName>Karapan-Sapi</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai kawan ! Madura juga memiliki rumah adat yang disebut rumah Bangshal (roma bhangsal). Dalam rumah adat Madura terdapat 2 tanduk di atapnya yang menyimbolkan dua nisan di sebuah kuburan. Maknanya yaitu bahwa selain ada rumah di dunia, ada juga rumah di akhirat yakni kuburan. </Penjelasan>
+      <Penjelasan>Hai Sobat Gamelan.....! Tahukah kamu pakaian adat Jawa Timur? Ya... pakaian adat Jawa Timur bernama baju mantenan. Baju ini umumnya hanya dikenakan pada saat resepsi pernikahan adat Jawa Timuran. Motif dan corak yang terdapat pada pakaian adat Jawa Timur lebih mencerminkan ketegasan namun juga tetap berkesan sederhana dengan menjunjung tinggi etika.</Penjelasan>
       <imageName>Roma-Bangshal</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Hai Kawan ! Madura juga memiliki pakaian adat. Nama pakaian adat Madura adalah baju pesa&apos;an. . Baju ini sebenarnya adalah baju sederhana yang dikenakan sehari-hari oleh orang-orang suku Madura di masa silam, baik untuk melaut, berladang, maupun untuk menghadiri upacara adat.</Penjelasan>
+      <Penjelasan>Hai Sobat Gamelan.....! Tahukah kamu alat musik tradisional Jawa Timur? Ya... alat musik tradisional Jawa Timur bernama Gamelan. Sejarah asal-usul dari alat musik tradisional Jawa timur gamelan, didahului dengan budaya hindu-budha yang juga mewakili seni asli Indonesia pada masa itu.</Penjelasan>
       <imageName>pakaian_adat_Madura</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu senjata tradisional Madura? Ya senjata tradisional Madura bernama Celurit. Celurit ini digunakan tokoh yang bernama Sakera sebagai simbol perlawanan rakyat terhadap penjajah Belanda.  </Penjelasan>
+      <Penjelasan>Hai Sobat Gamelan.....! Apakah kamu tahu tarian adat Jawa Timur? Ya... tarian adat Jawa Timur bernama tari remo. Tari Remo adalah salah satu tarian untuk penyambutan tamu agung, yang ditampilkan baik oleh satu atau banyak penari. Menurut sejarahnya, tari remo merupakan tari yang khusus dibawakan oleh penari laki – laki. Pertunjukan tari remo umumnya menampilkan kisah pangeran yang berjuang dalam sebuah medan pertempuran.</Penjelasan>
       <imageName>celurit</imageName>
     </Materi>
     <Materi>
-      <Penjelasan>Tahukah kamu Tari Muang Sangkal yang merupakan tarian tradisional Madura? Tari Muang Sangkal adalah salah satu tarian tradisional Madura yang dilakukan untuk ritual menjauhkan dari mara bahaya. Tarian ini sering ditampilkan di berbagai acara seperti penyambutan tamu dan berbagai acara adat lainnya.  </Penjelasan>
+      <Penjelasan>Hai Sobat Gamelan.....! Apakah kamu tahu seni pertunjukan Jawa Timur? Ya... seni pertunjukan yang terkenal di Jawa Timur adalah ludruk. Ludruk merupakan suatu drama tradisional yang diperagakan oleh sebuah grup kesenian yang dipergelarkan di sebuah panggung dengan mengambil cerita tentang kehidupan rakyat sehari-hari, cerita perjuangan, dan sebagainya yang diselingi dengan lawakan dan diiringi dengan gamelan sebagai musik.</Penjelasan>
       <imageName>muang_sangkal</imageName>
     </Materi>
   </materis>
