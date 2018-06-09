@@ -6,14 +6,14 @@ using UnityEngine.Events;
 using System;
 
 public class MateriController : MonoBehaviour {
-    public float waitTime = 4;
+   // public float waitTime = 4;
     public static MateriController self;
     public GameObject parent;
     public Image gambar;
     public Text penjelasan;
     public Button next;
     public Button prev;
-    public Scrollbar scroll;
+    public ScrollRect scroll;
     public Text timer;
     private Text next_text;
     private GamesMateri materis;
@@ -25,7 +25,7 @@ public class MateriController : MonoBehaviour {
     private float time;
     private MiniGameLoaderScript m;
     private Coroutine waiting;
-    private UnityEvent scrollOnValueChanged = new UnityEvent();
+    private UnityAction<Vector2> scrollEvent;
     // Use this for initialization
 
     private void Awake()
@@ -41,11 +41,11 @@ public class MateriController : MonoBehaviour {
     }
 
     void Start() {
-        //scroll.onValueChanged.AddListener(delegate { scrollOnValueChanged.Invoke(); });
-        self = this;
+         self = this;
         parent.SetActive(false);
         next.onClick.AddListener(Next);
         prev.onClick.AddListener(Prev);
+        scrollEvent = new UnityAction<Vector2>(delegate { scroll.verticalNormalizedPosition = 0; });
         next_text = next.transform.GetChild(0).gameObject.GetComponent<Text>();
     }
 
@@ -65,6 +65,10 @@ public class MateriController : MonoBehaviour {
     public void quit()
     {
         this.parent.SetActive(false);
+        while (RunningText.list.Count > 0) {
+            Destroy(RunningText.list[0].gameObject);
+            RunningText.list.RemoveAt(0);
+        }
         m = null;
     }
     void start() {
@@ -97,17 +101,21 @@ public class MateriController : MonoBehaviour {
         if (current > 0)
         {
             next_text.text = "Lanjut";
-            StopCoroutine(waiting);
             timer.text = "";
             next.transform.gameObject.SetActive(true);
+            while (RunningText.list.Count > 0)
+            {
+                Destroy(RunningText.list[0].gameObject);
+                RunningText.list.RemoveAt(0);
+            }
             showmateri(--current);
         }
        
     }
 
     void showmateri(int i) {
-        penjelasan.text = materis.materis[i].Penjelasan;
-        scroll.value = 1;
+        penjelasan.text = "";
+        
         try
         {
             gambar.sprite = Resources.Load<Sprite>("Materi/Gambar/" + materis.materis[i].imageName);
@@ -122,20 +130,12 @@ public class MateriController : MonoBehaviour {
         Debug.Log("Materi/Gambar/" + materis.materis[i].imageName);
         if (lastSaw <= current)
         {
-            waiting = StartCoroutine(wait());
             lastSaw = current;
-            //next.transform.gameObject.SetActive(false);
-            /*
-            if (!scroll.gameObject.activeSelf && scroll.size >=0.9)
-            {
-                scrollOnValueChanged.RemoveListener(checkForScroll);
-            }
-            else
-            {
-                scrollOnValueChanged.AddListener(checkForScroll);
-            }*/
+            scroll.onValueChanged.AddListener(scrollEvent);
+            RunningText.runningText(materis.materis[i].Penjelasan, penjelasan, 0.04F, delegate { next.transform.gameObject.SetActive(true); scroll.onValueChanged.RemoveListener(scrollEvent); });
         }
         else {
+            penjelasan.text = materis.materis[i].Penjelasan;
             next.transform.gameObject.SetActive(true);
 
         }
@@ -149,16 +149,8 @@ public class MateriController : MonoBehaviour {
         }
         else m = null;
     }
+    
     /*
-    public void checkForScroll() {
-        if (scroll.value == 0) {
-            next.transform.gameObject.SetActive(true);
-            timer.text = "";
-            StopCoroutine(waiting);
-            scrollOnValueChanged.RemoveListener(checkForScroll);
-        }
-    }*/
-
     IEnumerator wait() {
         int i = 0;
         while (i <= waitTime) {
@@ -167,5 +159,5 @@ public class MateriController : MonoBehaviour {
             i++;
         }
         next.transform.gameObject.SetActive(true);
-    }
+    }*/
 }

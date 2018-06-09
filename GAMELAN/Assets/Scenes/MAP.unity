@@ -1161,8 +1161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000012397766, y: -0.000050222156}
-  m_SizeDelta: {x: 484.1, y: 0}
+  m_AnchoredPosition: {x: 0.000012397766, y: -0.000034963366}
+  m_SizeDelta: {x: 496.8, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &309097991
 CanvasRenderer:
@@ -1186,11 +1186,11 @@ MonoBehaviour:
     m_Right: 4
     m_Top: 4
     m_Bottom: 4
-  m_ChildAlignment: 4
+  m_ChildAlignment: 0
   m_Spacing: 1
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
 --- !u!114 &309097993
 MonoBehaviour:
@@ -2481,7 +2481,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 492.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &668366264
 GameObject:
@@ -4781,13 +4781,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec93e616b754c746b2506046c2232db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 4
   parent: {fileID: 1321518767}
   gambar: {fileID: 227209756}
   penjelasan: {fileID: 665049138}
   next: {fileID: 400094089}
   prev: {fileID: 1257442661}
-  scroll: {fileID: 2025990578}
+  scroll: {fileID: 897747715}
   timer: {fileID: 1909700694}
   current: 0
   lastSaw: -1
@@ -6074,7 +6073,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6186,8 +6185,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 201256226}
   m_HandleRect: {fileID: 201256225}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9999998
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
