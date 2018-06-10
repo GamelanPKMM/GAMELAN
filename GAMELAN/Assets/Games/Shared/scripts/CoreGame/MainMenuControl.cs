@@ -14,7 +14,11 @@ public class MainMenuControl : MonoBehaviour {
         Application.targetFrameRate = 60;
         PenghargaanContainer.load();
         PenghargaanController.load();
+        AudioController.Load();
         acc = AccountContainer.load().accounts;
+        AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
+        audio.loop = true;
+        audio.Play();
         restartOption();
         saveClose();
 
@@ -97,5 +101,10 @@ public class MainMenuControl : MonoBehaviour {
     public void saveClose()
     {
         SaveGameUI.SetActive(false);
+    }
+
+    public void stopMusic() {
+        AudioSource audio = AudioController.getInstance().getAudioSource("MainMenu");
+        audio.Stop();
     }
 }
