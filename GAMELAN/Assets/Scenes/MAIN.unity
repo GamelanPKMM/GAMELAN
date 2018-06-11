@@ -1627,6 +1627,7 @@ GameObject:
   - component: {fileID: 732622480}
   - component: {fileID: 732622483}
   - component: {fileID: 732622482}
+  - component: {fileID: 732622484}
   - component: {fileID: 732622481}
   m_Layer: 5
   m_Name: Pengaturan
@@ -1739,6 +1740,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732622479}
+--- !u!114 &732622484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732622479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &805674674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,6 +2546,7 @@ GameObject:
   - component: {fileID: 1273397566}
   - component: {fileID: 1273397569}
   - component: {fileID: 1273397568}
+  - component: {fileID: 1273397570}
   - component: {fileID: 1273397567}
   m_Layer: 5
   m_Name: Quit Game
@@ -2643,6 +2659,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273397565}
+--- !u!114 &1273397570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273397565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &1346638388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3250,7 @@ GameObject:
   - component: {fileID: 1600615976}
   - component: {fileID: 1600615979}
   - component: {fileID: 1600615978}
+  - component: {fileID: 1600615980}
   - component: {fileID: 1600615977}
   m_Layer: 5
   m_Name: Button
@@ -3343,6 +3374,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1600615975}
+--- !u!114 &1600615980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600615975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &1627498315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,6 +3540,7 @@ GameObject:
   - component: {fileID: 1662577619}
   - component: {fileID: 1662577622}
   - component: {fileID: 1662577621}
+  - component: {fileID: 1662577623}
   - component: {fileID: 1662577620}
   m_Layer: 5
   m_Name: Play
@@ -3607,6 +3653,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1662577618}
+--- !u!114 &1662577623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662577618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &1667205008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3677,7 @@ GameObject:
   - component: {fileID: 1667205009}
   - component: {fileID: 1667205012}
   - component: {fileID: 1667205011}
+  - component: {fileID: 1667205013}
   - component: {fileID: 1667205010}
   m_Layer: 5
   m_Name: DeleteSaveGame
@@ -3729,6 +3790,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1667205008}
+--- !u!114 &1667205013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667205008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &1743431197
 GameObject:
   m_ObjectHideFlags: 0
@@ -4222,6 +4297,7 @@ GameObject:
   - component: {fileID: 1980203911}
   - component: {fileID: 1980203910}
   - component: {fileID: 1980203909}
+  - component: {fileID: 1980203912}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -4322,6 +4398,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980203907}
+--- !u!114 &1980203912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980203907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &1994253687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4468,6 +4558,7 @@ GameObject:
   - component: {fileID: 2061121993}
   - component: {fileID: 2061121996}
   - component: {fileID: 2061121995}
+  - component: {fileID: 2061121997}
   - component: {fileID: 2061121994}
   m_Layer: 5
   m_Name: newSave
@@ -4591,6 +4682,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2061121992}
+--- !u!114 &2061121997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061121992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe55e3177e97364bbea485ca255305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WiggleBeforeRest: 3
+  waitAtRest: 1
+  speed: 10
 --- !u!1 &2064965399
 GameObject:
   m_ObjectHideFlags: 0

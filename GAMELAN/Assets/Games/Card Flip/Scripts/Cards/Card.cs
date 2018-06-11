@@ -13,7 +13,7 @@ public class Card : MonoBehaviour
     public float speed = 1;
     public bool isFlipping;
 
-	void OnMouseDown () 
+    void OnMouseDown () 
 	{
         if (!CardFlipManager.control.stop && !CardFlipManager.control.init && !isDone && CardFlipManager.control.openedCards.Count<2)
         {
