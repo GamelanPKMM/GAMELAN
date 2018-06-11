@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class RunningText : MonoBehaviour{
     public static List<RunningText> list = new List<RunningText>();
+    float deltaTime = 0;
+    float realDeltaTime = 0;
     public static Coroutine runningText(string stext, float dur, Text text) {
         float dTime = dur / stext.Length;
         return runningText(stext, text, dTime);
@@ -31,9 +33,11 @@ public class RunningText : MonoBehaviour{
 
     }
     static IEnumerator runText(GameObject parent,string stext, float dTime, Text text) {
+        RunningText r = parent.GetComponent<RunningText>();
+        r.deltaTime = dTime;
         for (int i = 0; i < stext.Length; i++) {
             text.text += stext[i];
-            yield return new WaitForSecondsRealtime(dTime);
+            yield return new WaitForSecondsRealtime(r.realDeltaTime);
         }
         Destroy(parent);
         list.Remove(parent.GetComponent<RunningText>());
@@ -43,6 +47,17 @@ public class RunningText : MonoBehaviour{
         yield return runText(parent, stext, dTime, text);
         action.Invoke();
         yield return null;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            realDeltaTime = deltaTime / 5;
+        }
+        else {
+            realDeltaTime = deltaTime;
+        }
     }
 
 }
