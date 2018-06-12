@@ -56,6 +56,7 @@ public class CardFlipManager : MonoBehaviour
         DeserializeQuestions ();
 		InitSession ();
         gameOver = false;
+        DelayStart.self.StartCountDown();
 	}
 
 	//

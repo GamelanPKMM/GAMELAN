@@ -109,6 +109,7 @@ public class QuestionControlNias : MonoBehaviour {
         Time.timeScale = 1;
         GameControl.instance.input = true;
         Parent.SetActive(false);
+        DelayStart.self.PauseCountDown();
     }
 
     //mengecek soal agar tidak keluar 2 kali

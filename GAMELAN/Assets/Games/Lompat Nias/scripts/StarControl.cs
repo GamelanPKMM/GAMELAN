@@ -29,7 +29,6 @@ public class StarControl : MonoBehaviour {
         }
         starCount = GameControl.instance.star;
     }
-
     private void resetStar()
     {
         for (int i = 0; i < star.Length; i++)
@@ -37,7 +36,6 @@ public class StarControl : MonoBehaviour {
             star[i].SetActive(false);
         }
     }
-
     public void UpdateStar()
     {
         resetStar();
@@ -46,5 +44,14 @@ public class StarControl : MonoBehaviour {
         {
             star[i].SetActive(true);
         }
+    }
+
+    public void addStar()
+    {
+        star[GameControl.instance.star].SetActive(true);
+    }
+    public void removeStar()
+    {
+        star[GameControl.instance.star].SetActive(false);
     }
 }

@@ -24,7 +24,6 @@ public class TutorialNias : MonoBehaviour {
         }
         
     }
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

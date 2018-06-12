@@ -3849,6 +3849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControl: {fileID: 0}
+  baseEnemSpawnDelta: 2
   spawnDeltaVariable: 0
 --- !u!4 &1500045676
 Transform:

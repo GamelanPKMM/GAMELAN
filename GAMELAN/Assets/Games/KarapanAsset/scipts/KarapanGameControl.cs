@@ -9,6 +9,7 @@ public class KarapanGameControl : BasicGameControl {
     public ProgressControl progressControl;
     public UserInputControl userInputControl;
     public string Name;
+
     protected override void instantiate<T>()
     {
  	    base.instantiate<KarapanGameControl>();

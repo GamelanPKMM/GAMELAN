@@ -30,13 +30,19 @@ public class SpawnObs : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
-        //unutuk memindah batu jika batu sudah melebihi dari yang ditentukan
+        //untuk memindah batu jika batu sudah melebihi dari yang ditentukan
         if (GameControl.instance.gameOver == false && time >= spawnRate && GameControl.instance.stopBird == false)
         {
             time = 0;
             float spawnXPosition = Random.Range(minX, maxX);
             //Debug.Log(currentColumn);
             ColumnPrefabs[currentColumn].transform.position = new Vector2(spawnXPosition, positionY);
+            //Menambah bintang di atas batu
+            if (SpawnStar.self.starLock)
+            {
+                SpawnStar.self.AddStar(spawnXPosition);
+                SpawnStar.self.starLock = false;
+            }
             currentColumn++;
             //untuk mereset currentColumn
             if (currentColumn >= sizeColumn)

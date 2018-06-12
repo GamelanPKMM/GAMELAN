@@ -9,19 +9,22 @@ public class GameControl : MonoBehaviour
     public GameObject pauseUI;
     public bool stopBird = false;
     public static GameControl instance;
-    public float scrollSpeed = 0.5f;
+    public float scrollSpeed = 5f;
+    public float percentageUpdateSpeed = 5f;
+    public float acceleration = 1f;
     public int life = 3;
     public int star = 0;
+    public int result = 0;
     public  float timeFinish = 0f;
     public  float maxTime = 20f;
-    public float acceleration = 1;
     private bool pause = false;
-    public int result = 0;
     public bool gameOver = false;
-    static public bool tutorialNias = true;
     public bool finish = false;
+    static public bool tutorialNias = true;
     public bool input = true;
     public string gameName = "LompatNias";
+    //variabel lock update speed
+    private int tmp = 4;
     
 
     // Use this for initialization
@@ -41,27 +44,38 @@ public class GameControl : MonoBehaviour
     private void Start()
     {
         input = true;
+        //Delay Start
+        DelayStart.self.StartCountDown();
         //Memilih soal pada game
         QuestionControlNias.instance.gameName = gameName;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        //update Proggress bar
-        if (timeFinish <= maxTime && !stopBird)
+        //Seleksi delay start dan Pause
+        if (!DelayStart.self.DelayLock)
         {
-            timeFinish += Time.deltaTime;
-            result = (int)(timeFinish * 100 / maxTime);            
-            if (result % 5 == 0 && result > 4)
+            //update Proggress bar
+            if (timeFinish <= maxTime && !stopBird)
             {
-                updateSpeed();
+                timeFinish += Time.deltaTime;
+                result = (int)(timeFinish * 100 / maxTime);
+                
+                //update Speed
+                if (result % percentageUpdateSpeed == 0 && result > tmp)
+                {
+                    tmp = result;
+                    Debug.Log("Update Speed");
+                    updateSpeed();
+                }
+            }
+            //Finish
+            else if (timeFinish > maxTime)
+            {
+                birdFinish();
             }
         }
-        //Finish
-        else if (timeFinish > maxTime)
-        {
-            birdFinish();
-        }
+        
     }
     
     public void ResetGame()
@@ -96,8 +110,8 @@ public class GameControl : MonoBehaviour
         {
             return;
         }
-        life -= 1;
-        lifeControlUI.instance.UpdateLife();
+        life--;
+        lifeControlUI.instance.removeLife();
         //Debug.Log("nyawa kurang 1");
     }
 
@@ -105,21 +119,21 @@ public class GameControl : MonoBehaviour
     {
         if (life < 3)
         {
-            life += 1;
+            lifeControlUI.instance.addLife();
+            life++;
         }
        
         if (stopBird)
         {
             return;
         }
-        lifeControlUI.instance.UpdateLife();
         //Debug.Log("nyawa kurang 1");
     }
 
     public void StarIncrease()
     {
+        StarControl.instance.addStar();
         star++;
-        StarControl.instance.UpdateStar();
     }
 
     public void birdFinish()
@@ -132,9 +146,8 @@ public class GameControl : MonoBehaviour
     //mengupdate kecepatan scroll background dan obstacle
     void updateSpeed()
     {
-        scrollSpeed += acceleration/1000;
+        scrollSpeed += acceleration;
         ParalaxControl.self.updateSpeed(scrollSpeed);
-        //ScrollBackground.Sb.updateSpeed(scrollSpeed);
     }
 
     //untuk Pause game
@@ -143,9 +156,10 @@ public class GameControl : MonoBehaviour
         if (pause)
         {
             pause = false;
-            enabled = true;
             pauseUI.SetActive(false);
-            Time.timeScale = 1;
+            //Delay CountDown
+            DelayStart.self.PauseCountDown();
+            enabled = true;
         }
         else
         {

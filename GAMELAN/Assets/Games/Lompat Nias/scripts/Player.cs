@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (life == false && GameControl.instance.input)
+        if (life == false && GameControl.instance.input && !DelayStart.self.DelayLock)
         {
             if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))&& jumpLock && GameControl.instance.stopBird == false)
             {
@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.name == "BatuNias(Clone)")
         {
             anim.SetTrigger("Flash");
-            anim.SetTrigger("Idle");
+            //anim.SetTrigger("Idle");
             //Debug.Log("Flash");
         }
         //fungsi unutk mentriger jumplock

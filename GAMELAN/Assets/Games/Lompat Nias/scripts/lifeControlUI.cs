@@ -46,4 +46,13 @@ public class lifeControlUI : MonoBehaviour {
             life[i].SetActive(true);
         }
     }
+
+    public void addLife()
+    {
+        life[GameControl.instance.life].SetActive(true);
+    }
+    public void removeLife()
+    {
+        life[GameControl.instance.life].SetActive(false);
+    }
 }
