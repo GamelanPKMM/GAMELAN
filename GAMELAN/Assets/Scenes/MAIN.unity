@@ -221,6 +221,63 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 91240946}
+--- !u!1001 &141719988
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 703170211}
+    m_Modifications:
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.4996166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164904550970480, guid: c70aa4534126664458ce05ee20243596,
+        type: 2}
+      propertyPath: scene
+      value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164904550970480, guid: c70aa4534126664458ce05ee20243596,
+        type: 2}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c70aa4534126664458ce05ee20243596, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &141719989 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4857310892055846, guid: c70aa4534126664458ce05ee20243596,
+    type: 2}
+  m_PrefabInternal: {fileID: 141719988}
 --- !u!1 &146056082
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &146056083
 AudioSource:
   m_ObjectHideFlags: 0
@@ -591,6 +648,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216294632}
+--- !u!114 &228910664 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114164904550970480, guid: c70aa4534126664458ce05ee20243596,
+    type: 2}
+  m_PrefabInternal: {fileID: 141719988}
+  m_Script: {fileID: 11500000, guid: f10b53bf2ee458d4bb9e1f788fa00046, type: 3}
 --- !u!1 &297121212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1499,7 @@ MonoBehaviour:
   inputNewSave: {fileID: 1743431199}
   SaveGameUI: {fileID: 1098004654}
   namePlayers: {fileID: 91240948}
+  Scene: {fileID: 228910664}
 --- !u!1 &703170207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1598,7 @@ RectTransform:
   - {fileID: 1435742207}
   - {fileID: 732622480}
   - {fileID: 1980203908}
+  - {fileID: 141719989}
   - {fileID: 1098004655}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1696,6 +1761,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 658567738}
         m_MethodName: stopMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: moveOut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2278,7 +2354,7 @@ RectTransform:
   - {fileID: 1600615976}
   - {fileID: 982161784}
   m_Father: {fileID: 703170211}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3617,6 +3693,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 0
+      - m_Target: {fileID: 228910664}
+        m_MethodName: moveIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -4362,7 +4449,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1980203910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: moveIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1980203910

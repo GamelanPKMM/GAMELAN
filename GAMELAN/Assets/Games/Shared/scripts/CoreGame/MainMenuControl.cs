@@ -5,23 +5,28 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class MainMenuControl : MonoBehaviour {
     List<Account> acc;
+    public static MainMenuControl self;
+    static public bool main = true;
     public Dropdown savesDropdown;
     public Text inputNewSave;
     public GameObject SaveGameUI;
     public Text namePlayers;
-	// Use this for initialization
-	void Start () {
+    public CloudSceneChanger Scene;
+    // Use this for initialization
+    void Start () {
+        Debug.Log(main);
+        main = true;
         Application.targetFrameRate = 60;
         PenghargaanContainer.load();
         PenghargaanController.load();
         AudioController.Load();
         acc = AccountContainer.load().accounts;
-        AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
-        audio.loop = true;
-        audio.Play();
+        //AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
+       // audio.loop = true;
+        //audio.Play();
         restartOption();
         saveClose();
-
+        Scene.moveOut();
     }
     void restartOption() {
         savesDropdown.ClearOptions();
@@ -90,7 +95,9 @@ public class MainMenuControl : MonoBehaviour {
     public void gotoMap() {
         if (AccountContainer.self.currentAccount != null)
         {
-            SceneManager.LoadScene("MAP");
+            main = false;
+            Scene.moveOut();
+            //SceneManager.LoadScene("MAP");
         }
     }
 
