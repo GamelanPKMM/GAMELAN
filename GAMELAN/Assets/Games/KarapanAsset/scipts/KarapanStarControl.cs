@@ -12,17 +12,22 @@ public class KarapanStarControl : StarController {
     {
         base.start();
         StarPrefab = GameObject.FindGameObjectWithTag("Star");
+        basicGameControl.addSubController("KarapanStarControl", this);
         progressControl = basicGameControl.SubController<ProgressControl>("ProgressControl");
         StarPrefab.SetActive(false);
         basicGameControl.addEvent("Reset", reset);
     }
-
-    void spawnStar()
+    protected override void instantiate<T>()
+    {
+        base.instantiate<T>();
+        basicGameControl.addNewEventType("StarSpawn");
+    }
+    public void spawnStar(int pos)
     {
         if (basicGameControl.getGameState() && !basicGameControl.isPause() && base.starCount < maksStar)
         {
                 GameObject star = (GameObject)Instantiate(StarPrefab);
-                star.transform.position = new Vector3(Random.Range(-2, 3) * 2.5F, StartPos.y, 0);
+                star.transform.position = new Vector3(pos * 2.5F, StartPos.y, 0);
                 star.SetActive(true);
                 star.transform.SetParent(gameObject.transform);
         }
@@ -33,8 +38,12 @@ public class KarapanStarControl : StarController {
         {
             if (progressControl.progress >= lastSpawn + spawnDelta)
             {
+
+                /*
                 spawnStar();
                 Debug.Log("Spwning Star");
+                */
+                basicGameControl.callEvent("StarSpawn");
                 lastSpawn = (int)progressControl.progress;
             }
         }

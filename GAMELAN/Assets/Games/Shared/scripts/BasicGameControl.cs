@@ -43,9 +43,10 @@ public class BasicGameControl : SubController {
     public bool isWinning() {
         return isWin;
     }
-    public void resetGame() { isWin = false; gameState = true; getEvent("Reset")(); allowUserInput(); }
+    public void resetGame() { isWin = false; gameState = true; isPaused = false; getEvent("Reset")(); allowUserInput(); }
     public void gameOver() { gameState = false; getEvent("GameOver")(); banUserInput(); }
     public bool getGameState() { return gameState; }
+    public void setGameState(bool state) { gameState = state; }
     protected void toggleDebug() { isDebug = !isDebug; if (isDebug) getEvent("Debug")(); }
     private bool getDebugState() { return isDebug; }
     public bool isDebugState() { return isDebug; } 
@@ -117,13 +118,18 @@ public class BasicGameControl : SubController {
         events.Add(eventName, delegate() { });
     }
     public void callEvent(string name) {
-        events[name]();
+
+        StartCoroutine(fireEvent(name));
     }
     public void addSubController(string name, SubController sub){
         this.subController.Add(name, sub);
     }
     public T SubController<T>(string name) where T : SubController {
         return (T)this.subController[name];
+    }
+    IEnumerator fireEvent(string name) {
+        events[name]();
+            yield return null;
     }
 
 }

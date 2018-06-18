@@ -31,6 +31,7 @@ public class KarapanGameControl : BasicGameControl {
         userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Space }, "TogglePause", delegate() { togglePause(); }, Input.GetKeyDown, 0.75F));
         userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Slash }, "DEBUG", delegate() { toggleDebug(); }, Input.GetKeyDown, UserInputControl.SeldomtimePress));
         userInputControl.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.Equals }, "reset", delegate() { gameOver(); resetGame(); }, Input.GetKeyDown, UserInputControl.SometimePress));
+        AccountContainer.load();
     }
     void Update() { }
     public override void exitGame()

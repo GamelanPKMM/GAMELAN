@@ -7,7 +7,7 @@ public class MiniGameLoaderScript : MonoBehaviour {
     public MateriController mt;
     public void gotoMiniGames() {
         PlayerPrefs.SetString("minigame", gameName);
-        //SceneManager.LoadScene(gameName);
+        SceneManager.LoadScene(gameName);
         Debug.Log(gameName);
     }
 

@@ -42,7 +42,7 @@ public class MateriController : MonoBehaviour {
 
     void Start() {
          self = this;
-        parent.SetActive(false);
+        GetComponent<Interpolate>().Disable();
         next.onClick.AddListener(Next);
         prev.onClick.AddListener(Prev);
         scrollEvent = new UnityAction<Vector2>(delegate { scroll.verticalNormalizedPosition = 0; });
@@ -64,7 +64,7 @@ public class MateriController : MonoBehaviour {
     }
     public void quit()
     {
-        this.parent.SetActive(false);
+        GetComponent<Interpolate>().Disable();
         while (RunningText.list.Count > 0) {
             Destroy(RunningText.list[0].gameObject);
             RunningText.list.RemoveAt(0);
@@ -72,7 +72,7 @@ public class MateriController : MonoBehaviour {
         m = null;
     }
     void start() {
-        parent.SetActive(true);
+        GetComponent<Interpolate>().Enable();
         prev.transform.gameObject.SetActive(false);
         materis = GamesMateri.load(materiPath);
         current = 0;

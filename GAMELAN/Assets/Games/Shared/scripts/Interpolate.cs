@@ -8,27 +8,38 @@ public class Interpolate : MonoBehaviour {
     private Coroutine appearing;
     public bool Enable()
     {
+        return Enable(null);
+    }
+    public bool Disable()
+    {
+        return Disable(null);
+    }
+    public bool Enable(UnityAction action) {
         if (appearing == null)
         {
             gameObject.SetActive(true);
             transform.localScale = Vector3.zero;
-            appearing = StartCoroutine(interpolateScale(Vector3.one));
+            appearing = StartCoroutine(interpolateScale(Vector3.one, action));
             return true;
-        } return false;
+        }
+        return false;
     }
-    public bool Disable()
+    public bool Disable(UnityAction action)
     {
         if (appearing == null)
         {
             transform.localScale = Vector3.one;
             appearing = StartCoroutine(interpolateScale(Vector3.zero, () =>
             {
+                if(action!=null)
+                action.Invoke();
                 gameObject.SetActive(false);
             }));
             return true;
         }
         return false;
     }
+
     private IEnumerator interpolateScale(Vector3 target) {
         float interpol = 0;
         do
@@ -57,13 +68,15 @@ public class Interpolate : MonoBehaviour {
     private IEnumerator interpolateScale(Vector3 target, UnityAction action)
     {
         yield return interpolateScale(target);
-        action.Invoke();
+        if (action != null)
+            action.Invoke();
 
     }
 
     private IEnumerator interpolatePos(Vector3 target, UnityAction action) {
         yield return interpolatePos(target);
-        action.Invoke();
+        if (action != null)
+            action.Invoke();
 
     }
     public void toggle() {

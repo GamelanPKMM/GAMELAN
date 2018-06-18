@@ -47,7 +47,7 @@ public class QuestionControl : SubController {
     }
 
     public void startQuestion() {
-        
+
         basicGameControl.banUserInput();
         basicGameControl.pauseGame();
         userAnswer = -1;
@@ -61,7 +61,8 @@ public class QuestionControl : SubController {
         } while (uni[rand]);
         current = rand;
         q = questions.question[rand];
-        question.text = q.question;
+        question.text = "";
+
         for (int i = 0; i < 3; i++) {
             answer[i].transform.GetChild(0).gameObject.GetComponent<Text>().text = q.answers[i];
         }
@@ -69,8 +70,16 @@ public class QuestionControl : SubController {
         foreach (Button b in answer) {
             b.gameObject.SetActive(false);
         }
-        Parent.SetActive(true);
-        
+        Parent.GetComponent<Interpolate>().Enable(() => {
+            RunningText.runningText(q.question, question, 0.075F, () => {
+                foreach (Button b in answer)
+                {
+                    b.gameObject.SetActive(true);
+                }
+                isQuestionAnswerShow = true;
+            });
+        });
+
 
     }
 
@@ -93,7 +102,7 @@ public class QuestionControl : SubController {
     public void questionStop() {
         basicGameControl.allowUserInput();
         basicGameControl.unpauseGame();
-        Parent.SetActive(false);
+        Parent.GetComponent<Interpolate>().Disable();
     }
 
     private void questionAvailibilityCheck() {
@@ -118,10 +127,7 @@ public class QuestionControl : SubController {
     private void Update()
     {
         if (!isQuestionAnswerShow && Time.time >= startTime + deltaTime) {
-            foreach (Button b in answer) {
-                b.gameObject.SetActive(true);
-            }
-            isQuestionAnswerShow = true;
+            
         }   
     }
 }

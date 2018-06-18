@@ -25,7 +25,7 @@ public class MainMenuControl : MonoBehaviour {
        // audio.loop = true;
         //audio.Play();
         restartOption();
-        saveClose();
+        SaveGameUI.SetActive(false);
         Scene.moveOut();
     }
     void restartOption() {
@@ -103,11 +103,11 @@ public class MainMenuControl : MonoBehaviour {
 
     public void savePlayer()
     {
-        SaveGameUI.SetActive(true);
+        SaveGameUI.GetComponent<Interpolate>().Enable();
     }
     public void saveClose()
     {
-        SaveGameUI.SetActive(false);
+        SaveGameUI.GetComponent<Interpolate>().Disable();
     }
 
     public void stopMusic() {

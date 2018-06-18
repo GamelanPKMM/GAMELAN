@@ -73,9 +73,16 @@ public class KarapanPlayerControl : KarapanSubScontroller {
 
 
 
-    void reset() {
+    public void reset() {
+        transform.position = intialPlayerPos;
         targetPlayerPos = intialPlayerPos;
         pos = 0;
-    }
+        currentTransPosCode = 0;
+        isTransititioning = false;
+        transJourney = 0F;
+
+
+
+}
     
 }

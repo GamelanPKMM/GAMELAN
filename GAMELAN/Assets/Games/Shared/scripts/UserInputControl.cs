@@ -22,7 +22,6 @@ public class UserInputControl : SubController {
     void OnGUI() {
         
     }
-
      public void addKeyMap(KeyMap k) {
          this.keyMap.AddLast(k);
          this.inputHandler += k.checkInput;
