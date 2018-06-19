@@ -20,6 +20,7 @@ public class KarapanStarInstanceController : KarapanSubScontroller {
         OriPos = transform.position;
         targetVector = transform.position;
         targetVector.y = -transform.position.y;
+        gameControl.addEvent("Reset", reset);
 
     }
     void FixedUpdate()

@@ -6,9 +6,9 @@ public class KarapanEnemyControl : KarapanSubScontroller {
     private int maxEnemPerKloter = 4;
     public float baseEnemSpawnDelta = 2F;
     public float spawnDeltaVariable;
-    private GameObject[] PrefabEnem = new GameObject[4];
-    private Vector3 StartPos = new Vector3(0, 10, 0);
-    private float lastSpawn;
+    public GameObject[] PrefabEnem = new GameObject[4];
+    public Vector3 StartPos = new Vector3(0, 10, 0);
+    public float lastSpawn;
     bool starSpawn = false;
     protected override void start()
     {
@@ -20,6 +20,9 @@ public class KarapanEnemyControl : KarapanSubScontroller {
         lastSpawn = Time.time;
         gameControl.addEvent("Reset", reset);
         gameControl.addEvent("StarSpawn", spawnStar);
+        UserInputControl input = basicGameControl.SubController<UserInputControl>("UserInputControl");
+        input.addKeyMap(new KeyMap(new KeyCode[] { KeyCode.M }, "SpawnStar", () => { spawnStar(); }, Input.GetKeyDown, UserInputControl.SeldomtimePress));
+
     }
 
     void FixedUpdate()
@@ -70,7 +73,6 @@ public class KarapanEnemyControl : KarapanSubScontroller {
     }
     void reset() {
         maxEnemPerKloter = 4;
-        baseEnemSpawnDelta = 2F;
         spawnDeltaVariable = 0;
         lastSpawn = Time.time;
     }

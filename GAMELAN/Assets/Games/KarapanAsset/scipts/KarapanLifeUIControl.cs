@@ -14,12 +14,13 @@ public class KarapanLifeUIControl : KarapanSubScontroller {
         drawLife();
         gameControl.addEvent("LifeDecrease", drawRemLive);
         gameControl.addEvent("LifeIncrease", drawRemLive);
-        gameControl.addEvent("Reset", drawRemLive);
+        gameControl.addEvent("Reset", reset);
         LivePrefab.SetActive(false);
 
     }
     void drawRemLive()
     {
+        print("RedrawingLife");
         foreach (GameObject g in LiveSprites)
         {
             g.SetActive(false);
@@ -40,5 +41,10 @@ public class KarapanLifeUIControl : KarapanSubScontroller {
             LiveSprites[i].transform.localPosition = new Vector3((float)(initialLivePos + (i) * lifeDist), (float)-0.15, 0);
             LiveSprites[i].SetActive(true);
         }
+    }
+    void reset()
+    {
+        gameControl.lifeControl.reset();
+        drawRemLive();
     }
 }

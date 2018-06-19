@@ -8,6 +8,11 @@ public class MapController : MonoBehaviour {
 	void Start () {
         Time.timeScale = 1;
         self.moveOut();
+        AudioSource main = AudioController.getInstance().getAudioSource("MainMenu");
+        if (!main.isPlaying)
+        {
+            main.Play();
+        }
 	}
 	
 	// Update is called once per frame

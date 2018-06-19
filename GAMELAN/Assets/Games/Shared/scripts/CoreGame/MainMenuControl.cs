@@ -21,9 +21,10 @@ public class MainMenuControl : MonoBehaviour {
         PenghargaanController.load();
         AudioController.Load();
         acc = AccountContainer.load().accounts;
-        //AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
-       // audio.loop = true;
-        //audio.Play();
+        AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
+        DontDestroyOnLoad(audio);
+        audio.loop = true;
+        audio.Play();
         restartOption();
         SaveGameUI.SetActive(false);
         Scene.moveOut();

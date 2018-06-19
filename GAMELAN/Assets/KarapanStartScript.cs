@@ -10,17 +10,18 @@ public class KarapanStartScript : KarapanSubScontroller {
     protected override void start()
     {
         base.start();
+        basicGameControl.addSubController("KarapanStartScript", this);
         basicGameControl.addEvent("Reset", resetGame);
 
     }
 
     void resetGame()
     {
-        basicGameControl.setGameState(false);
-        StartCoroutine(countDown());    }
-
-    IEnumerator countDown()
+        countDown();
+    }
+    IEnumerator countDownCor()
     {
+        basicGameControl.setGameState(false);
         image.gameObject.SetActive(true);
         foreach (Sprite s in number)
         {
@@ -31,4 +32,10 @@ public class KarapanStartScript : KarapanSubScontroller {
         basicGameControl.setGameState(true);
         image.gameObject.SetActive(false);
     }
+
+    public void countDown() {
+            StartCoroutine(countDownCor());
+    }
+
+    
 }

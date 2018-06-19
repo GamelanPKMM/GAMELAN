@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class KarapanLifeControl : KarapanSubScontroller {
-    private int live = 3;
+    public int live = 3;
 
     public int maxLifeCap = 3;
 
@@ -45,7 +45,7 @@ public class KarapanLifeControl : KarapanSubScontroller {
     }
 
     public float getLife() { return live; }
-    void reset() {
+    public void reset() {
         live = maxLifeCap;
     }
     

@@ -88,12 +88,14 @@ public class QuestionControl : SubController {
              if (userAnswer == supposedAnswer)
              {
                  basicGameControl.SubController<StarController>("StarController").increaseStar();
-                uni[current] = true;
+                 uni[current] = true;
 
             }
             else {
-             }
-             isDOne = true;
+                basicGameControl.SubController<KarapanStartScript>("KarapanStartScript").countDown();
+
+            }
+            isDOne = true;
             questionStop();
 
        }

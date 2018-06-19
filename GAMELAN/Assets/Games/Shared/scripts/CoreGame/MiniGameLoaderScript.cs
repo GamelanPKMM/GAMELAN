@@ -8,6 +8,8 @@ public class MiniGameLoaderScript : MonoBehaviour {
     public void gotoMiniGames() {
         PlayerPrefs.SetString("minigame", gameName);
         SceneManager.LoadScene(gameName);
+        AudioSource main = AudioController.instance.getAudioSource("MainMenu");
+        main.Stop();
         Debug.Log(gameName);
     }
 
