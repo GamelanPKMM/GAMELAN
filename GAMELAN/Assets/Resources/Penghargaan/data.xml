@@ -1,13 +1,45 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="utf-8"?>
 <PenghargaanContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <PenghargaanArray>
+    <Penghargaan Penghargaan="Aceh Bintang 5">
+      <imageName>stiker1</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Aceh</penjelasan>
+    </Penghargaan>
     <Penghargaan Penghargaan="Nias Bintang 5">
-      <imageName>baju_adat_nias</imageName>
+      <imageName>stiker2</imageName>
       <penjelasan>Kamu telah menyelesaikan permainan di Nias</penjelasan>
     </Penghargaan>
-    <Penghargaan Penghargaan="Karapan Bintang 5">
-      <imageName>baju_adat_nias</imageName>
+    <Penghargaan Penghargaan="Jateng Bintang 5">
+      <imageName>stiker3</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Jawa Tengah</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Kalimantan Bintang 5">
+      <imageName>stiker4</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Kalimantan</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Jatim Bintang 5">
+      <imageName>stiker5</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Jawa Timur</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Madura Bintang 5">
+      <imageName>stiker6</imageName>
       <penjelasan>Kamu telah menyelesaikan permainan di Madura</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Sulawesi Bintang 5">
+      <imageName>stiker7</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Sulawesi</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Papua Bintang 5">
+      <imageName>stiker8</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Papua</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Lombok Bintang 5">
+      <imageName>stiker9</imageName>
+      <penjelasan>Kamu telah menyelesaikan permainan di Lombok</penjelasan>
+    </Penghargaan>
+    <Penghargaan Penghargaan="Semua Bintang">
+      <imageName>stiker10</imageName>
+      <penjelasan>Kamu telah menyelesaikan semua permainan GAMELAN</penjelasan>
     </Penghargaan>
   </PenghargaanArray>
 </PenghargaanContainer>

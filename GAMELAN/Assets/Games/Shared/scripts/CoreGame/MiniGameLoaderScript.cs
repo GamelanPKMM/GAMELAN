@@ -7,9 +7,13 @@ public class MiniGameLoaderScript : MonoBehaviour {
     public MateriController mt;
     public void gotoMiniGames() {
         PlayerPrefs.SetString("minigame", gameName);
-        SceneManager.LoadScene(gameName);
-        AudioSource main = AudioController.instance.getAudioSource("MainMenu");
-        main.Stop();
+        CloudSceneChanger.moveTo(gameName);
+        //SceneManager.LoadScene(gameName);
+        if (!gameName.Equals("MAIN"))
+        {
+            AudioSource main = AudioController.instance.getAudioSource("MainMenu");
+            main.Stop();
+        }
         Debug.Log(gameName);
     }
 

@@ -22,11 +22,16 @@ public class AudioController : MonoBehaviour {
        
     }
     public AudioSource registerSound(string path, string name) {
+        
         GameObject g = new GameObject();
         AudioSource audio = g.AddComponent<AudioSource>();
         AudioClip clip = Resources.Load(path) as AudioClip;
         audio.clip = clip;
-        list.Add(name, audio);
+        if (list.ContainsKey(name))
+        {
+            removeSound(name);
+        }
+        list.Add(name, audio);        
         print("success adding audio " + name);
         return list[name];
     }
@@ -54,6 +59,15 @@ public class AudioController : MonoBehaviour {
         }
     }
     public AudioSource getAudioSource(string name) {
-        return list[name];
+        if (list.ContainsKey(name))
+        {
+            return list[name];
+        }
+        else { return null; }
     }
+
+    public bool containKey(string name) {
+        return list.ContainsKey(name);
+    }
+    
 }

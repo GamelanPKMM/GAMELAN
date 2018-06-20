@@ -400,6 +400,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 388912282}
+    - target: {fileID: 114297461271283060, guid: ed1daad782059a64b817b8e4f714e4ba,
+        type: 2}
+      propertyPath: PenghargaanName
+      value: Madura Bintang 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed1daad782059a64b817b8e4f714e4ba, type: 2}
   m_IsPrefabParent: 0
@@ -1501,6 +1506,13 @@ MonoBehaviour:
   gameControl: {fileID: 0}
   baseEnemSpawnDelta: 2
   spawnDeltaVariable: 0
+  PrefabEnem:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  StartPos: {x: 0, y: 10, z: 0}
+  lastSpawn: 0
 --- !u!4 &1500045676
 Transform:
   m_ObjectHideFlags: 0

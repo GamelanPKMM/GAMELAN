@@ -2736,6 +2736,7 @@ MonoBehaviour:
   finish: 0
   input: 1
   gameName: Papua
+  PenghargaanName: Papua Bintang 5
 --- !u!4 &780396707
 Transform:
   m_ObjectHideFlags: 0

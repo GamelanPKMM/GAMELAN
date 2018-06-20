@@ -1898,6 +1898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControl: {fileID: 0}
+  PenghargaanName: 
 --- !u!1 &522425212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3730,6 +3731,11 @@ Prefab:
     - target: {fileID: 1696530374555232, guid: ed1daad782059a64b817b8e4f714e4ba, type: 2}
       propertyPath: m_Name
       value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297461271283060, guid: ed1daad782059a64b817b8e4f714e4ba,
+        type: 2}
+      propertyPath: PenghargaanName
+      value: Lombok Bintang 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed1daad782059a64b817b8e4f714e4ba, type: 2}

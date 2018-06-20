@@ -25,7 +25,8 @@ public class GameControl : MonoBehaviour
     public string gameName = "LompatNias";
     //variabel lock update speed
     private int tmp = 4;
-    
+
+    public string PenghargaanName;
 
     // Use this for initialization
 
@@ -174,13 +175,13 @@ public class GameControl : MonoBehaviour
     {
         tutorialNias = true;
         //Time.timeScale = 1;
-        /*
+        
         //Tambah penghargaan
         if (star >= 5)
         {
-            PenghargaanController.self.tambahPenghargaan("Jateng");
+                        PenghargaanController.self.tambahPenghargaan(PenghargaanName);
         }
-        */
+        
         CoreGameInterface.instance.exitGame(star);
         
     }

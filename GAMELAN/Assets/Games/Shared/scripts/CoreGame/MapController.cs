@@ -9,9 +9,18 @@ public class MapController : MonoBehaviour {
         Time.timeScale = 1;
         self.moveOut();
         AudioSource main = AudioController.getInstance().getAudioSource("MainMenu");
-        if (!main.isPlaying)
+        if (main != null)
         {
-            main.Play();
+            if (!main.isPlaying)
+            {
+                main.Play();
+            }
+        }
+        else {
+            AudioSource audio = AudioController.getInstance().registerSound("Audio/Intro insyaAllah fix", "MainMenu");
+            DontDestroyOnLoad(audio);
+            audio.loop = true;
+            audio.Play();
         }
 	}
 	

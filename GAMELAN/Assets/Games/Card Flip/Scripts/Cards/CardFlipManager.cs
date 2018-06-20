@@ -38,6 +38,7 @@ public class CardFlipManager : MonoBehaviour
     public bool gameOver;
     public bool isQuestionShowing;
 
+    public string PenghargaanName;
 	void Awake () 
 	{
 		if(control == null) 
@@ -348,13 +349,13 @@ public class CardFlipManager : MonoBehaviour
 
     public void gotoMap()
     {
-        /*
+        
         //Tambah penghargaan
         if (StarScore.control.obtainedStar >= 5)
         {
-            PenghargaanController.self.tambahPenghargaan("Jateng");
+                        PenghargaanController.self.tambahPenghargaan(PenghargaanName);
         }
-        */
+        
         CoreGameInterface.instance.exitGame(StarScore.control.obtainedStar);
     }
 

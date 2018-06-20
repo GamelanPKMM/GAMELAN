@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class KarapanEndingScript : KarapanSubScontroller {
     private Text text;
+    public string PenghargaanName;
     public void gameOver() {
         if (basicGameControl.getIsFinish())
         {
             text.text = "Selamat kamu menang!";
-            //PenghargaanController.self.tambahPenghargaan("Karapan Bintang 5");
+            PenghargaanController.self.tambahPenghargaan(PenghargaanName);
         }
         else {
             text.text = "Kamu kalah!";

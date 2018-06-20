@@ -29,6 +29,10 @@ public class CloudSceneChanger : MonoBehaviour {
     public void moveIn()
     {
         startTime = Time.time;
+        if (rbLeft == null || rbright == null) {
+            rbLeft = left.GetComponent<Rigidbody2D>();
+            rbright = right.GetComponent<Rigidbody2D>();
+        }
         rbLeft.transform.position = outImage.transform.position;
         rbright.transform.position = outImageR.transform.position;
         toogle = true;
@@ -40,6 +44,11 @@ public class CloudSceneChanger : MonoBehaviour {
     public void moveOut()
     {
         startTime = Time.time;
+        if (rbLeft == null || rbright == null)
+        {
+            rbLeft = left.GetComponent<Rigidbody2D>();
+            rbright = right.GetComponent<Rigidbody2D>();
+        }
         rbLeft.transform.position = inImage.transform.position;
         rbright.transform.position = inImageR.transform.position;
         toogle = false;
@@ -95,6 +104,16 @@ public class CloudSceneChanger : MonoBehaviour {
         {
             SceneManager.LoadScene(scene);
         }
-
     }
+    public static void moveTo(string sceneName) {
+        CloudSceneChanger c = getSceneChanger();
+        c.scene = sceneName;
+        c.moveIn();
+    }
+    private static CloudSceneChanger getSceneChanger() {
+        GameObject g = Instantiate<GameObject>(Resources.Load("Prefabs/Scene Changer") as GameObject);
+        CloudSceneChanger c = g.GetComponent<CloudSceneChanger>();
+        return c;
+    }
+
 }

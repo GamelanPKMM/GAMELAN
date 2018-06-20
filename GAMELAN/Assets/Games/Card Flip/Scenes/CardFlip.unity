@@ -1047,6 +1047,7 @@ MonoBehaviour:
   previewTime: 3
   gameOver: 0
   isQuestionShowing: 0
+  PenghargaanName: Jateng Bintang 5
 --- !u!4 &690919687
 Transform:
   m_ObjectHideFlags: 0

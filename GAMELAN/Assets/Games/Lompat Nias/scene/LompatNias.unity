@@ -1928,7 +1928,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 2.16}
+    oldSize: {x: 1.01, y: 2.12}
     newSize: {x: 1.08, y: 2.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2669,6 +2669,7 @@ MonoBehaviour:
   finish: 0
   input: 1
   gameName: LompatNias
+  PenghargaanName: Nias Bintang 5
 --- !u!4 &780396707
 Transform:
   m_ObjectHideFlags: 0

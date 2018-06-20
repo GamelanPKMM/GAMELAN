@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Games/Cidomo/Scene/Cidomo.unity
+- path: Assets/Games/Sulawesi/Scenes/Sulawesi.unity
   isLoaded: 1
   isActive: 1
