@@ -55,6 +55,7 @@ MonoBehaviour:
   isDone: 0
   speed: 0.5
   isFlipping: 0
+  flip: {fileID: 8300000, guid: 16bb02e6969020a458de309a3a141396, type: 3}
 --- !u!212 &212522216002075462
 SpriteRenderer:
   m_ObjectHideFlags: 1

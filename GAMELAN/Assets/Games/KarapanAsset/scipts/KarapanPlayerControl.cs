@@ -13,13 +13,15 @@ public class KarapanPlayerControl : KarapanSubScontroller {
     private float flatSpeed = 0.5F;
     private float transJourney = 0F;
     private float startTrans;
+    public AudioClip move;
+    private AudioSource audio_player;
     protected override void start()
     {
         base.start();
         player = GameObject.Find("Player");
         targetPlayerPos = player.transform.localPosition;
         GameObject child = transform.GetChild(0).gameObject;
-
+        audio_player = gameObject.AddComponent<AudioSource>();
         gameControl.addEvent("Reset", reset);
     }
 	
@@ -61,6 +63,7 @@ public class KarapanPlayerControl : KarapanSubScontroller {
         {
             if (posCode == -1 && pos > -2 || pos < 2 && posCode == 1)
             {
+                audio_player.PlayOneShot(move);
                 pos += posCode;
                 isTransititioning = true;
                 targetPlayerPos.x = targetPlayerPos.x + getTransReal(posCode); ;

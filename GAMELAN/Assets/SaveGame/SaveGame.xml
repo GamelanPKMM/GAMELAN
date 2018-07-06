@@ -5,12 +5,12 @@
       <minigameSave>
         <MinigameSave Minigame="Karapan" MinigameSave="5" />
         <MinigameSave Minigame="LompatNias" MinigameSave="5" />
-        <MinigameSave Minigame="Cidomo" MinigameSave="1" />
+        <MinigameSave Minigame="Cidomo" MinigameSave="5" />
         <MinigameSave Minigame="Aceh" MinigameSave="1" />
         <MinigameSave Minigame="Dayak" MinigameSave="1" />
         <MinigameSave Minigame="Jatim" MinigameSave="0" />
         <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
-        <MinigameSave Minigame="Papua" MinigameSave="0" />
+        <MinigameSave Minigame="Papua" MinigameSave="1" />
       </minigameSave>
       <penghargaans>
         <PenghargaanSave>
@@ -51,6 +51,42 @@
         </PenghargaanSave>
         <PenghargaanSave>
           <name>Karapan Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Aceh Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Jateng Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Kalimantan Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Jatim Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Madura Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Sulawesi Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Papua Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Lombok Bintang 5</name>
+          <isEarned>true</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Semua Bintang</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
       </penghargaans>
@@ -107,6 +143,42 @@
           <name>Karapan Bintang 5</name>
           <isEarned>false</isEarned>
         </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Aceh Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Jateng Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Kalimantan Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Jatim Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Madura Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Sulawesi Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Papua Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Lombok Bintang 5</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
+        <PenghargaanSave>
+          <name>Semua Bintang</name>
+          <isEarned>false</isEarned>
+        </PenghargaanSave>
       </penghargaans>
     </Account>
   </Accounts>
@@ -114,12 +186,12 @@
     <minigameSave>
       <MinigameSave Minigame="Karapan" MinigameSave="5" />
       <MinigameSave Minigame="LompatNias" MinigameSave="5" />
-      <MinigameSave Minigame="Cidomo" MinigameSave="1" />
+      <MinigameSave Minigame="Cidomo" MinigameSave="5" />
       <MinigameSave Minigame="Aceh" MinigameSave="1" />
       <MinigameSave Minigame="Dayak" MinigameSave="1" />
       <MinigameSave Minigame="Jatim" MinigameSave="0" />
       <MinigameSave Minigame="Sulawesi" MinigameSave="0" />
-      <MinigameSave Minigame="Papua" MinigameSave="0" />
+      <MinigameSave Minigame="Papua" MinigameSave="1" />
     </minigameSave>
     <penghargaans>
       <PenghargaanSave>
@@ -160,6 +232,42 @@
       </PenghargaanSave>
       <PenghargaanSave>
         <name>Karapan Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Aceh Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Jateng Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Kalimantan Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Jatim Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Madura Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Sulawesi Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Papua Bintang 5</name>
+        <isEarned>false</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Lombok Bintang 5</name>
+        <isEarned>true</isEarned>
+      </PenghargaanSave>
+      <PenghargaanSave>
+        <name>Semua Bintang</name>
         <isEarned>false</isEarned>
       </PenghargaanSave>
     </penghargaans>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Games/Sulawesi/Scenes/Sulawesi.unity
+- path: Assets/Games/Aceh/Scenes/Aceh.unity
   isLoaded: 1
   isActive: 1

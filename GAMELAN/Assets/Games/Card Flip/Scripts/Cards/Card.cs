@@ -12,15 +12,29 @@ public class Card : MonoBehaviour
     public bool isDone;
     public float speed = 1;
     public bool isFlipping;
+    public AudioClip flip;
+    private AudioSource audio_player;
 
+    private void Awake()
+    {
+        audio_player = gameObject.AddComponent<AudioSource>();
+    }
     void OnMouseDown () 
 	{
         if (!CardFlipManager.control.stop && !CardFlipManager.control.init && !isDone && CardFlipManager.control.openedCards.Count<2)
         {
             if (this.isFaceUp)
+            {
+                audio_player.PlayOneShot(flip);
+
                 CloseCard();
+            }
             else
+            {
+                audio_player.PlayOneShot(flip);
+
                 OpenCard();
+            }
         }
 	}
 
