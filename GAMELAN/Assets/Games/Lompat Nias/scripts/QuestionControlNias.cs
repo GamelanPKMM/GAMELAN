@@ -90,6 +90,7 @@ public class QuestionControlNias : MonoBehaviour {
             if (userAnswer == supposedAnswer)
             {
                 GameControl.instance.StarIncrease();
+                Player.instance.correctSound();
                 //jika jawaban benar maka akan nyawa ditambah 1
                 //GameControl.instance.lifeIncrease();
                 uni[current] = true;

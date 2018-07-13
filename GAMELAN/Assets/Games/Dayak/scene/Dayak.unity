@@ -809,6 +809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218893323}
   - component: {fileID: 218893322}
+  - component: {fileID: 218893324}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -909,6 +910,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218893324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218893321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd19017c4869514caf3e9865144262d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 0}
+  flash: {fileID: 0}
+  hit: {fileID: 0}
+  jump: {fileID: 8300000, guid: 4045bf31e300a9d40a5c8ecd2f3f19a1, type: 3}
+  earncoin: {fileID: 8300000, guid: a1235fd6ddfdeae42b6094568ceeae30, type: 3}
+  earnStar: {fileID: 8300000, guid: 9768c88a3a2792c4fa9efe918e3594fd, type: 3}
+  finish: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!1 &229946183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1757,7 @@ MonoBehaviour:
   down: 50
   ground: {fileID: 1702316143}
   obs: {fileID: 60935926038126488, guid: b86b5399587bd2848afd52c3006fc964, type: 2}
+  audio: {fileID: 218893322}
 --- !u!95 &625824350
 Animator:
   serializedVersion: 3

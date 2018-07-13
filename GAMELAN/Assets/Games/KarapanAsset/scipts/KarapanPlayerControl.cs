@@ -63,7 +63,7 @@ public class KarapanPlayerControl : KarapanSubScontroller {
         {
             if (posCode == -1 && pos > -2 || pos < 2 && posCode == 1)
             {
-                audio_player.PlayOneShot(move);
+                audio_player.PlayOneShot(move,1);
                 pos += posCode;
                 isTransititioning = true;
                 targetPlayerPos.x = targetPlayerPos.x + getTransReal(posCode); ;

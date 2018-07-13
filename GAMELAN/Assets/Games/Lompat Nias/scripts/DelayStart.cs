@@ -28,7 +28,7 @@ public class DelayStart : MonoBehaviour {
 
     private void Start()
     {
-        start.SetActive(true);
+        //start.SetActive(true);
         pause.SetActive(false);
     }
     //Start Count Down
@@ -66,7 +66,7 @@ public class DelayStart : MonoBehaviour {
         yield return new WaitForSecondsRealtime(count - 1);
         param.transform.parent.gameObject.GetComponent<Image>().enabled = false;
         //menonaktifkan image component parrent
-        Debug.Log("delay finish");
+        //Debug.Log("delay finish");
         DelayLock = false;
         Time.timeScale = 1;
         yield return new WaitForSecondsRealtime(reduce);

@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Black Device/Desktop/Build/Gamelan/Gamelan.exe
+C:/Users/Black Device/Desktop/Build/win/Gamelan/Gamelan.exe
 SceneListBegin?
 Assets/Scenes/MAIN.unity
 Assets/Scenes/MAP.unity
@@ -16,7 +16,7 @@ SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UserInputControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Console
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SubController
-c22cd2f3df02f99d217f7162b20bd1f1 Assembly-CSharp.dll:.MainMenuControl
+9658971948c3109516f9478195e1be0f Assembly-CSharp.dll:.MainMenuControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecycleBackground
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -30,8 +30,9 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+98c4ce445b5524ecbffa10a097c6d138 Assembly-CSharp.dll:.ButtonExtWiggle
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CoreGameInterface
-68b86eb73a2c95381b545f850fe4e7f0 Assembly-CSharp.dll:.MateriController
+88723b028c919caba9e3b674dc5d7186 Assembly-CSharp.dll:.MateriController
 ef69d4e36c0b831fd95a6a3314ee5947 Assembly-CSharp.dll:.PenghargaanControl
 36a8c9cd97d1ba17f61d18484bbbfd8d Assembly-CSharp.dll:.MiniGameLoaderScript
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -98,10 +99,10 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-66cfd7a38f3c5b20594f760c7ec72ed8 Assembly-CSharp.dll:.KarapanStarInstanceController
+c477a5a6a5a167e23d13594364375666 Assembly-CSharp.dll:.KarapanStarInstanceController
 5c05474e417e53b54580a5d5adfdf48e Assembly-CSharp.dll:.MoveRelatively
 cce3d10a927e685614c3ec1f39d18e75 Assembly-CSharp.dll:.lifeControlUI
-871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanPlayerControl
+49c5c0dc266e778ceb8d9f50131bd616 Assembly-CSharp.dll:.KarapanPlayerControl
 1822a392d36a184defb2a5d1cb6550df Assembly-CSharp.dll:.MapCloudMove
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.PausePanelScript
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -117,7 +118,8 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 b506dea3bcb0b43de0ffa235ca6075d1 Assembly-CSharp.dll:.KarapanStarControl
-68fa5a5c4e1a38233a1e74b24ba3e217 Assembly-CSharp.dll:.KarapanEnemyControl
+605d292dc3804cfe511cf00b817f826b Assembly-CSharp.dll:.Interpolate
+2e19a15c05940e320f3a909efa6d65fd Assembly-CSharp.dll:.KarapanEnemyControl
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -140,6 +142,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 e71e1956823281b823d6f013a7fb30a6 Assembly-CSharp.dll:.KarapanSpeedControl
 36a0e8231d00a106a06a14480ccd7e30 Assembly-CSharp.dll:.QuestionControlNias
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioController
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -153,15 +156,18 @@ e52f20e755b87771372b4dc180d1baec Assembly-CSharp.dll:.QuestionControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroy
 462ff9cf66e3287ba5a4fb5df35fce53 Assembly-CSharp.dll:.StarController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PenghargaanController
-262918d1bb11a9317c4067d76c08a82f Assembly-CSharp.dll:.SpawnStar
+c24cd04a8e3bc28e9b86ecf821a4bdd3 Assembly-CSharp.dll:.SpawnStar
+f9d4e9f3bb449fd29463f57065cf8c59 Assembly-CSharp.dll:.PlayerSound
 eaefc5cfeea000c502ec6d63be576d53 Assembly-CSharp.dll:.TimeBar
 e6684292d2db8c82040c9472852e881c Assembly-CSharp.dll:.StarControl
 0c09726084a5ecbe51c7eb9a8518601c Assembly-CSharp.dll:.Life
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-d6e6ba70329c2693555c4f8d4591cead Assembly-CSharp.dll:.Player
+ee98d33d18f5cb7dc6c1a49553252e07 Assembly-CSharp.dll:.Player
 b537ac24f5ee9d86b6240882df45e1ec Assembly-CSharp.dll:.RecycleCloud
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RunningText
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
+9884ede6644a2d73efb9d123690b6616 Assembly-CSharp.dll:.KarapanStartScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BasicGameControl
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -178,7 +184,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanSubScontroller
-fcb5af787c4bc79477108b74e9cb5ca3 Assembly-CSharp.dll:.GameControl
+1b8b46c1461f388c5db3890aac94688f Assembly-CSharp.dll:.GameControl
 e436449e5d3ccae409960fac1a7bfdcd Assembly-CSharp.dll:.ProgressControl
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -189,10 +195,10 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 c7db17a5b2c258602a88825da7c883e3 Assembly-CSharp.dll:.Quiz
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MapController
+b61afa7828a0c53bf5833a56643f1203 Assembly-CSharp.dll:.MapController
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanProgressBarUI
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanPlayerFinish
-a52677b4312744c00fee55dee8653012 Assembly-CSharp.dll:.KarapanStarUIControl
+55cd6dff4aee0b9c2c4594302be21bac Assembly-CSharp.dll:.KarapanStarUIControl
 9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -200,6 +206,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 b85073668632806a1421a205605cd8f8 Assembly-CSharp.dll:.Star
 1b9691cf22c56e590a38013cc11a7418 Assembly-CSharp.dll:.FrameAndTimeDisplay
 a70c8cd376901b4f377119c8d7bbeaab Assembly-CSharp.dll:.KarapanPlayerHit
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioExt
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -214,11 +221,13 @@ c477a5a6a5a167e23d13594364375666 Assembly-CSharp.dll:.KarapanEnemyInstanceContro
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.Scroll
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioScript
 1820ed1de6bce04cf91bf4cad00967ef Assembly-CSharp.dll:.KarapanLifeUIControl
-19f5e39600cbb2f4ab4fe18a74a1f824 Assembly-CSharp.dll:.KarapanLifeControl
-871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanEndingScript
+82887265966b1e8e3618deb7f097930d Assembly-CSharp.dll:.KarapanLifeControl
+f02776e5c0da838437567e44aea6129e Assembly-CSharp.dll:.KarapanEndingScript
 871cbe9891a2a0a46892afdcf7b0e2c1 Assembly-CSharp.dll:.KarapanScoreDisplay
 65ad023b29c12fb98c1abc6bab196eaa Assembly-CSharp.dll:.SpawnObs
-d0c4dec2b5a89eef0a9a1e5aa0e41607 Assembly-CSharp.dll:.Card
-6e223dee6eef1df4695f6317abfe1cb5 Assembly-CSharp.dll:.CardFlipManager
+32758ef75e7a049174946bf44a996263 Assembly-CSharp.dll:.Card
+540451936a8211888b437e37d74fcc07 Assembly-CSharp.dll:.DelayStart
+705240458723934fa7a70d5c5d3cf1f1 Assembly-CSharp.dll:.CardFlipManager
 c565f3bca0f722aae62c1956f5f14ffb Assembly-CSharp.dll:.StarScore
+d924ea8dc63a5f0180879ff79d54b3f8 Assembly-CSharp.dll:.CloudSceneChanger
 54d5e2865724850deeaaf3c34b99183e Assembly-CSharp.dll:.ParalaxControl

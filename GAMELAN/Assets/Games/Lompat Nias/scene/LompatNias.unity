@@ -705,15 +705,16 @@ Transform:
   m_Father: {fileID: 1710865717}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &218893321
+--- !u!1 &208559827
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 218893323}
-  - component: {fileID: 218893322}
+  - component: {fileID: 208559830}
+  - component: {fileID: 208559829}
+  - component: {fileID: 208559828}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -721,16 +722,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &218893322
+--- !u!114 &208559828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208559827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd19017c4869514caf3e9865144262d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 0}
+  flash: {fileID: 0}
+  hit: {fileID: 0}
+  jump: {fileID: 8300000, guid: 4045bf31e300a9d40a5c8ecd2f3f19a1, type: 3}
+  earncoin: {fileID: 8300000, guid: a1235fd6ddfdeae42b6094568ceeae30, type: 3}
+  earnStar: {fileID: 8300000, guid: 9768c88a3a2792c4fa9efe918e3594fd, type: 3}
+  finish: {fileID: 0}
+  gameOver: {fileID: 0}
+--- !u!82 &208559829
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218893321}
-  m_Enabled: 0
+  m_GameObject: {fileID: 208559827}
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 536e96e1859609d4f88aa75d6733bc4d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 69fa1c65acff145478d333e7211d14c9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -801,12 +821,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!4 &218893323
+--- !u!4 &208559830
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218893321}
+  m_GameObject: {fileID: 208559827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 265.59195, y: 125.18711, z: 1.9665045}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1952,6 +1972,7 @@ MonoBehaviour:
   down: 25
   ground: {fileID: 1702316143}
   obs: {fileID: 60935926038126488, guid: b86b5399587bd2848afd52c3006fc964, type: 2}
+  audio: {fileID: 208559829}
 --- !u!95 &625824350
 Animator:
   serializedVersion: 3
@@ -2621,6 +2642,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114496708916697176, guid: 902ca2630e387f84c9de926034695960,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 7064502b569ae9c42a0d0f143dcd8802,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 902ca2630e387f84c9de926034695960, type: 2}
   m_IsPrefabParent: 0

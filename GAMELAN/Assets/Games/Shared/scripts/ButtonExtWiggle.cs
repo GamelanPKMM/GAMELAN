@@ -10,8 +10,8 @@ public class ButtonExtWiggle : MonoBehaviour, IPointerEnterHandler, IPointerExit
     Coroutine wiggle;
     [SerializeField]
     float speed = 10;
-    private float right = 10;
-    private float left = -10;
+    private float right = 2.5f;
+    private float left = -2.5f;
     private float deltaTransition = 0.15F;
     private float lastTransition;
 
